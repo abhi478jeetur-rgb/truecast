@@ -1,8 +1,8 @@
 {
-  "name": "weather-app",
+  "name": "truecast",
   "private": true,
   "version": "0.1.0",
-  "description": "macOS-like Weather app for Ubuntu (Electron + React + Tailwind)",
+  "description": "A weather app that proves its numbers \u2014 macOS-style, for Linux.",
   "homepage": "https://github.com/tarun-bansal/weather-app",
   "author": "tarun-bansal",
   "main": "dist-electron/main.js",
@@ -42,8 +42,8 @@
     "wait-on": "^8.0.0"
   },
   "build": {
-    "appId": "com.weather.macos",
-    "productName": "Weather",
+    "appId": "com.truecast.weather",
+    "productName": "Truecast",
     "directories": {
       "output": "release"
     },

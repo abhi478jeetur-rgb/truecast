@@ -32,3 +32,4 @@ dist-electron
 # Local
 .env
 .env.*
+docs/demo-frames

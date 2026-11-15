@@ -1,32 +1,115 @@
-# React + TypeScript + Vite
+# Truecast
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**A weather app that proves its numbers.** macOS-style, for Linux. Every reading
+on screen is checked against the API it came from, and the receipts are in
+[`QA.md`](QA.md).
 
-Currently, two official plugins are available:
+![Truecast demo](docs/demo.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Night | Day |
+|---|---|
+| ![Dark theme](docs/screenshots/dark.png) | ![Light theme](docs/screenshots/light.png) |
+| ![Search sheet](docs/screenshots/sheet.png) | ![Fahrenheit](docs/screenshots/fahrenheit.png) |
 
-## React Compiler
+## Why this one
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Most desktop weather apps are a web page in a frame. This one is small, honest,
+and measured:
 
-## Expanding the Oxlint configuration
+- **No API key, no account, no telemetry.** [Open-Meteo](https://open-meteo.com)
+  is called directly from the app.
+- **Numbers you can audit.** Hero, high/low, feels-like, humidity, wind, UV,
+  visibility, pressure, sunrise/sunset, 24 hourly cards and 10 daily rows are
+  compared against the API response — 131–132 of them, all matching.
+- **City-local time everywhere.** Dates and hours come from the city's own
+  sunrise/sunset, never the host clock.
+- **Measured accessibility.** Contrast sampled from rendered pixels (worst
+  sampled layer 6.19:1), real dialog semantics, focus trap, 24 px targets,
+  `prefers-reduced-motion`, forced-colors selection.
+- **One request per load.** In-flight de-duplication plus a 60 s cache.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Features
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+- Current conditions, 24-hour strip, 10-day list, detail grid
+- Dynamic gradient and day/night icons from the selected city's condition and sun
+- °C/°F with km/h ↔ mph (re-requested from the API, never converted locally)
+- City search with keyboard support and saved favourites
+- Last city, units and favourites persist across launches
+- Frameless window with real traffic lights, Restore state and double-click zoom
+
+## Install
+
+Grab `truecast_0.1.0_amd64.deb` from Releases:
+
+```bash
+sudo apt install ./truecast_0.1.0_amd64.deb
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Tested on Ubuntu 26.04 LTS with GNOME on X11. Wayland and HiDPI are untested.
+
+## Run from source
+
+```bash
+npm install
+npm run electron:dev     # Vite dev server + Electron
+npm run build            # type-check and bundle the renderer
+npm run dist             # package the .deb into release/
+```
+
+Requires Node 20+ and a Linux desktop with X11. No sandbox setup is needed — the
+main process starts with `--no-sandbox` so the packaged binary runs on systems
+where `chrome-sandbox` is not setuid-root.
+
+## How it is put together
+
+```
+src/
+  state/WeatherProvider.tsx   one source of truth: data, city, status, units, favourites
+  services/weatherApi.ts      Open-Meteo requests, unit params, cache, de-duplication
+  lib/format.ts               calendar-safe dates (never `new Date(string)`)
+  lib/theme.ts                per-condition gradients + the dark/light decision
+  lib/storage.ts              persisted city, units, favourites (validated reads)
+  components/                 header, hourly strip, 10-day list, details, sheet, title bar
+electron/
+  main.ts                     window, IPC for the window controls
+  preload.ts                  the small bridge exposed to the renderer
+tools/capture.mjs             regenerates the screenshots and the demo GIF
+```
+
+The renderer never talks to the network directly except through
+`services/weatherApi.ts`, and every component reads from the single provider.
+That is what keeps one city's name from appearing above another city's forecast —
+the bug that started this project's QA record.
+
+## Weather data
+
+Data by [Open-Meteo](https://open-meteo.com), licensed
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Their free API is for
+non-commercial use; if you fork this and ship it commercially, you need your own
+Open-Meteo plan. Truecast asks for the units it displays and shows the API's own
+values — including its quirk of labelling miles per hour `mp/h`, normalised here
+to `mph`.
+
+Inter is bundled under the SIL Open Font License
+([licence](src/assets/fonts/Inter-LICENSE.txt)); icons are
+[Lucide](https://lucide.dev) (ISC).
+
+## Limitations, stated
+
+- Linux only, x64. The package is a `.deb`.
+- The search sheet is always light, even in the night theme (open P2).
+- No geolocation, settings window, notifications or tray icon yet.
+- English only.
+- The hero numeral scales with your font size but the layout is tuned for
+  1000 × 700.
+
+## Quality
+
+The app passed an independent ship gate at **7.1 / 10**, with **0 P0 and 0 P1**.
+Three runs, their measurements, and the things that were *not* fixed are in
+[`QA.md`](QA.md); the full reports are in [`design-review/`](design-review/).
+
+## Licence
+
+MIT — see [LICENSE](LICENSE). Not affiliated with Apple; "macOS-style" describes
+the visual language, not the vendor.

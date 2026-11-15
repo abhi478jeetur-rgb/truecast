@@ -50,6 +50,9 @@ export default function App() {
                     <WeatherDetailGrid details={data.details} units={data.units} />
                   </div>
                 </div>
+                <p className="px-6 pb-6 text-app-2 text-xs">
+                  Weather data by Open-Meteo (CC BY 4.0). Not affiliated with Apple.
+                </p>
               </div>
             </>
           )}

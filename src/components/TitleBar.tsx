@@ -94,7 +94,7 @@ export default function TitleBar() {
       </div>
 
       <div className="absolute left-1/2 -translate-x-1/2 text-app-2 text-xs font-medium tracking-wide pointer-events-none">
-        Weather
+        Truecast
       </div>
 
       <div className="app-region-no-drag flex items-center gap-2">

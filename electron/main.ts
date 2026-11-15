@@ -1,7 +1,7 @@
 import { app, BrowserWindow, ipcMain, screen } from "electron";
 import path from "node:path";
 
-app.setName("Weather");
+app.setName("Truecast");
 
 const isDev = process.env.NODE_ENV === "development";
 

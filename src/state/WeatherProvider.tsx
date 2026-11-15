@@ -19,9 +19,11 @@ import {
   placeKey,
   readCity,
   readFavorites,
+  readReduceMotion,
   readUnits,
   writeCity,
   writeFavorites,
+  writeReduceMotion,
   writeUnits,
 } from "@/lib/storage";
 
@@ -74,6 +76,13 @@ export interface WeatherContextValue {
   results: City[];
   isSearching: boolean;
   searchError: string | null;
+
+  isSettingsOpen: boolean;
+  openSettings: () => void;
+  closeSettings: () => void;
+  /** True when the user forced animations off, even if the OS allows them. */
+  reduceMotion: boolean;
+  setReduceMotion: (value: boolean) => void;
 }
 
 const WeatherContext = createContext<WeatherContextValue | null>(null);
@@ -93,6 +102,23 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
   const [results, setResults] = useState<City[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [searchError, setSearchError] = useState<string | null>(null);
+
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [reduceMotion, setReduceMotionState] = useState<boolean>(() => readReduceMotion());
+
+  // Persist the override and apply it: data-motion="reduce" on <html> silences
+  // animations the same way the OS setting does (see src/index.css). Off
+  // follows the OS prefers-reduced-motion setting.
+  useEffect(() => {
+    writeReduceMotion(reduceMotion);
+    const root = document.documentElement;
+    if (reduceMotion) root.dataset.motion = "reduce";
+    else delete root.dataset.motion;
+  }, [reduceMotion]);
+
+  const setReduceMotion = useCallback((value: boolean) => {
+    setReduceMotionState(value);
+  }, []);
 
   /** Guards against an older response overwriting a newer one. */
   const latestRequest = useRef(0);
@@ -252,6 +278,14 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
     setIsSearchOpen(false);
   }, []);
 
+  const openSettings = useCallback(() => {
+    setIsSettingsOpen(true);
+  }, []);
+
+  const closeSettings = useCallback(() => {
+    setIsSettingsOpen(false);
+  }, []);
+
   const selectCity = useCallback(
     (next: City) => {
       setIsSearchOpen(false);
@@ -307,6 +341,11 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
       results,
       isSearching,
       searchError,
+      isSettingsOpen,
+      openSettings,
+      closeSettings,
+      reduceMotion,
+      setReduceMotion,
     }),
     [
       data,
@@ -335,6 +374,11 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
       results,
       isSearching,
       searchError,
+      isSettingsOpen,
+      openSettings,
+      closeSettings,
+      reduceMotion,
+      setReduceMotion,
     ],
   );
 

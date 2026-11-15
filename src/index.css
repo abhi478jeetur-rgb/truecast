@@ -287,3 +287,20 @@ a {
     scroll-behavior: auto !important;
   }
 }
+
+/* ── Reduce-motion override ────────────────────────────────────────────────
+   The Settings sheet's toggle: the same silence as the OS setting, driven by
+   data-motion="reduce" on <html> instead of the media query, so it holds even
+   when the OS allows motion. */
+[data-motion="reduce"] .city-enter {
+  animation: none;
+}
+
+[data-motion="reduce"] *,
+[data-motion="reduce"] *::before,
+[data-motion="reduce"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}

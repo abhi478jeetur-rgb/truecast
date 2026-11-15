@@ -1,15 +1,14 @@
 # Maintainer: TODO <you@example.com>
 # Builds Truecast from the tagged source tarball.
 #
-# Before publishing: replace OWNER below with the GitHub account that hosts the
-# repository, and publish a `v$pkgver` tag first.
+# The source tag `v$pkgver` must exist before this builds.
 
 pkgname=truecast
 pkgver=0.1.0
 pkgrel=1
 pkgdesc="A weather app that proves its numbers — macOS-style, for Linux"
 arch=('x86_64')
-url="https://github.com/OWNER/truecast"
+url="https://github.com/tarun-bansal/truecast"
 license=('MIT')
 depends=('gtk3' 'nss' 'libxss' 'libasound2' 'libgbm' 'libsecret')
 makedepends=('nodejs' 'npm')

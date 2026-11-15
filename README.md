@@ -1,5 +1,9 @@
 # Truecast
 
+[![CI](https://github.com/tarun-bansal/truecast/actions/workflows/ci.yml/badge.svg)](https://github.com/tarun-bansal/truecast/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/tarun-bansal/truecast?color=3b7fe0)](https://github.com/tarun-bansal/truecast/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **A weather app that proves its numbers.** macOS-style, for Linux. Every reading
 on screen is checked against the API it came from, and the receipts are in
 [`QA.md`](QA.md).
@@ -43,7 +47,7 @@ and measured:
 
 ## Install
 
-Grab `truecast_0.1.0_amd64.deb` from Releases:
+[**Download the latest `.deb`**](https://github.com/tarun-bansal/truecast/releases/latest) and install it:
 
 ```bash
 sudo apt install ./truecast_0.1.0_amd64.deb

@@ -7,9 +7,8 @@ files here are the next step, and are deliberately marked unfinished.
 
 `PKGBUILD` builds from the tagged source tarball.
 
-1. Replace `OWNER` in `url=` with the GitHub account that hosts the repository.
-2. Publish a `v0.1.0` tag; the `source=` line expects
-   `https://github.com/OWNER/truecast/archive/v0.1.0.tar.gz`.
+1. Publish a `v0.1.0` tag; the `source=` line expects
+   `https://github.com/tarun-bansal/truecast/archive/v0.1.0.tar.gz`.
 3. On Arch: `makepkg -si` in this directory, then
    `makepkg --printsrcinfo > .SRCINFO` and push both to the AUR package
    `truecast`.

@@ -2,9 +2,9 @@
   "name": "truecast",
   "private": true,
   "version": "0.1.0",
-  "description": "A weather app that proves its numbers \u2014 macOS-style, for Linux.",
-  "homepage": "https://github.com/tarun-bansal/weather-app",
-  "author": "tarun-bansal",
+  "description": "A weather app that proves its numbers — macOS-style, for Linux.",
+  "homepage": "https://github.com/tarun-bansal/truecast",
+  "author": "Tarun Bansal",
   "main": "dist-electron/main.js",
   "scripts": {
     "dev": "vite",
@@ -69,5 +69,13 @@
     "deb": {
       "compression": "xz"
     }
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarun-bansal/truecast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tarun-bansal/truecast/issues"
+  },
+  "license": "MIT"
 }

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Truecast
+Comment=A weather app that proves its numbers
+Exec=/opt/truecast/truecast %U
+Terminal=false
+Type=Application
+Icon=truecast
+Categories=Weather;Utility;
+StartupWMClass=Truecast

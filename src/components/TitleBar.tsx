@@ -23,21 +23,21 @@ const UNIT_OPTIONS: Array<{ short: string; label: string; value: UnitPreferences
  */
 export default function TitleBar() {
   const api = (window as any).electronAPI ?? {};
-  const { minimize, maximize, close } = api;
+  const { minimize, maximize, close, isMaximized, onMaximizedChange, toggleMaximize } = api;
   const { units, changeUnits, favorites, openSearch, isSearchOpen, refresh, isStale } = useWeather();
 
   const [maximized, setMaximized] = useState(false);
   useEffect(() => {
     let alive = true;
-    api.isMaximized?.().then((value: boolean) => {
+    isMaximized?.().then((value: boolean) => {
       if (alive) setMaximized(value);
     }).catch(() => {});
-    const off = api.onMaximizedChange?.((value: boolean) => setMaximized(value));
+    const off = onMaximizedChange?.((value: boolean) => setMaximized(value));
     return () => {
       alive = false;
       off?.();
     };
-  }, [api.isMaximized, api.onMaximizedChange]);
+  }, [isMaximized, onMaximizedChange]);
 
   const controls = [
     {
@@ -54,7 +54,7 @@ export default function TitleBar() {
     },
     {
       short: maximized ? "Restore" : "Maximize",
-      onClick: api.toggleMaximize ?? maximize,
+      onClick: toggleMaximize ?? maximize,
       dot: "bg-[#28c840] border-[#1f9f33]",
       icon: maximized ? Minimize2 : Square,
     },
@@ -67,7 +67,7 @@ export default function TitleBar() {
         // On macOS a double-click on the title bar zooms the window. The drag
         // region swallows the gesture otherwise.
         if ((event.target as HTMLElement).closest("button")) return;
-        api.toggleMaximize?.();
+        toggleMaximize?.();
       }}
     >
       <div className="app-region-no-drag flex items-center gap-1">

@@ -65,14 +65,18 @@ matches the layout (24 blocks, 860 px).
 
 | ID | Task | Size | Pri | Notes |
 |---|---|---|---|---|
-| R-30 | AUR package (S) or Flathub submission (L) | S / L | P1 | one-line install moves stars more than features |
-| R-31 | GitHub Actions: typecheck + build + lint on PR | S | P1 | |
-| R-32 | Unit tests for `format.ts` / `weatherApi.ts` (dates, units, rounding, window) | M | P1 | 0 tests today |
-| R-33 | E2E smoke under xvfb (launch, one city, one toggle) | M | P2 | move the `/tmp` harnesses into `e2e/` first |
-| R-34 | Release workflow that attaches the `.deb` | S | P1 | |
-| R-35 | Wayland + HiDPI check on a real session | S | P2 | untested |
+| R-30 | AUR / Flathub packaging | S / L | P1 | **PARTIAL** — `packaging/PKGBUILD` + docs; both need a public repo and accounts, so neither was published |
+| R-31 | GitHub Actions CI | S | P1 | **DONE** — typecheck, tests, lint, build, plus an xvfb e2e job |
+| R-32 | Unit tests | M | P1 | **DONE** — 30 tests: dates, units, day/night boundaries, theme, storage validation |
+| R-33 | E2E smoke under xvfb | M | P2 | **DONE** — `e2e/smoke.mjs`, 8 checks against the packaged binary |
+| R-34 | Release workflow | S | P1 | **DONE** — tag `v*` builds and attaches `release/*.deb` |
+| R-35 | Wayland + HiDPI | S | P2 | **PARTIAL** — 2× HiDPI verified (identical layout, 2000×1400 capture); Wayland untested, no session here |
 
 ---
+
+**M3 verification:** `npm test` 30/30; `node e2e/smoke.mjs` 8/8 on the
+packaged binary; `npm run typecheck` and `npm run lint` clean; `p15-hidpi.json`
+(dpr 2, hero 96 px, cards 159 px, no overflow).
 
 ## M4 — The differentiator (P2)
 

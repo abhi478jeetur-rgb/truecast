@@ -79,7 +79,7 @@ interface SunTimes {
  * not by the host clock, and not by a fixed 6am/8pm guess. Both sides are naive
  * city-local ISO strings ("2026-11-14T06:49"), so a lexical comparison is exact.
  */
-function isNightAt(localIso: string, sunByDate: Map<string, SunTimes>): boolean {
+export function isNightAt(localIso: string, sunByDate: Map<string, SunTimes>): boolean {
   const sun = sunByDate.get(localIso.slice(0, 10));
   if (!sun) return false;
   return localIso < sun.sunrise || localIso >= sun.sunset;

@@ -55,6 +55,11 @@ npm install
 npm run electron:dev     # Vite dev server + Electron
 npm run build            # type-check and bundle the renderer
 npm run dist             # package the .deb into release/
+
+npm test                 # unit tests (dates, units, day/night, storage)
+npm run typecheck
+npm run lint
+node e2e/smoke.mjs       # end-to-end against the packaged binary (needs a display)
 ```
 
 Requires Node 20+ and a Linux desktop with X11. No sandbox setup is needed — the
@@ -108,6 +113,10 @@ Inter is bundled under the SIL Open Font License
 The app passed an independent ship gate at **7.1 / 10**, with **0 P0 and 0 P1**.
 Three runs, their measurements, and the things that were *not* fixed are in
 [`QA.md`](QA.md); the full reports are in [`design-review/`](design-review/).
+
+That is backed by 30 unit tests, an end-to-end smoke test against the packaged
+binary (launch, API agreement, units, shortcuts), and CI on every push.
+Packaging notes for AUR and Flathub are in [`packaging/`](packaging/).
 
 ## Licence
 

@@ -1,4 +1,4 @@
-import { app, BrowserWindow, ipcMain, screen } from "electron";
+import { app, BrowserWindow, ipcMain, Menu, screen } from "electron";
 import path from "node:path";
 
 app.setName("Truecast");
@@ -32,7 +32,10 @@ function createWindow() {
     },
   });
 
-  win.setAutoHideMenuBar(true);
+  // A real menu keeps the standard accelerators (copy/paste, zoom, quit) but is
+  // never drawn: Alt must not reveal a menu bar over a frameless window.
+  win.setAutoHideMenuBar(false);
+  win.setMenuBarVisibility(false);
 
   // The renderer draws a Restore glyph when the window is maximized.
   win.on("maximize", () => win.webContents.send("window-maximized", true));
@@ -69,6 +72,36 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  Menu.setApplicationMenu(
+    Menu.buildFromTemplate([
+      { label: "Truecast", submenu: [{ role: "about" }, { type: "separator" }, { role: "quit" }] },
+      {
+        label: "Edit",
+        submenu: [
+          { role: "undo" },
+          { role: "redo" },
+          { type: "separator" },
+          { role: "cut" },
+          { role: "copy" },
+          { role: "paste" },
+          { role: "selectAll" },
+        ],
+      },
+      {
+        label: "View",
+        submenu: [
+          { role: "reload" },
+          { type: "separator" },
+          { role: "resetZoom" },
+          { role: "zoomIn" },
+          { role: "zoomOut" },
+          { type: "separator" },
+          { role: "togglefullscreen" },
+        ],
+      },
+      { label: "Window", submenu: [{ role: "minimize" }, { role: "close" }] },
+    ]),
+  );
   createWindow();
 
   app.on("activate", () => {

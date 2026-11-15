@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-14T23:12:47.172Z",
+  "at": "2026-11-15T04:53:51.669Z",
   "checks": [
     {
       "name": "no stored city → default",
@@ -9,7 +9,7 @@
     {
       "name": "default readings correct",
       "pass": true,
-      "detail": "16°"
+      "detail": "13°"
     },
     {
       "name": "first load persists its city",
@@ -34,7 +34,7 @@
     {
       "name": "restored readings are Miami's",
       "pass": true,
-      "detail": "17° vs 17°"
+      "detail": "15° vs 15°"
     },
     {
       "name": "one forecast request on launch",

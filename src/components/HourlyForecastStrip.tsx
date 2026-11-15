@@ -1,4 +1,4 @@
-import { Clock, Droplet } from "lucide-react";
+import { Clock } from "lucide-react";
 import type { HourlyForecast } from "@/types/weather";
 import ConditionIcon from "./ConditionIcon";
 import { formatTemp, hourLabel } from "@/lib/format";
@@ -41,15 +41,25 @@ export default function HourlyForecastStrip({ hourly }: HourlyForecastStripProps
               <span className={`text-sm font-medium tnum ${hour.isCurrent ? "text-app" : "text-app-2"}`}>
                 {formatTemp(hour.temperature)}
               </span>
-              <span
-                className={`text-xs tnum flex items-center gap-0.5 ${
-                  hour.precipitationProbability > 0 ? "text-app-3" : "text-transparent"
+              {/* Shape as well as the number: a 48 px track whose fill is the
+                  probability. Zero-probability hours keep the space but stay
+                  invisible, so the strip does not flicker. */}
+              <div
+                className={`w-full flex flex-col items-center gap-1 ${
+                  hour.precipitationProbability > 0 ? "" : "opacity-0"
                 }`}
                 aria-hidden={hour.precipitationProbability === 0}
               >
-                <Droplet size={10} aria-hidden="true" />
-                {hour.precipitationProbability}%
-              </span>
+                <span className="w-full h-1 rounded-full bg-[color:var(--hairline)] overflow-hidden">
+                  <span
+                    className="block h-full rounded-full bg-sky-300"
+                    style={{ width: `${hour.precipitationProbability}%` }}
+                  />
+                </span>
+                <span className="text-[10px] tnum text-app-3">
+                  {hour.precipitationProbability}%
+                </span>
+              </div>
             </div>
           ))}
         </div>

@@ -1,0 +1,212 @@
+{
+  "at": "2026-11-15T04:56:18.545Z",
+  "dark": {
+    "theme": "dark",
+    "file": "/home/tarun-bansal/dev/weather-app/design-review/evidence-remediation/p11-sheet-dark.png",
+    "rows": [
+      {
+        "name": "title",
+        "color": "rgb(248, 250, 252)",
+        "size": 18,
+        "x": 394,
+        "y": 63,
+        "bg": {
+          "r": 14,
+          "g": 22,
+          "b": 40
+        },
+        "contrast": 17.24,
+        "required": 3
+      },
+      {
+        "name": "input",
+        "color": "rgb(248, 250, 252)",
+        "size": 14,
+        "x": 500,
+        "y": 135,
+        "bg": {
+          "r": 28,
+          "g": 35,
+          "b": 52
+        },
+        "contrast": 14.99,
+        "required": 4.5
+      },
+      {
+        "name": "placeholder",
+        "color": "rgba(255, 255, 255, 0.55)",
+        "size": 14,
+        "x": 500,
+        "y": 135,
+        "bg": {
+          "r": 28,
+          "g": 35,
+          "b": 52
+        },
+        "contrast": 5.71,
+        "required": 4.5
+      },
+      {
+        "name": "result name",
+        "color": "rgb(248, 250, 252)",
+        "size": 16,
+        "x": 498,
+        "y": 230,
+        "bg": {
+          "r": 14,
+          "g": 22,
+          "b": 40
+        },
+        "contrast": 17.24,
+        "required": 4.5
+      },
+      {
+        "name": "result subtitle",
+        "color": "rgba(255, 255, 255, 0.72)",
+        "size": 12,
+        "x": 381,
+        "y": 242,
+        "bg": {
+          "r": 14,
+          "g": 22,
+          "b": 40
+        },
+        "contrast": 9.7,
+        "required": 4.5
+      },
+      {
+        "name": "cancel",
+        "color": "rgba(255, 255, 255, 0.72)",
+        "size": 16,
+        "x": 500,
+        "y": 635,
+        "bg": {
+          "r": 15,
+          "g": 23,
+          "b": 42
+        },
+        "contrast": 9.6,
+        "required": 4.5
+      },
+      {
+        "name": "count",
+        "color": "rgba(255, 255, 255, 0.72)",
+        "size": 12,
+        "x": 500,
+        "y": 184,
+        "bg": {
+          "r": 14,
+          "g": 22,
+          "b": 40
+        },
+        "contrast": 9.7,
+        "required": 4.5
+      }
+    ]
+  },
+  "light": {
+    "theme": "light",
+    "file": "/home/tarun-bansal/dev/weather-app/design-review/evidence-remediation/p11-sheet-light.png",
+    "rows": [
+      {
+        "name": "title",
+        "color": "rgb(15, 23, 42)",
+        "size": 18,
+        "x": 394,
+        "y": 63,
+        "bg": {
+          "r": 247,
+          "g": 248,
+          "b": 249
+        },
+        "contrast": 16.79,
+        "required": 3
+      },
+      {
+        "name": "input",
+        "color": "rgb(15, 23, 42)",
+        "size": 14,
+        "x": 500,
+        "y": 135,
+        "bg": {
+          "r": 248,
+          "g": 249,
+          "b": 252
+        },
+        "contrast": 16.96,
+        "required": 4.5
+      },
+      {
+        "name": "placeholder",
+        "color": "rgb(71, 85, 105)",
+        "size": 14,
+        "x": 500,
+        "y": 135,
+        "bg": {
+          "r": 248,
+          "g": 249,
+          "b": 252
+        },
+        "contrast": 7.2,
+        "required": 4.5
+      },
+      {
+        "name": "result name",
+        "color": "rgb(15, 23, 42)",
+        "size": 16,
+        "x": 498,
+        "y": 230,
+        "bg": {
+          "r": 246,
+          "g": 248,
+          "b": 249
+        },
+        "contrast": 16.76,
+        "required": 4.5
+      },
+      {
+        "name": "result subtitle",
+        "color": "rgb(71, 85, 105)",
+        "size": 12,
+        "x": 381,
+        "y": 242,
+        "bg": {
+          "r": 246,
+          "g": 248,
+          "b": 249
+        },
+        "contrast": 7.11,
+        "required": 4.5
+      },
+      {
+        "name": "cancel",
+        "color": "rgb(71, 85, 105)",
+        "size": 16,
+        "x": 500,
+        "y": 635,
+        "bg": {
+          "r": 254,
+          "g": 254,
+          "b": 254
+        },
+        "contrast": 7.51,
+        "required": 4.5
+      },
+      {
+        "name": "count",
+        "color": "rgb(71, 85, 105)",
+        "size": 12,
+        "x": 500,
+        "y": 184,
+        "bg": {
+          "r": 246,
+          "g": 248,
+          "b": 249
+        },
+        "contrast": 7.11,
+        "required": 4.5
+      }
+    ]
+  },
+  "fails": []
+}

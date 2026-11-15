@@ -59,6 +59,8 @@ export interface WeatherContextValue {
   isFavorite: (city: City) => boolean;
   toggleFavorite: (city: City) => void;
   removeFavorite: (city: City) => void;
+  moveFavorite: (from: number, to: number) => void;
+  clearFavorites: () => void;
   retry: () => void;
   dismissError: () => void;
   selectCity: (city: City) => void;
@@ -177,6 +179,20 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
     setFavorites((previous) => previous.filter((f) => placeKey(f) !== placeKey(target)));
   }, []);
 
+  const moveFavorite = useCallback((from: number, to: number) => {
+    setFavorites((previous) => {
+      if (from === to || to < 0 || to >= previous.length || from < 0 || from >= previous.length) {
+        return previous;
+      }
+      const next = [...previous];
+      const [moved] = next.splice(from, 1);
+      next.splice(to, 0, moved);
+      return next;
+    });
+  }, []);
+
+  const clearFavorites = useCallback(() => setFavorites([]), []);
+
   // Refresh the city that is on screen, keeping its full identity (SG-33).
   useEffect(() => {
     const interval = setInterval(() => {
@@ -189,6 +205,14 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
     if (!isSearchOpen) return;
     const trimmed = query.trim();
     if (!trimmed) {
+      setResults([]);
+      setSearchError(null);
+      setIsSearching(false);
+      return;
+    }
+    // One letter is not a search: the geocoder has nothing useful to say and
+    // "No cities found" would read as "that city does not exist".
+    if (trimmed.length < 2) {
       setResults([]);
       setSearchError(null);
       setIsSearching(false);
@@ -264,6 +288,8 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
       isFavorite,
       toggleFavorite,
       removeFavorite,
+      moveFavorite,
+      clearFavorites,
       retry,
       dismissError,
       selectCity,
@@ -290,6 +316,8 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
       isFavorite,
       toggleFavorite,
       removeFavorite,
+      moveFavorite,
+      clearFavorites,
       retry,
       dismissError,
       selectCity,

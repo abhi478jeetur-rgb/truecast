@@ -1,10 +1,10 @@
 {
-  "at": "2026-11-15T04:43:39.206Z",
+  "at": "2026-11-15T04:56:33.894Z",
   "city": "San Francisco",
   "api": {
     "timezone": "America/Los_Angeles",
-    "currentTime": "2026-11-14T20:30",
-    "temperature": 12.9,
+    "currentTime": "2026-11-14T20:45",
+    "temperature": 12.8,
     "apparent": 11.6,
     "daily0": {
       "date": "2026-11-14",
@@ -50,8 +50,8 @@
     },
     {
       "name": "humidity",
-      "ui": "80%",
-      "api": "80%",
+      "ui": "82%",
+      "api": "82%",
       "pass": true
     },
     {
@@ -242,8 +242,8 @@
     },
     {
       "name": "hour[8] pop",
-      "ui": "2%",
-      "api": "2%",
+      "ui": "1%",
+      "api": "1%",
       "pass": true
     },
     {
@@ -260,8 +260,8 @@
     },
     {
       "name": "hour[9] pop",
-      "ui": "3%",
-      "api": "3%",
+      "ui": "2%",
+      "api": "2%",
       "pass": true
     },
     {
@@ -350,8 +350,8 @@
     },
     {
       "name": "hour[14] pop",
-      "ui": "10%",
-      "api": "10%",
+      "ui": "9%",
+      "api": "9%",
       "pass": true
     },
     {
@@ -368,8 +368,8 @@
     },
     {
       "name": "hour[15] pop",
-      "ui": "27%",
-      "api": "27%",
+      "ui": "23%",
+      "api": "23%",
       "pass": true
     },
     {
@@ -386,8 +386,8 @@
     },
     {
       "name": "hour[16] pop",
-      "ui": "36%",
-      "api": "36%",
+      "ui": "32%",
+      "api": "32%",
       "pass": true
     },
     {
@@ -398,14 +398,14 @@
     },
     {
       "name": "hour[17] temp",
-      "ui": "13°",
-      "api": "13°",
+      "ui": "14°",
+      "api": "14°",
       "pass": true
     },
     {
       "name": "hour[17] pop",
-      "ui": "42%",
-      "api": "42%",
+      "ui": "38%",
+      "api": "38%",
       "pass": true
     },
     {
@@ -422,8 +422,8 @@
     },
     {
       "name": "hour[18] pop",
-      "ui": "58%",
-      "api": "58%",
+      "ui": "48%",
+      "api": "48%",
       "pass": true
     },
     {
@@ -440,8 +440,8 @@
     },
     {
       "name": "hour[19] pop",
-      "ui": "86%",
-      "api": "86%",
+      "ui": "66%",
+      "api": "66%",
       "pass": true
     },
     {
@@ -458,8 +458,8 @@
     },
     {
       "name": "hour[20] pop",
-      "ui": "94%",
-      "api": "94%",
+      "ui": "82%",
+      "api": "82%",
       "pass": true
     },
     {
@@ -476,8 +476,8 @@
     },
     {
       "name": "hour[21] pop",
-      "ui": "92%",
-      "api": "92%",
+      "ui": "94%",
+      "api": "94%",
       "pass": true
     },
     {
@@ -512,8 +512,8 @@
     },
     {
       "name": "hour[23] pop",
-      "ui": "84%",
-      "api": "84%",
+      "ui": "85%",
+      "api": "85%",
       "pass": true
     },
     {
@@ -776,14 +776,14 @@
     },
     {
       "name": "humidity card",
-      "ui": "80%",
-      "api": "80%",
+      "ui": "82%",
+      "api": "82%",
       "pass": true
     },
     {
       "name": "visibility card",
-      "ui": "18 km",
-      "api": "18 km",
+      "ui": "17 km",
+      "api": "17 km",
       "pass": true
     },
     {

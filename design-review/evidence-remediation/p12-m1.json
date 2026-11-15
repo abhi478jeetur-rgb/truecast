@@ -1,0 +1,83 @@
+{
+  "at": "2026-11-15T04:56:26.015Z",
+  "precip": {
+    "cards": 24,
+    "withBar": 24,
+    "nonZero": 19
+  },
+  "before": [
+    "Tokyo",
+    "Paris",
+    "Dubai"
+  ],
+  "after": [
+    "Paris",
+    "Tokyo",
+    "Dubai"
+  ],
+  "confirm": [
+    "Clear 3",
+    "Cancel",
+    "Cancel"
+  ],
+  "afterClear": {
+    "text": "Search city | Search for a city, open it, then use the star beside its name to keep it here for one-click access, even after you r",
+    "focus": "INPUT",
+    "stored": "[]"
+  },
+  "checks": [
+    {
+      "name": "precip bars render for every card",
+      "pass": true,
+      "detail": {
+        "cards": 24,
+        "withBar": 24,
+        "nonZero": 19
+      }
+    },
+    {
+      "name": "non-zero probabilities have a fill",
+      "pass": true,
+      "detail": 19
+    },
+    {
+      "name": "arrow key reorders favourites",
+      "pass": true,
+      "detail": {
+        "before": [
+          "Tokyo",
+          "Paris",
+          "Dubai"
+        ],
+        "after": [
+          "Paris",
+          "Tokyo",
+          "Dubai"
+        ]
+      }
+    },
+    {
+      "name": "reorder persists",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "clear all asks first",
+      "pass": true,
+      "detail": [
+        "Clear 3",
+        "Cancel",
+        "Cancel"
+      ]
+    },
+    {
+      "name": "clear all empties the list and focuses the field",
+      "pass": true,
+      "detail": {
+        "text": "Search city | Search for a city, open it, then use the star beside its name to keep it here for one-click access, even after you r",
+        "focus": "INPUT",
+        "stored": "[]"
+      }
+    }
+  ]
+}

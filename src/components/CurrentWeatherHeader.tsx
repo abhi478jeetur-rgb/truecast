@@ -23,6 +23,8 @@ export default function CurrentWeatherHeader() {
     isFavorite,
     toggleFavorite,
     removeFavorite,
+    moveFavorite,
+    clearFavorites,
   } = useWeather();
 
   // Keeps "Updated N min ago" honest without re-fetching anything.
@@ -130,6 +132,8 @@ export default function CurrentWeatherHeader() {
         onSelect={selectCity}
         favorites={favorites}
         onRemoveFavorite={removeFavorite}
+        onMoveFavorite={moveFavorite}
+        onClearFavorites={clearFavorites}
       />
     </>
   );

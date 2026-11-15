@@ -58,19 +58,20 @@ the reconciliation, including the rejected finding, is
 | F-02 | Hero numeral was pinned at 96 px — now `6rem`, 192 px at 200 % text |
 | F-05 | Empty-state copy pointed at a star that isn't in the result list |
 
-## Open, deliberately
+## Closed after the pass (second round)
 
-| ID | Sev | Finding |
-|---|---|---|
-| F-03 | P2 | The search sheet is always light inside the night theme. Fixing it properly needs a token pass and fresh contrast measurement. |
-| F-04 | P3 | The forced-colors selection ring uses a hard-coded colour instead of `Highlight`. |
-| F-06 | P3 | A one-character query says "No cities found" instead of "Keep typing". |
-| F-07 | P3 | The default Electron menu is reachable with Alt. |
-| F-08 | P3 | No precipitation or wind visualisation. |
-| F-09 | P3 | No favourite reorder or "Clear all". |
+| ID | Fix |
+|---|---|
+| F-03 | The sheet is tokenised and follows the theme: 9.6–17.2:1 dark, 7.1–17.0:1 light |
+| F-06 | One character says "Keep typing to search…" and never calls the geocoder |
+| F-07 | A real, hidden application menu: Alt no longer reveals a menu bar, accelerators still work |
+| F-08 | Per-hour precipitation bars under each hourly temperature |
+| F-09 | Favourites reorder by arrow keys or drag; "Clear all" asks before clearing |
 
-These are stated here rather than hidden; the README repeats the user-facing
-ones.
+F-04 was **rejected**: `src/index.css` already used `outline: 2px solid Highlight`;
+the gate measured the computed value and mistook it for a hard-coded colour.
+
+No finding from gate #3 remains open.
 
 ## Reproduce
 

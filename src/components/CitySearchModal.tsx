@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import { Search, X, ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { GripVertical, Search, X, ArrowRight } from "lucide-react";
 import type { City } from "@/types/weather";
 
 interface CitySearchModalProps {
@@ -14,6 +14,8 @@ interface CitySearchModalProps {
   /** Saved places, shown when the field is empty so they are one click away. */
   favorites: City[];
   onRemoveFavorite: (city: City) => void;
+  onMoveFavorite: (from: number, to: number) => void;
+  onClearFavorites: () => void;
 }
 
 export function CitySearchModal({
@@ -27,12 +29,15 @@ export function CitySearchModal({
   onSelect,
   favorites,
   onRemoveFavorite,
+  onMoveFavorite,
+  onClearFavorites,
 }: CitySearchModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const previousFocus = useRef<HTMLElement | null>(null);
   /** One ref per favourites row, so removing one can hand focus to the next. */
   const removeRefs = useRef<Array<HTMLButtonElement | null>>([]);
+  const [confirmClear, setConfirmClear] = useState(false);
 
   useEffect(() => {
     if (!open) return;
@@ -89,18 +94,14 @@ export function CitySearchModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby="search-title"
-        /* The sheet is always light, so it must opt into the light token set:
-           otherwise the dark theme's white focus ring is drawn on white and
-           keyboard focus on Cancel / a result row becomes invisible. */
-        data-theme="light"
-        className="relative w-full max-w-md mx-4 h-[min(40rem,calc(100vh-1.5rem))] bg-white/95 backdrop-blur rounded-3xl border border-white/60 shadow-2xl overflow-hidden flex flex-col"
+        className="relative w-full max-w-md mx-4 h-[min(40rem,calc(100vh-1.5rem))] bg-[color:var(--sheet-bg)] backdrop-blur rounded-3xl border border-[color:var(--sheet-border)] shadow-2xl overflow-hidden flex flex-col"
       >
-        <div className="px-6 py-4 border-b border-slate-200/70">
+        <div className="px-6 py-4 border-b border-[color:var(--sheet-hairline)]">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-600">
+            <div className="w-8 h-8 rounded-xl bg-[color:var(--sheet-accent-bg)] flex items-center justify-center text-[color:var(--sheet-accent)]">
               <Search size={18} aria-hidden="true" />
             </div>
-            <h2 id="search-title" className="text-slate-900 text-lg font-semibold">
+            <h2 id="search-title" className="text-[color:var(--sheet-text)] text-lg font-semibold">
               Search city
             </h2>
           </div>
@@ -108,7 +109,7 @@ export function CitySearchModal({
 
         <div className="p-4 flex flex-1 min-h-0 flex-col">
           <div className="relative mb-4">
-            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+            <div className="absolute left-3 top-1/2 -translate-y-1/2 text-[color:var(--sheet-faint)]">
               <Search size={16} aria-hidden="true" />
             </div>
             <input
@@ -124,7 +125,7 @@ export function CitySearchModal({
               }}
               placeholder="Enter city name"
               aria-label="Enter city name"
-              className="app-region-no-drag w-full pl-10 pr-12 py-3 rounded-2xl border border-slate-200 bg-slate-50/60 focus:border-blue-500 transition text-slate-900 placeholder-slate-600 text-sm"
+              className="app-region-no-drag w-full pl-10 pr-12 py-3 rounded-2xl border border-[color:var(--sheet-field-border)] bg-[color:var(--sheet-field)] focus:border-[color:var(--sheet-accent)] transition text-[color:var(--sheet-text)] placeholder:text-[color:var(--sheet-faint)] text-sm"
               autoComplete="off"
               spellCheck={false}
             />
@@ -133,7 +134,7 @@ export function CitySearchModal({
                 onClick={() => setQuery("")}
                 aria-label="Clear search"
                 title="Clear search"
-                className="app-region-no-drag absolute right-1.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-800 hover:bg-slate-200/60 transition"
+                className="app-region-no-drag absolute right-1.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full flex items-center justify-center text-[color:var(--sheet-muted)] hover:text-[color:var(--sheet-text)] hover:bg-[color:var(--sheet-hover)] transition"
               >
                 <X size={16} aria-hidden="true" />
               </button>
@@ -141,20 +142,23 @@ export function CitySearchModal({
           </div>
 
           <div aria-live="polite" className="min-h-[1rem]">
-            {isSearching && <p className="text-center py-2 text-slate-600 text-sm">Searching…</p>}
+            {isSearching && <p className="text-center py-2 text-[color:var(--sheet-muted)] text-sm">Searching…</p>}
             {!isSearching && searchError && (
-              <p className="text-center py-2 text-slate-600 text-sm">
-                <span className="block font-medium text-slate-800">Couldn't search for cities</span>
+              <p className="text-center py-2 text-[color:var(--sheet-muted)] text-sm">
+                <span className="block font-medium text-[color:var(--sheet-text)]">Couldn't search for cities</span>
                 {searchError}
               </p>
             )}
-            {!isSearching && !searchError && query.trim() && results.length === 0 && (
-              <p className="text-center py-2 text-slate-600 text-sm">
+            {!isSearching && !searchError && query.trim().length === 1 && (
+              <p className="text-center py-2 text-[color:var(--sheet-muted)] text-sm">Keep typing to search…</p>
+            )}
+            {!isSearching && !searchError && query.trim().length >= 2 && results.length === 0 && (
+              <p className="text-center py-2 text-[color:var(--sheet-muted)] text-sm">
                 No cities found for “{query.trim()}”
               </p>
             )}
             {!isSearching && !searchError && results.length > 0 && (
-              <p className="pb-1 text-xs text-slate-600 tnum">
+              <p className="pb-1 text-xs text-[color:var(--sheet-muted)] tnum">
                 {results.length} {results.length === 1 ? "result" : "results"}
               </p>
             )}
@@ -167,7 +171,7 @@ export function CitySearchModal({
 
           <div className="mt-1 min-h-0 max-h-96 flex-1 overflow-y-auto pr-1 snap-y snap-proximity">
             {!query.trim() && favorites.length === 0 && (
-              <p className="px-4 py-3 text-sm text-slate-600">
+              <p className="px-4 py-3 text-sm text-[color:var(--sheet-muted)]">
                 Search for a city, open it, then use the star beside its name to keep it
                 here for one-click access, even after you restart the app.
               </p>
@@ -175,26 +179,86 @@ export function CitySearchModal({
 
             {!query.trim() && favorites.length > 0 && (
               <>
-                <p className="px-4 pb-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-slate-600">
-                  Favorites
-                </p>
+                <div className="flex items-center justify-between px-4 pb-1">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-[color:var(--sheet-muted)]">
+                    Favorites
+                  </p>
+                  {confirmClear ? (
+                    <span className="flex items-center gap-2">
+                      <button
+                        onClick={() => {
+                          onClearFavorites();
+                          setConfirmClear(false);
+                          requestAnimationFrame(() => inputRef.current?.focus());
+                        }}
+                        className="text-[11px] font-semibold text-[color:var(--danger)] hover:underline"
+                      >
+                        Clear {favorites.length}
+                      </button>
+                      <button
+                        onClick={() => setConfirmClear(false)}
+                        className="text-[11px] text-[color:var(--sheet-muted)] hover:underline"
+                      >
+                        Cancel
+                      </button>
+                    </span>
+                  ) : (
+                    <button
+                      onClick={() => setConfirmClear(true)}
+                      className="text-[11px] text-[color:var(--sheet-muted)] hover:text-[color:var(--sheet-text)] hover:underline"
+                    >
+                      Clear all
+                    </button>
+                  )}
+                </div>
                 {favorites.map((city, index) => (
                   <div
                     key={`${city.latitude.toFixed(3)},${city.longitude.toFixed(3)}`}
                     className="flex items-center gap-1"
+                    draggable
+                    onDragStart={(event) => {
+                      event.dataTransfer.setData("text/plain", String(index));
+                      event.dataTransfer.effectAllowed = "move";
+                    }}
+                    onDragOver={(event) => {
+                      event.preventDefault();
+                      event.dataTransfer.dropEffect = "move";
+                    }}
+                    onDrop={(event) => {
+                      event.preventDefault();
+                      const from = Number(event.dataTransfer.getData("text/plain"));
+                      if (Number.isInteger(from)) onMoveFavorite(from, index);
+                    }}
                   >
                     <button
+                      aria-label={`Reorder ${city.name}. Use the arrow up and arrow down keys.`}
+                      title="Drag to reorder"
+                      onKeyDown={(event) => {
+                        if (event.key === "ArrowUp") {
+                          event.preventDefault();
+                          onMoveFavorite(index, index - 1);
+                        }
+                        if (event.key === "ArrowDown") {
+                          event.preventDefault();
+                          onMoveFavorite(index, index + 1);
+                        }
+                      }}
+                      className="app-region-no-drag w-6 h-9 shrink-0 flex items-center justify-center text-[color:var(--sheet-faint)] cursor-grab active:cursor-grabbing"
+                    >
+                      <GripVertical size={14} aria-hidden="true" />
+                    </button>
+                    <button
                       onClick={() => onSelect(city)}
-                      className="app-region-no-drag flex-1 flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl hover:bg-blue-50 transition text-slate-800 snap-start"
+                      className="app-region-no-drag flex-1 flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl hover:bg-[color:var(--sheet-hover)] transition text-[color:var(--sheet-text)] snap-start"
                     >
                       <span className="flex flex-col min-w-0">
                         <span className="font-medium truncate">{city.name}</span>
-                        <span className="text-xs text-slate-600 truncate">
+                        <span className="text-xs text-[color:var(--sheet-muted)] truncate">
                           {city.admin1 ? city.admin1 + ", " : ""}
                           {city.country}
                         </span>
                       </span>
-                      <ArrowRight size={14} className="text-slate-400 shrink-0" aria-hidden="true" />
+                      <ArrowRight size={14} className="text-[color:var(--sheet-faint)] shrink-0" aria-hidden="true" />
                     </button>
                     <button
                       ref={(node) => {
@@ -216,7 +280,7 @@ export function CitySearchModal({
                       }}
                       aria-label={`Remove ${city.name} from favorites`}
                       title="Remove from favorites"
-                      className="app-region-no-drag w-9 h-9 shrink-0 rounded-full flex items-center justify-center text-slate-500 hover:text-slate-800 hover:bg-slate-200/60 transition"
+                      className="app-region-no-drag w-9 h-9 shrink-0 rounded-full flex items-center justify-center text-[color:var(--sheet-muted)] hover:text-[color:var(--sheet-text)] hover:bg-[color:var(--sheet-hover)] transition"
                     >
                       <X size={15} aria-hidden="true" />
                     </button>
@@ -229,25 +293,25 @@ export function CitySearchModal({
               <button
                 key={city.id}
                 onClick={() => onSelect(city)}
-                className="app-region-no-drag w-full flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl hover:bg-blue-50 transition text-slate-800 snap-start"
+                className="app-region-no-drag w-full flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl hover:bg-[color:var(--sheet-hover)] transition text-[color:var(--sheet-text)] snap-start"
               >
                 <span className="flex flex-col min-w-0">
                   <span className="font-medium truncate">{city.name}</span>
-                  <span className="text-xs text-slate-600 truncate">
+                  <span className="text-xs text-[color:var(--sheet-muted)] truncate">
                     {city.admin1 ? city.admin1 + ", " : ""}
                     {city.country}
                   </span>
                 </span>
-                <ArrowRight size={14} className="text-slate-400 shrink-0" aria-hidden="true" />
+                <ArrowRight size={14} className="text-[color:var(--sheet-faint)] shrink-0" aria-hidden="true" />
               </button>
             ))}
           </div>
         </div>
 
-        <div className="px-6 py-3 border-t border-slate-200/70 bg-white/80">
+        <div className="px-6 py-3 border-t border-[color:var(--sheet-hairline)] bg-[color:var(--sheet-footer)]">
           <button
             onClick={onClose}
-            className="app-region-no-drag w-full py-2.5 rounded-xl text-slate-600 font-medium hover:bg-slate-100 transition"
+            className="app-region-no-drag w-full py-2.5 rounded-xl text-[color:var(--sheet-muted)] font-medium hover:bg-[color:var(--sheet-hover)] transition"
           >
             Cancel
           </button>

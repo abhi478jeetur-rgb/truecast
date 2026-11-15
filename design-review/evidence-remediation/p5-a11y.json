@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-14T23:13:03.648Z",
+  "at": "2026-11-15T04:54:03.570Z",
   "heads": {
     "h1": [
       {
@@ -20,7 +20,7 @@
     {
       "tag": "BODY",
       "label": null,
-      "text": "Weather\n°C\n°F\nSan Franci",
+      "text": "Truecast\n0\n°C\n°F\nSan Fra",
       "outlineColor": "rgb(255, 255, 255)",
       "outlineWidth": "3px",
       "outlineStyle": "none",
@@ -55,6 +55,15 @@
     },
     {
       "tag": "BUTTON",
+      "label": "Favorites, none saved",
+      "text": "0",
+      "outlineColor": "rgba(255, 255, 255, 1)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
       "label": "Celsius, wind in kilometres per hour",
       "text": "°C",
       "outlineColor": "rgb(255, 255, 255)",
@@ -66,7 +75,7 @@
       "tag": "BUTTON",
       "label": "Fahrenheit, wind in miles per hour",
       "text": "°F",
-      "outlineColor": "rgba(255, 255, 255, 1)",
+      "outlineColor": "rgba(255, 255, 255, 0.992)",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
       "scrollable": false
@@ -84,7 +93,7 @@
       "tag": "BUTTON",
       "label": "Add San Francisco to favorites",
       "text": "",
-      "outlineColor": "rgba(255, 255, 255, 1)",
+      "outlineColor": "rgba(255, 255, 255, 0.996)",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
       "scrollable": false
@@ -92,7 +101,7 @@
     {
       "tag": "DIV",
       "label": null,
-      "text": "Now\n16°\n1%\n4pm\n15°\n1%\n5p",
+      "text": "Now\n13°\n0%\n9pm\n13°\n0%\n10",
       "outlineColor": "rgb(255, 255, 255)",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
@@ -110,15 +119,6 @@
     {
       "tag": "BUTTON",
       "label": "Minimize window",
-      "text": "",
-      "outlineColor": "rgb(255, 255, 255)",
-      "outlineWidth": "2px",
-      "outlineStyle": "solid",
-      "scrollable": false
-    },
-    {
-      "tag": "BUTTON",
-      "label": "Maximize window",
       "text": "",
       "outlineColor": "rgb(255, 255, 255)",
       "outlineWidth": "2px",

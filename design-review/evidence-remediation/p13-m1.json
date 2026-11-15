@@ -1,0 +1,37 @@
+{
+  "at": "2026-11-15T04:56:31.386Z",
+  "oneChar": "Search city | Keep typing to search… | Cancel",
+  "geoAfterOne": 0,
+  "hBefore": 700,
+  "hAfter": 700,
+  "checks": [
+    {
+      "name": "one character does not call the geocoder",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "one character says keep typing",
+      "pass": true,
+      "detail": "Search city | Keep typing to search… | Cancel"
+    },
+    {
+      "name": "two characters search normally",
+      "pass": true,
+      "detail": true
+    },
+    {
+      "name": "Alt does not reveal a menu bar",
+      "pass": true,
+      "detail": {
+        "hBefore": 700,
+        "hAfter": 700
+      }
+    },
+    {
+      "name": "precipitation bars visible on a rainy city",
+      "pass": true,
+      "detail": "Tokyo"
+    }
+  ]
+}

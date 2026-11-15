@@ -1,69 +1,69 @@
 {
   "facts": {
-    "pill": "San Francisco",
-    "date": "SATURDAY, NOVEMBER 14",
+    "pill": "Tokyo",
+    "date": "SUNDAY, NOVEMBER 15",
     "head": [
-      "Weather",
+      "Truecast",
+      "0",
       "°C",
       "°F",
-      "San Francisco weather",
-      "San Francisco",
-      "SATURDAY, NOVEMBER 14",
+      "Tokyo weather",
+      "Tokyo",
+      "SUNDAY, NOVEMBER 15",
       "Updated just now",
-      "16°",
-      "Overcast",
-      "H:17°",
-      "L:11°",
-      "Feels like 16°"
+      "12°",
+      "Slight rain",
+      "H:14°",
+      "L:11°"
     ],
     "dayRows": [
-      "Today | 11° | 17° | 15%",
-      "Sun | 11° | 15° | 96%",
-      "Mon | 10° | 15° | 72%",
-      "Tue | 11° | 15° | 75%",
-      "Wed | 12° | 15° | 96%",
-      "Thu | 14° | 15° | 86%",
-      "Fri | 12° | 16° | 28%",
-      "Sat | 12° | 17° | 43%",
-      "Sun | 13° | 16° | 47%",
-      "Mon | 13° | 16° | 39%"
+      "Today | 11° | 14° | 100%",
+      "Mon | 11° | 18° | 47%",
+      "Tue | 9° | 14° | 65%",
+      "Wed | 9° | 16° | 84%",
+      "Thu | 8° | 18° | 12%",
+      "Fri | 5° | 15° | 1%",
+      "Sat | 3° | 13° | —",
+      "Sun | 3° | 12° | —",
+      "Mon | 4° | 14° | 2%",
+      "Tue | 8° | 20° | 7%"
     ],
     "cards": [
-      "UV INDEX | 1.6 | Low",
-      "WIND | 8 km/h | From SW",
-      "HUMIDITY | 75%",
-      "VISIBILITY | 22 km",
-      "PRESSURE | 1014 hPa",
-      "SUNRISE | 6:49 AM | Sunset 4:58 PM"
+      "UV INDEX | 0.2 | Low",
+      "WIND | 4 km/h | From NNW",
+      "HUMIDITY | 95%",
+      "VISIBILITY | 12 km",
+      "PRESSURE | 1009 hPa",
+      "SUNRISE | 6:16 AM | Sunset 4:34 PM"
     ],
     "hourly": [
-      "Now | 16° | 1%",
-      "4pm | 15° | 1%",
-      "5pm | 14° | 0%",
-      "6pm | 13° | 1%",
-      "7pm | 13° | 1%",
-      "8pm | 13° | 1%"
+      "Now | 12° | 82%",
+      "2pm | 12° | 93%",
+      "3pm | 12° | 100%",
+      "4pm | 12° | 100%",
+      "5pm | 12° | 100%",
+      "6pm | 12° | 100%"
     ],
     "theme": "dark",
-    "gradient": "linear-gradient(rgb(71, 85, 105) 0%, rgb(30, 41, 59) 100%)",
+    "gradient": "linear-gradient(rgb(71, 85, 105) 0%, rgb(31, 41, 55) 100%)",
     "htmlText": [
-      "Weather",
+      "Truecast",
+      "0",
       "°C",
-      "°F",
-      "San Francisco weather"
+      "°F"
     ],
     "scroll": {
-      "scrollHeight": 1112,
+      "scrollHeight": 1159,
       "clientHeight": 700
     },
     "grid": "56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px",
     "fonts": 156.390625,
-    "now": "Sat Nov 14 2026 18:13:09 GMT-0500 (Eastern Standard Time)"
+    "now": "Sat Nov 14 2026 23:54:41 GMT-0500 (Eastern Standard Time)"
   },
   "rows": [
     {
       "name": "hero",
-      "text": "16°",
+      "text": "12°",
       "color": "rgb(255, 255, 255)",
       "fontSize": "96px",
       "fontWeight": "300",
@@ -75,9 +75,9 @@
         "h": 86
       },
       "bg": {
-        "r": 57,
+        "r": 58,
         "g": 70,
-        "b": 90
+        "b": 88
       },
       "effective": {
         "r": 255,
@@ -89,7 +89,7 @@
     },
     {
       "name": "condition",
-      "text": "Overcast",
+      "text": "Slight rain",
       "color": "rgba(255, 255, 255, 0.88)",
       "fontSize": "24px",
       "fontWeight": "500",
@@ -97,24 +97,24 @@
       "rect": {
         "x": 216,
         "y": 234,
-        "w": 103,
+        "w": 115,
         "h": 32
       },
       "bg": {
         "r": 56,
         "g": 69,
-        "b": 88
+        "b": 87
       },
       "effective": {
         "r": 231,
         "g": 233,
         "b": 235
       },
-      "contrast": 7.99
+      "contrast": 8
     },
     {
       "name": "city-pill",
-      "text": "San Francisco",
+      "text": "Tokyo",
       "color": "rgb(255, 255, 255)",
       "fontSize": "14px",
       "fontWeight": "500",
@@ -122,13 +122,13 @@
       "rect": {
         "x": 48,
         "y": 123,
-        "w": 162,
+        "w": 109,
         "h": 34
       },
       "bg": {
         "r": 81,
         "g": 98,
-        "b": 125
+        "b": 123
       },
       "effective": {
         "r": 255,
@@ -136,11 +136,11 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 6.19
+      "contrast": 6.21
     },
     {
       "name": "high",
-      "text": "H:17°",
+      "text": "H:14°",
       "color": "rgba(255, 255, 255, 0.88)",
       "fontSize": "14px",
       "fontWeight": "400",
@@ -152,16 +152,16 @@
         "h": 20
       },
       "bg": {
-        "r": 53,
+        "r": 54,
         "g": 66,
-        "b": 85
+        "b": 84
       },
       "effective": {
         "r": 231,
         "g": 232,
-        "b": 235
+        "b": 234
       },
-      "contrast": 8.31
+      "contrast": 8.3
     },
     {
       "name": "low",
@@ -177,20 +177,20 @@
         "h": 20
       },
       "bg": {
-        "r": 53,
+        "r": 54,
         "g": 66,
-        "b": 85
+        "b": 83
       },
       "effective": {
         "r": 231,
         "g": 232,
-        "b": 235
+        "b": 234
       },
       "contrast": 8.31
     },
     {
       "name": "feels-like",
-      "text": "Feels like 16°",
+      "text": "Feels like 11°",
       "color": "rgba(255, 255, 255, 0.88)",
       "fontSize": "14px",
       "fontWeight": "500",
@@ -198,20 +198,20 @@
       "rect": {
         "x": 48,
         "y": 346,
-        "w": 87,
+        "w": 84,
         "h": 20
       },
       "bg": {
         "r": 50,
         "g": 62,
-        "b": 81
+        "b": 79
       },
       "effective": {
         "r": 230,
         "g": 232,
         "b": 234
       },
-      "contrast": 8.8
+      "contrast": 8.82
     },
     {
       "name": "hourly-heading",
@@ -227,9 +227,9 @@
         "h": 20
       },
       "bg": {
-        "r": 48,
+        "r": 49,
         "g": 61,
-        "b": 80
+        "b": 77
       },
       "effective": {
         "r": 255,
@@ -237,7 +237,7 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 11
+      "contrast": 11.02
     },
     {
       "name": "daily-heading",
@@ -248,14 +248,14 @@
       "opacity": 1,
       "rect": {
         "x": 48,
-        "y": 572,
+        "y": 579,
         "w": 492,
         "h": 20
       },
       "bg": {
         "r": 37,
         "g": 48,
-        "b": 66
+        "b": 63
       },
       "effective": {
         "r": 255,
@@ -263,7 +263,7 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 13.29
+      "contrast": 13.35
     },
     {
       "name": "day1-name",
@@ -274,14 +274,14 @@
       "opacity": 1,
       "rect": {
         "x": 65,
-        "y": 619,
+        "y": 626,
         "w": 56,
         "h": 20
       },
       "bg": {
         "r": 56,
-        "g": 70,
-        "b": 96
+        "g": 71,
+        "b": 89
       },
       "effective": {
         "r": 255,
@@ -300,39 +300,39 @@
       "opacity": 1,
       "rect": {
         "x": 169,
-        "y": 619,
+        "y": 626,
         "w": 32,
         "h": 20
       },
       "bg": {
         "r": 56,
         "g": 71,
-        "b": 95
+        "b": 89
       },
       "effective": {
         "r": 231,
         "g": 233,
-        "b": 236
+        "b": 235
       },
-      "contrast": 7.73
+      "contrast": 7.79
     },
     {
       "name": "day1-max",
-      "text": "17°",
+      "text": "14°",
       "color": "rgb(255, 255, 255)",
       "fontSize": "14px",
       "fontWeight": "500",
       "opacity": 1,
       "rect": {
         "x": 443,
-        "y": 619,
+        "y": 626,
         "w": 32,
         "h": 20
       },
       "bg": {
         "r": 56,
         "g": 71,
-        "b": 95
+        "b": 89
       },
       "effective": {
         "r": 255,
@@ -340,7 +340,7 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 9.4
+      "contrast": 9.49
     },
     {
       "name": "detail-label",
@@ -351,14 +351,14 @@
       "opacity": 1,
       "rect": {
         "x": 629,
-        "y": 589,
+        "y": 596,
         "w": 125,
         "h": 28
       },
       "bg": {
-        "r": 57,
-        "g": 73,
-        "b": 96
+        "r": 59,
+        "g": 72,
+        "b": 91
       },
       "effective": {
         "r": 255,
@@ -366,25 +366,25 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 9.15
+      "contrast": 9.28
     },
     {
       "name": "detail-value",
-      "text": "1.6",
+      "text": "0.2",
       "color": "rgb(255, 255, 255)",
       "fontSize": "20px",
       "fontWeight": "500",
       "opacity": 1,
       "rect": {
         "x": 629,
-        "y": 629,
+        "y": 636,
         "w": 125,
         "h": 25
       },
       "bg": {
-        "r": 55,
-        "g": 69,
-        "b": 95
+        "r": 57,
+        "g": 70,
+        "b": 89
       },
       "effective": {
         "r": 255,
@@ -392,7 +392,7 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 9.64
+      "contrast": 9.57
     },
     {
       "name": "hourly-now",
@@ -408,9 +408,9 @@
         "h": 16
       },
       "bg": {
-        "r": 82,
+        "r": 83,
         "g": 97,
-        "b": 121
+        "b": 117
       },
       "effective": {
         "r": 255,
@@ -418,11 +418,11 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 6.28
+      "contrast": 6.3
     },
     {
       "name": "hourly-hour",
-      "text": "4pm",
+      "text": "2pm",
       "color": "rgba(255, 255, 255, 0.88)",
       "fontSize": "12px",
       "fontWeight": "500",
@@ -430,24 +430,24 @@
       "rect": {
         "x": 143,
         "y": 431,
-        "w": 26,
+        "w": 25,
         "h": 16
       },
       "bg": {
-        "r": 57,
+        "r": 58,
         "g": 72,
-        "b": 97
+        "b": 94
       },
       "effective": {
         "r": 231,
         "g": 233,
         "b": 236
       },
-      "contrast": 7.59
+      "contrast": 7.61
     },
     {
       "name": "hourly-temp",
-      "text": "16°",
+      "text": "12°",
       "color": "rgb(255, 255, 255)",
       "fontSize": "14px",
       "fontWeight": "500",
@@ -459,9 +459,9 @@
         "h": 20
       },
       "bg": {
-        "r": 79,
+        "r": 80,
         "g": 95,
-        "b": 118
+        "b": 115
       },
       "effective": {
         "r": 255,
@@ -469,25 +469,25 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 6.5
+      "contrast": 6.51
     },
     {
       "name": "date",
-      "text": "SATURDAY, NOVEMBER 14\nUpdated just now",
+      "text": "SUNDAY, NOVEMBER 15\nUpdated just now",
       "color": "rgb(255, 255, 255)",
       "fontSize": "16px",
       "fontWeight": "400",
       "opacity": 1,
       "rect": {
-        "x": 739,
+        "x": 759,
         "y": 120,
-        "w": 203,
+        "w": 183,
         "h": 40
       },
       "bg": {
         "r": 63,
-        "g": 77,
-        "b": 96
+        "g": 76,
+        "b": 95
       },
       "effective": {
         "r": 255,
@@ -495,35 +495,10 @@
         "b": 255,
         "a": 1
       },
-      "contrast": 8.6
-    },
-    {
-      "name": "titlebar-title",
-      "text": "Weather",
-      "color": "rgba(255, 255, 255, 0.88)",
-      "fontSize": "12px",
-      "fontWeight": "500",
-      "opacity": 1,
-      "rect": {
-        "x": 475,
-        "y": 12,
-        "w": 51,
-        "h": 16
-      },
-      "bg": {
-        "r": 70,
-        "g": 84,
-        "b": 104
-      },
-      "effective": {
-        "r": 233,
-        "g": 234,
-        "b": 237
-      },
-      "contrast": 6.4
+      "contrast": 8.71
     }
   ],
   "requests": [
-    "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,wind_direction_10m,uv_index,visibility,pressure_msl,precipitation&hourly=temperature_2m,weather_code,precipitation_probability&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max&timezone=auto&forecast_days=10&forecast_hours=30&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm"
+    "https://api.open-meteo.com/v1/forecast?latitude=35.6895&longitude=139.69171&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,wind_direction_10m,uv_index,visibility,pressure_msl,precipitation&hourly=temperature_2m,weather_code,precipitation_probability&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max&timezone=auto&forecast_days=10&forecast_hours=30&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm"
   ]
 }

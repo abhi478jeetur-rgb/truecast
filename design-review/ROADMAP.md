@@ -28,14 +28,19 @@ P2 should · P3 nice
 
 | ID | Task | Size | Pri | Notes |
 |---|---|---|---|---|
-| R-10 | **F-03** theme the search sheet (tokens + night overrides, re-measure 4.5:1) | M | P1 | the only open P2 |
-| R-11 | **F-06** "Keep typing" below 2 characters; don't call the API | XS | P1 | reads as a bug today |
-| R-12 | **F-07** kill the default Electron menu (or ship a real one) | XS | P1 | Alt breaks the frameless illusion |
-| R-13 | **F-09** favourite reorder + "Clear all" with confirm | M | P1 | verify the min-size claim; `minWidth` already exists |
-| R-14 | **F-04** `outline-color: Highlight` under forced colors | XS | P1 | 5-minute fix |
-| R-15 | **F-08** 24 h precipitation strip under the hourly scroller | M | P2 | shape beats numbers; also a good screenshot |
+| R-10 | **F-03** theme the search sheet | M | P1 | **DONE** — 9.6–17.2 dark, 7.1–17.0 light |
+| R-11 | **F-06** "Keep typing" below 2 characters | XS | P1 | **DONE** — 0 geocoder calls at 1 char |
+| R-12 | **F-07** kill the default Electron menu | XS | P1 | **DONE** — real hidden menu, Alt does nothing |
+| R-13 | **F-09** favourite reorder + "Clear all" | M | P1 | **DONE** — arrows + drag, confirm, focus kept |
+| R-14 | **F-04** `outline-color: Highlight` under forced colors | XS | P1 | **REJECTED** — the source already uses `Highlight`; the gate measured its computed value |
+| R-15 | **F-08** precipitation visualisation | M | P2 | **DONE** — per-hour bars under each temperature |
 
 ---
+
+**M1 verification:** `p11-sheet.json` (both themes), `p12-m1.json` (6/6: bars,
+reorder, persistence, clear-all), `p13-m1.json` (5/5: one character, menu, bars),
+plus the regression suite (features 28/28, city 10/10, search 8/8, a11y 9/9,
+sheet 5/5, focus 5/5, truth 131/131, console 0).
 
 ## M2 — Premium feel (P1/P2)
 

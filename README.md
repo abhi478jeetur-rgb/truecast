@@ -33,7 +33,7 @@ and measured:
 - Current conditions, 24-hour strip, 10-day list, detail grid
 - Dynamic gradient and day/night icons from the selected city's condition and sun
 - °C/°F with km/h ↔ mph (re-requested from the API, never converted locally)
-- City search with keyboard support and saved favourites
+- City search with keyboard support; saved favourites reorder by arrow key or drag
 - Last city, units and favourites persist across launches
 - Frameless window with real traffic lights, Restore state and double-click zoom
 
@@ -97,7 +97,6 @@ Inter is bundled under the SIL Open Font License
 ## Limitations, stated
 
 - Linux only, x64. The package is a `.deb`.
-- The search sheet is always light, even in the night theme (open P2).
 - No geolocation, settings window, notifications or tray icon yet.
 - English only.
 - The hero numeral scales with your font size but the layout is tuned for

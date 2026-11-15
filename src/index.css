@@ -44,6 +44,22 @@
   --unit-track: rgba(2, 6, 23, 0.32);
   --unit-active: rgba(255, 255, 255, 0.16);
 
+  /* The city sheet follows the theme. It used to be light in every theme,
+     which read as a different app at night. */
+  --sheet-bg: rgba(15, 23, 42, 0.96);
+  --sheet-footer: rgba(15, 23, 42, 0.85);
+  --sheet-border: rgba(255, 255, 255, 0.14);
+  --sheet-hairline: rgba(255, 255, 255, 0.12);
+  --sheet-text: #f8fafc;
+  --sheet-muted: rgba(255, 255, 255, 0.72);
+  --sheet-faint: rgba(255, 255, 255, 0.55);
+  --sheet-hover: rgba(255, 255, 255, 0.08);
+  --sheet-field: rgba(255, 255, 255, 0.06);
+  --sheet-field-border: rgba(255, 255, 255, 0.16);
+  --sheet-accent: #7dd3fc;
+  --sheet-accent-bg: rgba(125, 211, 252, 0.12);
+  --danger: #fca5a5;
+
   --focus-ring: #ffffff;
   --scrollbar-thumb: rgba(255, 255, 255, 0.24);
   --scrollbar-thumb-hover: rgba(255, 255, 255, 0.38);
@@ -68,6 +84,20 @@
   --chip-hover: rgba(255, 255, 255, 0.78);
   --unit-track: rgba(255, 255, 255, 0.55);
   --unit-active: rgba(255, 255, 255, 0.75);
+
+  --sheet-bg: rgba(255, 255, 255, 0.95);
+  --sheet-footer: rgba(255, 255, 255, 0.8);
+  --sheet-border: rgba(255, 255, 255, 0.6);
+  --sheet-hairline: rgba(15, 23, 42, 0.1);
+  --sheet-text: #0f172a;
+  --sheet-muted: #475569;
+  --sheet-faint: #475569;
+  --sheet-hover: rgba(59, 130, 246, 0.08);
+  --sheet-field: rgba(248, 250, 252, 0.9);
+  --sheet-field-border: rgba(15, 23, 42, 0.12);
+  --sheet-accent: #2563eb;
+  --sheet-accent-bg: rgba(37, 99, 235, 0.1);
+  --danger: #b91c1c;
 
   --focus-ring: #0b57d0;
   --scrollbar-thumb: rgba(11, 18, 32, 0.24);

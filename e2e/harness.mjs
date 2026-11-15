@@ -101,7 +101,13 @@ export async function launchApp({ port, binary } = {}) {
     stop() {
       cdp.close();
       child.kill("SIGTERM");
-      rmSync(profile, { recursive: true, force: true });
+      try {
+        // The child may still be flushing its profile; retry rather than throw
+        // an ENOTEMPTY over the real test result.
+        rmSync(profile, { recursive: true, force: true, maxRetries: 6, retryDelay: 150 });
+      } catch {
+        // A leftover temp directory is not a test failure.
+      }
     },
   };
 }

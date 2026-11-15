@@ -20,11 +20,24 @@ const api = async (unit, wind) => {
   return (await fetch(url)).json();
 };
 
+// CI stability: this test needs the live API. Say so instead of hanging.
+const reachable = await fetch(
+  "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=temperature_2m",
+  { signal: AbortSignal.timeout(10_000) },
+).then((response) => response.ok).catch(() => false);
+if (!reachable) {
+  console.log("SKIP  api.open-meteo.com is not reachable from this machine; the live checks need it.");
+  process.exit(0);
+}
+
 const app = await launchApp({ port: 9230 });
 try {
   const { cdp } = app;
   await cdp.send("Page.reload", { ignoreCache: true });
-  await waitFor(cdp, `!!document.querySelector('button[aria-label^="Change city"]') && /°/.test(document.body.innerText)`, "first paint");
+  await waitFor(cdp, `!!document.querySelector('button[aria-label^="Change city"]') || /Weather is unavailable/.test(document.body.innerText)`, "first paint", 60_000);
+  if (await cdp.eval(`/Weather is unavailable/.test(document.body.innerText)`)) {
+    throw new Error(`the app showed its error state instead of weather: ${await cdp.eval("document.body.innerText.replace(/\\n+/g, ' | ')")}`);
+  }
   await sleep(1500);
 
   check("window title is Truecast", (await cdp.eval("document.title")) === "Truecast");

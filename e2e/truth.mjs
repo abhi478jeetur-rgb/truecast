@@ -43,10 +43,22 @@ const clockLabel = (value) => {
 const temp = (value) => `${Math.round(value)}°`;
 const decimal = (value) => (Number.isInteger(value) ? String(value) : value.toFixed(1));
 
+const reachable = await fetch(
+  "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=temperature_2m",
+  { signal: AbortSignal.timeout(10_000) },
+).then((response) => response.ok).catch(() => false);
+if (!reachable) {
+  console.log("SKIP  api.open-meteo.com is not reachable from this machine; the truth check needs it.");
+  process.exit(0);
+}
+
 const app = await launchApp({ port: 9231 });
 try {
   await app.cdp.send("Page.reload", { ignoreCache: true });
-  await waitFor(app.cdp, `!!document.querySelector('button[aria-label^="Change city"]') && /°/.test(document.body.innerText)`, "first paint");
+  await waitFor(app.cdp, `!!document.querySelector('button[aria-label^="Change city"]') || /Weather is unavailable/.test(document.body.innerText)`, "first paint", 60_000);
+  if (await app.cdp.eval(`/Weather is unavailable/.test(document.body.innerText)`)) {
+    throw new Error(`the app showed its error state instead of weather: ${await app.cdp.eval("document.body.innerText.replace(/\\n+/g, ' | ')")}`);
+  }
   await sleep(1500);
 
   const forecastUrls = app.cdp.requests.filter((url) => /api\.open-meteo\.com\/v1\/forecast/.test(url));

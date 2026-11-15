@@ -10,7 +10,7 @@
     "dev": "vite",
     "electron:dev": "tsc -p tsconfig.electron.json && electron .",
     "build": "tsc -p tsconfig.electron.json && tsc -b && vite build",
-    "electron:build": "electron-builder",
+    "electron:build": "electron-builder --publish never",
     "dist": "npm run build && npm run electron:build",
     "lint": "oxlint",
     "preview": "vite preview",

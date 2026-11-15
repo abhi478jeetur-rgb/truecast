@@ -1,0 +1,529 @@
+{
+  "facts": {
+    "pill": "San Francisco",
+    "date": "SATURDAY, NOVEMBER 14",
+    "head": [
+      "Weather",
+      "°C",
+      "°F",
+      "San Francisco weather",
+      "San Francisco",
+      "SATURDAY, NOVEMBER 14",
+      "Updated just now",
+      "16°",
+      "Overcast",
+      "H:17°",
+      "L:11°",
+      "Feels like 16°"
+    ],
+    "dayRows": [
+      "Today | 11° | 17° | 15%",
+      "Sun | 11° | 15° | 96%",
+      "Mon | 10° | 15° | 72%",
+      "Tue | 11° | 15° | 75%",
+      "Wed | 12° | 15° | 96%",
+      "Thu | 14° | 15° | 86%",
+      "Fri | 12° | 16° | 28%",
+      "Sat | 12° | 17° | 43%",
+      "Sun | 13° | 16° | 47%",
+      "Mon | 13° | 16° | 39%"
+    ],
+    "cards": [
+      "UV INDEX | 1.6 | Low",
+      "WIND | 8 km/h | From SW",
+      "HUMIDITY | 75%",
+      "VISIBILITY | 22 km",
+      "PRESSURE | 1014 hPa",
+      "SUNRISE | 6:49 AM | Sunset 4:58 PM"
+    ],
+    "hourly": [
+      "Now | 16° | 1%",
+      "4pm | 15° | 1%",
+      "5pm | 14° | 0%",
+      "6pm | 13° | 1%",
+      "7pm | 13° | 1%",
+      "8pm | 13° | 1%"
+    ],
+    "theme": "dark",
+    "gradient": "linear-gradient(rgb(71, 85, 105) 0%, rgb(30, 41, 59) 100%)",
+    "htmlText": [
+      "Weather",
+      "°C",
+      "°F",
+      "San Francisco weather"
+    ],
+    "scroll": {
+      "scrollHeight": 1112,
+      "clientHeight": 700
+    },
+    "grid": "56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px",
+    "fonts": 156.390625,
+    "now": "Sat Nov 14 2026 18:13:09 GMT-0500 (Eastern Standard Time)"
+  },
+  "rows": [
+    {
+      "name": "hero",
+      "text": "16°",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "96px",
+      "fontWeight": "300",
+      "opacity": 1,
+      "rect": {
+        "x": 48,
+        "y": 192,
+        "w": 156,
+        "h": 86
+      },
+      "bg": {
+        "r": 57,
+        "g": 70,
+        "b": 90
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 9.56
+    },
+    {
+      "name": "condition",
+      "text": "Overcast",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "24px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 216,
+        "y": 234,
+        "w": 103,
+        "h": 32
+      },
+      "bg": {
+        "r": 56,
+        "g": 69,
+        "b": 88
+      },
+      "effective": {
+        "r": 231,
+        "g": 233,
+        "b": 235
+      },
+      "contrast": 7.99
+    },
+    {
+      "name": "city-pill",
+      "text": "San Francisco",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 48,
+        "y": 123,
+        "w": 162,
+        "h": 34
+      },
+      "bg": {
+        "r": 81,
+        "g": 98,
+        "b": 125
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 6.19
+    },
+    {
+      "name": "high",
+      "text": "H:17°",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "opacity": 1,
+      "rect": {
+        "x": 48,
+        "y": 286,
+        "w": 39,
+        "h": 20
+      },
+      "bg": {
+        "r": 53,
+        "g": 66,
+        "b": 85
+      },
+      "effective": {
+        "r": 231,
+        "g": 232,
+        "b": 235
+      },
+      "contrast": 8.31
+    },
+    {
+      "name": "low",
+      "text": "L:11°",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "opacity": 1,
+      "rect": {
+        "x": 112,
+        "y": 286,
+        "w": 36,
+        "h": 20
+      },
+      "bg": {
+        "r": 53,
+        "g": 66,
+        "b": 85
+      },
+      "effective": {
+        "r": 231,
+        "g": 232,
+        "b": 235
+      },
+      "contrast": 8.31
+    },
+    {
+      "name": "feels-like",
+      "text": "Feels like 16°",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 48,
+        "y": 346,
+        "w": 87,
+        "h": 20
+      },
+      "bg": {
+        "r": 50,
+        "g": 62,
+        "b": 81
+      },
+      "effective": {
+        "r": 230,
+        "g": 232,
+        "b": 234
+      },
+      "contrast": 8.8
+    },
+    {
+      "name": "hourly-heading",
+      "text": "HOURLY FORECAST",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "opacity": 1,
+      "rect": {
+        "x": 64,
+        "y": 382,
+        "w": 149,
+        "h": 20
+      },
+      "bg": {
+        "r": 48,
+        "g": 61,
+        "b": 80
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 11
+    },
+    {
+      "name": "daily-heading",
+      "text": "10-DAY FORECAST",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "opacity": 1,
+      "rect": {
+        "x": 48,
+        "y": 572,
+        "w": 492,
+        "h": 20
+      },
+      "bg": {
+        "r": 37,
+        "g": 48,
+        "b": 66
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 13.29
+    },
+    {
+      "name": "day1-name",
+      "text": "Today",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 65,
+        "y": 619,
+        "w": 56,
+        "h": 20
+      },
+      "bg": {
+        "r": 56,
+        "g": 70,
+        "b": 96
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 9.49
+    },
+    {
+      "name": "day1-min",
+      "text": "11°",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "opacity": 1,
+      "rect": {
+        "x": 169,
+        "y": 619,
+        "w": 32,
+        "h": 20
+      },
+      "bg": {
+        "r": 56,
+        "g": 71,
+        "b": 95
+      },
+      "effective": {
+        "r": 231,
+        "g": 233,
+        "b": 236
+      },
+      "contrast": 7.73
+    },
+    {
+      "name": "day1-max",
+      "text": "17°",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 443,
+        "y": 619,
+        "w": 32,
+        "h": 20
+      },
+      "bg": {
+        "r": 56,
+        "g": 71,
+        "b": 95
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 9.4
+    },
+    {
+      "name": "detail-label",
+      "text": "UV INDEX",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": 1,
+      "rect": {
+        "x": 629,
+        "y": 589,
+        "w": 125,
+        "h": 28
+      },
+      "bg": {
+        "r": 57,
+        "g": 73,
+        "b": 96
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 9.15
+    },
+    {
+      "name": "detail-value",
+      "text": "1.6",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "20px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 629,
+        "y": 629,
+        "w": 125,
+        "h": 25
+      },
+      "bg": {
+        "r": 55,
+        "g": 69,
+        "b": 95
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 9.64
+    },
+    {
+      "name": "hourly-now",
+      "text": "Now",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 67,
+        "y": 431,
+        "w": 26,
+        "h": 16
+      },
+      "bg": {
+        "r": 82,
+        "g": 97,
+        "b": 121
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 6.28
+    },
+    {
+      "name": "hourly-hour",
+      "text": "4pm",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 143,
+        "y": 431,
+        "w": 26,
+        "h": 16
+      },
+      "bg": {
+        "r": 57,
+        "g": 72,
+        "b": 97
+      },
+      "effective": {
+        "r": 231,
+        "g": 233,
+        "b": 236
+      },
+      "contrast": 7.59
+    },
+    {
+      "name": "hourly-temp",
+      "text": "16°",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 68,
+        "y": 487,
+        "w": 25,
+        "h": 20
+      },
+      "bg": {
+        "r": 79,
+        "g": 95,
+        "b": 118
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 6.5
+    },
+    {
+      "name": "date",
+      "text": "SATURDAY, NOVEMBER 14\nUpdated just now",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "opacity": 1,
+      "rect": {
+        "x": 739,
+        "y": 120,
+        "w": 203,
+        "h": 40
+      },
+      "bg": {
+        "r": 63,
+        "g": 77,
+        "b": 96
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 8.6
+    },
+    {
+      "name": "titlebar-title",
+      "text": "Weather",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "fontSize": "12px",
+      "fontWeight": "500",
+      "opacity": 1,
+      "rect": {
+        "x": 475,
+        "y": 12,
+        "w": 51,
+        "h": 16
+      },
+      "bg": {
+        "r": 70,
+        "g": 84,
+        "b": 104
+      },
+      "effective": {
+        "r": 233,
+        "g": 234,
+        "b": 237
+      },
+      "contrast": 6.4
+    }
+  ],
+  "requests": [
+    "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,wind_direction_10m,uv_index,visibility,pressure_msl,precipitation&hourly=temperature_2m,weather_code,precipitation_probability&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max&timezone=auto&forecast_days=10&forecast_hours=30&temperature_unit=celsius&wind_speed_unit=kmh&precipitation_unit=mm"
+  ]
+}

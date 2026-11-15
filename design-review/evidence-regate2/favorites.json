@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-14T23:02:42.823Z",
+  "steps": [
+    {
+      "step": "star current",
+      "pill": "Tokyo",
+      "favs": "[{\"id\":\"1850147\",\"name\":\"Tokyo\",\"country\":\"Japan\",\"admin1\":\"Tokyo\",\"latitude\":35.6895,\"longitude\":139.69171}]"
+    },
+    {
+      "step": "paris results",
+      "text": "6 results"
+    },
+    {
+      "step": "enter selected",
+      "pill": "Paris",
+      "modal": false
+    },
+    {
+      "step": "star paris",
+      "label": "Remove Paris from favorites",
+      "favs": "[{\"id\":\"1850147\",\"name\":\"Tokyo\",\"country\":\"Japan\",\"admin1\":\"Tokyo\",\"latitude\":35.6895,\"longitude\":139.69171},{\"id\":\"2988507\",\"name\":\"Paris\",\"country\":\"France\",\"admin1\":\"Île-de-France Region\",\"latitude\":48.85341,\"longitude\":2.3488}]"
+    }
+  ],
+  "favorites": {
+    "dialog": {
+      "x": 276,
+      "y": 150.8,
+      "w": 448,
+      "h": 398.5,
+      "bottom": 549.3
+    },
+    "text": "Search city\n\n2 favorite cities\n\nFAVORITES\n\nTokyo\nTokyo, Japan\nParis\nÎle-de-France Region, France\nCancel",
+    "list": {
+      "x": 293,
+      "y": 314.8,
+      "w": 414,
+      "h": 148.5,
+      "bottom": 463.3,
+      "client": 149,
+      "scroll": 149
+    },
+    "remove": [
+      "Remove Tokyo from favorites",
+      "Remove Paris from favorites"
+    ]
+  },
+  "afterRemove": {
+    "favs": "[{\"id\":\"1850147\",\"name\":\"Tokyo\",\"country\":\"Japan\",\"admin1\":\"Tokyo\",\"latitude\":35.6895,\"longitude\":139.69171},{\"id\":\"2988507\",\"name\":\"Paris\",\"country\":\"France\",\"admin1\":\"Île-de-France Region\",\"latitude\":48.85341,\"longitude\":2.3488}]"
+  },
+  "focusAfterEscape": true,
+  "restored": "Miami"
+}

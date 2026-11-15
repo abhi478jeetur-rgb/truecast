@@ -1,0 +1,808 @@
+{
+  "at": "2026-11-15T03:54:39.171Z",
+  "city": "San Francisco",
+  "api": {
+    "timezone": "America/Los_Angeles",
+    "currentTime": "2026-11-14T19:45",
+    "temperature": 13,
+    "apparent": 11.9,
+    "daily0": {
+      "date": "2026-11-14",
+      "max": 16.9,
+      "min": 11.2,
+      "sunrise": "2026-11-14T06:49",
+      "sunset": "2026-11-14T16:58"
+    }
+  },
+  "total": 131,
+  "passed": 131,
+  "failed": [],
+  "checks": [
+    {
+      "name": "city pill",
+      "ui": "San Francisco",
+      "api": "San Francisco",
+      "pass": true
+    },
+    {
+      "name": "hero",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "high",
+      "ui": "H:17°",
+      "api": "H:17°",
+      "pass": true
+    },
+    {
+      "name": "low",
+      "ui": "L:11°",
+      "api": "L:11°",
+      "pass": true
+    },
+    {
+      "name": "feels like",
+      "ui": "Feels like 12°",
+      "api": "Feels like 12°",
+      "pass": true
+    },
+    {
+      "name": "humidity",
+      "ui": "79%",
+      "api": "79%",
+      "pass": true
+    },
+    {
+      "name": "wind",
+      "ui": "6 km/h",
+      "api": "6 km/h",
+      "pass": true
+    },
+    {
+      "name": "header date",
+      "ui": "SATURDAY, NOVEMBER 14",
+      "api": "SATURDAY, NOVEMBER 14",
+      "pass": true
+    },
+    {
+      "name": "hourly heading",
+      "ui": "HOURLY FORECAST",
+      "api": "Hourly forecast",
+      "pass": true
+    },
+    {
+      "name": "hourly count",
+      "ui": "24",
+      "api": "24",
+      "pass": true
+    },
+    {
+      "name": "daily heading",
+      "ui": "10-DAY FORECAST",
+      "api": "10-day forecast",
+      "pass": true
+    },
+    {
+      "name": "day count",
+      "ui": "10",
+      "api": "10",
+      "pass": true
+    },
+    {
+      "name": "updated live",
+      "ui": "true",
+      "api": "true",
+      "pass": true
+    },
+    {
+      "name": "hour[0] label",
+      "ui": "Now",
+      "api": "Now",
+      "pass": true
+    },
+    {
+      "name": "hour[0] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[1] label",
+      "ui": "8pm",
+      "api": "8pm",
+      "pass": true
+    },
+    {
+      "name": "hour[1] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[2] label",
+      "ui": "9pm",
+      "api": "9pm",
+      "pass": true
+    },
+    {
+      "name": "hour[2] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[2] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[3] label",
+      "ui": "10pm",
+      "api": "10pm",
+      "pass": true
+    },
+    {
+      "name": "hour[3] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[3] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[4] label",
+      "ui": "11pm",
+      "api": "11pm",
+      "pass": true
+    },
+    {
+      "name": "hour[4] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[4] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[5] label",
+      "ui": "12am",
+      "api": "12am",
+      "pass": true
+    },
+    {
+      "name": "hour[5] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[5] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[6] label",
+      "ui": "1am",
+      "api": "1am",
+      "pass": true
+    },
+    {
+      "name": "hour[6] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[6] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[7] label",
+      "ui": "2am",
+      "api": "2am",
+      "pass": true
+    },
+    {
+      "name": "hour[7] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[7] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[8] label",
+      "ui": "3am",
+      "api": "3am",
+      "pass": true
+    },
+    {
+      "name": "hour[8] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[8] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
+      "name": "hour[9] label",
+      "ui": "4am",
+      "api": "4am",
+      "pass": true
+    },
+    {
+      "name": "hour[9] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[9] pop",
+      "ui": "2%",
+      "api": "2%",
+      "pass": true
+    },
+    {
+      "name": "hour[10] label",
+      "ui": "5am",
+      "api": "5am",
+      "pass": true
+    },
+    {
+      "name": "hour[10] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[10] pop",
+      "ui": "2%",
+      "api": "2%",
+      "pass": true
+    },
+    {
+      "name": "hour[11] label",
+      "ui": "6am",
+      "api": "6am",
+      "pass": true
+    },
+    {
+      "name": "hour[11] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[11] pop",
+      "ui": "2%",
+      "api": "2%",
+      "pass": true
+    },
+    {
+      "name": "hour[12] label",
+      "ui": "7am",
+      "api": "7am",
+      "pass": true
+    },
+    {
+      "name": "hour[12] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[12] pop",
+      "ui": "3%",
+      "api": "3%",
+      "pass": true
+    },
+    {
+      "name": "hour[13] label",
+      "ui": "8am",
+      "api": "8am",
+      "pass": true
+    },
+    {
+      "name": "hour[13] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[13] pop",
+      "ui": "4%",
+      "api": "4%",
+      "pass": true
+    },
+    {
+      "name": "hour[14] label",
+      "ui": "9am",
+      "api": "9am",
+      "pass": true
+    },
+    {
+      "name": "hour[14] temp",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "hour[14] pop",
+      "ui": "7%",
+      "api": "7%",
+      "pass": true
+    },
+    {
+      "name": "hour[15] label",
+      "ui": "10am",
+      "api": "10am",
+      "pass": true
+    },
+    {
+      "name": "hour[15] temp",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "hour[15] pop",
+      "ui": "12%",
+      "api": "12%",
+      "pass": true
+    },
+    {
+      "name": "hour[16] label",
+      "ui": "11am",
+      "api": "11am",
+      "pass": true
+    },
+    {
+      "name": "hour[16] temp",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "hour[16] pop",
+      "ui": "29%",
+      "api": "29%",
+      "pass": true
+    },
+    {
+      "name": "hour[17] label",
+      "ui": "12pm",
+      "api": "12pm",
+      "pass": true
+    },
+    {
+      "name": "hour[17] temp",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "hour[17] pop",
+      "ui": "35%",
+      "api": "35%",
+      "pass": true
+    },
+    {
+      "name": "hour[18] label",
+      "ui": "1pm",
+      "api": "1pm",
+      "pass": true
+    },
+    {
+      "name": "hour[18] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[18] pop",
+      "ui": "51%",
+      "api": "51%",
+      "pass": true
+    },
+    {
+      "name": "hour[19] label",
+      "ui": "2pm",
+      "api": "2pm",
+      "pass": true
+    },
+    {
+      "name": "hour[19] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[19] pop",
+      "ui": "78%",
+      "api": "78%",
+      "pass": true
+    },
+    {
+      "name": "hour[20] label",
+      "ui": "3pm",
+      "api": "3pm",
+      "pass": true
+    },
+    {
+      "name": "hour[20] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[20] pop",
+      "ui": "87%",
+      "api": "87%",
+      "pass": true
+    },
+    {
+      "name": "hour[21] label",
+      "ui": "4pm",
+      "api": "4pm",
+      "pass": true
+    },
+    {
+      "name": "hour[21] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[21] pop",
+      "ui": "94%",
+      "api": "94%",
+      "pass": true
+    },
+    {
+      "name": "hour[22] label",
+      "ui": "5pm",
+      "api": "5pm",
+      "pass": true
+    },
+    {
+      "name": "hour[22] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[22] pop",
+      "ui": "84%",
+      "api": "84%",
+      "pass": true
+    },
+    {
+      "name": "hour[23] label",
+      "ui": "6pm",
+      "api": "6pm",
+      "pass": true
+    },
+    {
+      "name": "hour[23] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[23] pop",
+      "ui": "79%",
+      "api": "79%",
+      "pass": true
+    },
+    {
+      "name": "day[0] label",
+      "ui": "Today",
+      "api": "Today",
+      "pass": true
+    },
+    {
+      "name": "day[0] min",
+      "ui": "11°",
+      "api": "11°",
+      "pass": true
+    },
+    {
+      "name": "day[0] max",
+      "ui": "17°",
+      "api": "17°",
+      "pass": true
+    },
+    {
+      "name": "day[0] precip",
+      "ui": "15%",
+      "api": "15%",
+      "pass": true
+    },
+    {
+      "name": "day[1] label",
+      "ui": "Sun",
+      "api": "Sun",
+      "pass": true
+    },
+    {
+      "name": "day[1] min",
+      "ui": "10°",
+      "api": "10°",
+      "pass": true
+    },
+    {
+      "name": "day[1] max",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "day[1] precip",
+      "ui": "94%",
+      "api": "94%",
+      "pass": true
+    },
+    {
+      "name": "day[2] label",
+      "ui": "Mon",
+      "api": "Mon",
+      "pass": true
+    },
+    {
+      "name": "day[2] min",
+      "ui": "9°",
+      "api": "9°",
+      "pass": true
+    },
+    {
+      "name": "day[2] max",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "day[2] precip",
+      "ui": "64%",
+      "api": "64%",
+      "pass": true
+    },
+    {
+      "name": "day[3] label",
+      "ui": "Tue",
+      "api": "Tue",
+      "pass": true
+    },
+    {
+      "name": "day[3] min",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "day[3] max",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "day[3] precip",
+      "ui": "83%",
+      "api": "83%",
+      "pass": true
+    },
+    {
+      "name": "day[4] label",
+      "ui": "Wed",
+      "api": "Wed",
+      "pass": true
+    },
+    {
+      "name": "day[4] min",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "day[4] max",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "day[4] precip",
+      "ui": "99%",
+      "api": "99%",
+      "pass": true
+    },
+    {
+      "name": "day[5] label",
+      "ui": "Thu",
+      "api": "Thu",
+      "pass": true
+    },
+    {
+      "name": "day[5] min",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "day[5] max",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "day[5] precip",
+      "ui": "95%",
+      "api": "95%",
+      "pass": true
+    },
+    {
+      "name": "day[6] label",
+      "ui": "Fri",
+      "api": "Fri",
+      "pass": true
+    },
+    {
+      "name": "day[6] min",
+      "ui": "11°",
+      "api": "11°",
+      "pass": true
+    },
+    {
+      "name": "day[6] max",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "day[6] precip",
+      "ui": "24%",
+      "api": "24%",
+      "pass": true
+    },
+    {
+      "name": "day[7] label",
+      "ui": "Sat",
+      "api": "Sat",
+      "pass": true
+    },
+    {
+      "name": "day[7] min",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "day[7] max",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "day[7] precip",
+      "ui": "31%",
+      "api": "31%",
+      "pass": true
+    },
+    {
+      "name": "day[8] label",
+      "ui": "Sun",
+      "api": "Sun",
+      "pass": true
+    },
+    {
+      "name": "day[8] min",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "day[8] max",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "day[8] precip",
+      "ui": "42%",
+      "api": "42%",
+      "pass": true
+    },
+    {
+      "name": "day[9] label",
+      "ui": "Mon",
+      "api": "Mon",
+      "pass": true
+    },
+    {
+      "name": "day[9] min",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "day[9] max",
+      "ui": "15°",
+      "api": "15°",
+      "pass": true
+    },
+    {
+      "name": "day[9] precip",
+      "ui": "48%",
+      "api": "48%",
+      "pass": true
+    },
+    {
+      "name": "UV value",
+      "ui": "0",
+      "api": "0",
+      "pass": true
+    },
+    {
+      "name": "UV descriptor",
+      "ui": "Low",
+      "api": "Low",
+      "pass": true
+    },
+    {
+      "name": "wind card",
+      "ui": "6 km/h",
+      "api": "6 km/h",
+      "pass": true
+    },
+    {
+      "name": "humidity card",
+      "ui": "79%",
+      "api": "79%",
+      "pass": true
+    },
+    {
+      "name": "visibility card",
+      "ui": "19 km",
+      "api": "19 km",
+      "pass": true
+    },
+    {
+      "name": "pressure card",
+      "ui": "1016 hPa",
+      "api": "1016 hPa",
+      "pass": true
+    },
+    {
+      "name": "sunrise",
+      "ui": "6:49 AM",
+      "api": "6:49 AM",
+      "pass": true
+    },
+    {
+      "name": "sunset",
+      "ui": "4:58 PM",
+      "api": "4:58 PM",
+      "pass": true
+    }
+  ]
+}

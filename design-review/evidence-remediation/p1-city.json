@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-14T23:12:47.172Z",
+  "checks": [
+    {
+      "name": "no stored city → default",
+      "pass": true,
+      "detail": "San Francisco"
+    },
+    {
+      "name": "default readings correct",
+      "pass": true,
+      "detail": "16°"
+    },
+    {
+      "name": "first load persists its city",
+      "pass": true,
+      "detail": "{\"id\":\"default\",\"name\":\"San Francisco\",\"country\":\"United Sta"
+    },
+    {
+      "name": "selection written to storage",
+      "pass": true,
+      "detail": "{\"id\":\"4164138\",\"name\":\"Miami\",\"country\":\"United States\",\"admin1\":\"Florida\",\"lat"
+    },
+    {
+      "name": "stored city keeps the selected coordinates",
+      "pass": true,
+      "detail": "25.77427,-80.19366"
+    },
+    {
+      "name": "reload restores the last city",
+      "pass": true,
+      "detail": "Miami"
+    },
+    {
+      "name": "restored readings are Miami's",
+      "pass": true,
+      "detail": "17° vs 17°"
+    },
+    {
+      "name": "one forecast request on launch",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "invalid stored city → default",
+      "pass": true,
+      "detail": "San Francisco"
+    },
+    {
+      "name": "cleared key → default",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

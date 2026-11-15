@@ -1,0 +1,30 @@
+{
+  "sf": {
+    "currentTemp": 16,
+    "apparent": 15.2,
+    "todayMax": 21.7,
+    "todayMin": 10.6,
+    "dailyDaysReturned": 7,
+    "hourlyHoursReturned": 168,
+    "firstDays": [
+      "2026-11-12",
+      "2026-11-13",
+      "2026-11-14"
+    ],
+    "timezone": "America/Los_Angeles"
+  },
+  "tokyo": {
+    "currentTemp": 19.9,
+    "todayMax": 19.9,
+    "todayMin": 8.1,
+    "dailyDaysReturned": 7,
+    "timezone": "Asia/Tokyo",
+    "firstHourTimes": [
+      "2026-11-13T00:00",
+      "2026-11-13T01:00",
+      "2026-11-13T02:00",
+      "2026-11-13T03:00"
+    ],
+    "hourOfDayNow": "2026-11-13T14:00"
+  }
+}

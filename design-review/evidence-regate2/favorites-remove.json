@@ -1,0 +1,7 @@
+{
+  "added": "[{\"id\":\"4164138\",\"name\":\"Miami\",\"country\":\"United States\",\"admin1\":\"Florida\",\"latitude\":25.77427,\"longitude\":-80.19366},{\"id\":\"2988507\",\"name\":\"Paris\",\"country\":\"France\",\"admin1\":\"Île-de-France Region\",\"latitude\":48.85341,\"longitude\":2.3488}]",
+  "before": "Search city\n\n2 favorite cities\n\nFAVORITES\n\nMiami\nFlorida, United States\nParis\nÎle-de-France Region, France\nCancel",
+  "after": "{\"text\":\"Search city\\n\\n1 favorite city\\n\\nFAVORITES\\n\\nMiami\\nFlorida, United States\\nCancel\",\"favs\":\"[{\\\"id\\\":\\\"4164138\\\",\\\"name\\\":\\\"Miami\\\",\\\"country\\\":\\\"United States\\\",\\\"admin1\\\":\\\"Florida\\\",\\\"latitude\\\":25.77427,\\\"longitude\\\":-80.19366}]\",\"live\":\"1 favorite city\"}",
+  "focusStayed": "BODY:Weather\n°C\n°F\nParis weather\nParis\nSUNDAY",
+  "restored": "Miami | {\"id\":\"4164138\",\"name\":\"Miami\",\"country\":\"United States\",\"admin1\":\"Florida\",\"latitude\":25.77427,\"longitude\":-80.19366}"
+}

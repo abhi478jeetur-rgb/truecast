@@ -1,0 +1,51 @@
+{
+  "daylight": {
+    "theme": "none-found"
+  },
+  "focusAfterEscape": {
+    "tag": "BUTTON",
+    "haspopup": "dialog",
+    "label": "Change city, currently Denver"
+  },
+  "failure": {
+    "pill": "Denver",
+    "hero": "9°",
+    "banner": "Couldn't update Tokyo. | Showing the last reading — Can't reach the weather service. Check your connection. | Retry | Dismiss",
+    "retry": true,
+    "dismiss": true,
+    "panels": true,
+    "rootHeading": [],
+    "fullPageError": false,
+    "opacity": "1",
+    "before": {
+      "pill": "Denver",
+      "hero": "9°"
+    }
+  },
+  "recovered": {
+    "pill": "Tokyo",
+    "banner": false,
+    "hero": "11°"
+  },
+  "coldFailure": {
+    "heading": [
+      "Weather is unavailable"
+    ],
+    "body": [
+      "Weather",
+      "°C",
+      "°F",
+      "Weather is unavailable",
+      "Can't reach the weather service. Check your connection.",
+      "Try again"
+    ],
+    "retry": true,
+    "theme": null,
+    "background": "linear-gradient(rgb(11, 18, 32) 0%, rgb(30, 41, 59",
+    "onWhitePage": "rgba(0, 0, 0, 0)"
+  },
+  "coldRecovery": {
+    "pill": "San Francisco",
+    "hero": "15°"
+  }
+}

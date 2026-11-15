@@ -1,0 +1,1292 @@
+{
+  "1000x700": {
+    "vp": [
+      1000,
+      700
+    ],
+    "scroll": {
+      "h": 1112,
+      "client": 700,
+      "top": 0,
+      "overflow": "auto"
+    },
+    "main": {
+      "x": 0,
+      "y": 40,
+      "w": 990,
+      "h": 1112.4,
+      "bottom": 1152.4
+    },
+    "docs": {
+      "hero": {
+        "x": 48,
+        "y": 192,
+        "w": 156.4,
+        "h": 86.4,
+        "bottom": 278.4
+      },
+      "hourlyH": {
+        "x": 64,
+        "y": 382.4,
+        "w": 148.6,
+        "h": 20,
+        "bottom": 402.4
+      },
+      "dailyH": {
+        "x": 48,
+        "y": 572.4,
+        "w": 491.5,
+        "h": 20,
+        "bottom": 592.4
+      },
+      "hourCard": {
+        "x": 48,
+        "y": 418.4,
+        "w": 64,
+        "h": 130,
+        "bottom": 548.4
+      },
+      "dayRow": {
+        "x": 48,
+        "y": 608.4,
+        "w": 491.5,
+        "h": 42,
+        "bottom": 650.4
+      },
+      "dayName": {
+        "x": 65,
+        "y": 619.4,
+        "w": 56,
+        "h": 20,
+        "bottom": 639.4
+      },
+      "detailSection": {
+        "x": 587.5,
+        "y": 556.4,
+        "w": 378.5,
+        "h": 414,
+        "bottom": 970.4
+      },
+      "detailCard": {
+        "x": 611.5,
+        "y": 572.4,
+        "w": 159.3,
+        "h": 119,
+        "bottom": 691.4
+      },
+      "detailValue": {
+        "x": 628.5,
+        "y": 629.4,
+        "w": 125.3,
+        "h": 25,
+        "bottom": 654.4
+      },
+      "detailLabel": {
+        "x": 666.5,
+        "y": 595.1,
+        "w": 58.1,
+        "h": 16.5,
+        "bottom": 611.6
+      },
+      "pill": {
+        "x": 48,
+        "y": 123,
+        "w": 108.2,
+        "h": 34,
+        "bottom": 157
+      }
+    },
+    "ink": {
+      "hero": {
+        "x": 48,
+        "y": 177,
+        "w": 156.4,
+        "h": 116
+      },
+      "hourlyH": {
+        "x": 64,
+        "y": 383.4,
+        "w": 148.6,
+        "h": 17
+      },
+      "dailyH": {
+        "x": 64,
+        "y": 573.4,
+        "w": 141.3,
+        "h": 17
+      },
+      "dayName": {
+        "x": 65,
+        "y": 620.4,
+        "w": 41,
+        "h": 17
+      },
+      "detailValue": {
+        "x": 628.5,
+        "y": 629.4,
+        "w": 13,
+        "h": 24
+      },
+      "detailLabel": {
+        "x": 666.5,
+        "y": 596.1,
+        "w": 58.1,
+        "h": 14
+      }
+    },
+    "grid": {
+      "cols": "56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px",
+      "rect": {
+        "x": 24,
+        "y": 556.4,
+        "w": 942,
+        "h": 516,
+        "bottom": 1072.4
+      }
+    },
+    "detailGrid": {
+      "cols": "159.25px 159.25px",
+      "rect": {
+        "x": 611.5,
+        "y": 572.4,
+        "w": 330.5,
+        "h": 366,
+        "bottom": 938.4
+      }
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Miami weather",
+        "rect": {
+          "x": 23,
+          "y": 103,
+          "w": 1,
+          "h": 1,
+          "bottom": 104
+        },
+        "ink": {
+          "x": 23,
+          "y": 105,
+          "w": 111,
+          "h": 20
+        },
+        "size": "16px",
+        "weight": "400",
+        "lh": "24px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      {
+        "tag": "h2",
+        "text": "HOURLY FORECAST",
+        "rect": {
+          "x": 64,
+          "y": 382.4,
+          "w": 148.6,
+          "h": 20,
+          "bottom": 402.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 383.4,
+          "w": 148.6,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      {
+        "tag": "h2",
+        "text": "10-DAY FORECAST",
+        "rect": {
+          "x": 48,
+          "y": 572.4,
+          "w": 491.5,
+          "h": 20,
+          "bottom": 592.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 573.4,
+          "w": 141.3,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      }
+    ],
+    "ramp": [
+      {
+        "k": "hero",
+        "rect": {
+          "x": 48,
+          "y": 192,
+          "w": 156.4,
+          "h": 86.4,
+          "bottom": 278.4
+        },
+        "ink": {
+          "x": 48,
+          "y": 177,
+          "w": 156.4,
+          "h": 116
+        },
+        "size": "96px",
+        "weight": "300",
+        "lh": "86.4px",
+        "ls": "-3.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "condition",
+        "rect": {
+          "x": 216.4,
+          "y": 234.4,
+          "w": 60.9,
+          "h": 32,
+          "bottom": 266.4
+        },
+        "ink": {
+          "x": 216.4,
+          "y": 235.4,
+          "w": 60.9,
+          "h": 29
+        },
+        "size": "24px",
+        "weight": "500",
+        "lh": "32px",
+        "ls": "normal",
+        "color": "rgba(255, 255, 255, 0.88)"
+      },
+      {
+        "k": "hourlyH",
+        "rect": {
+          "x": 64,
+          "y": 382.4,
+          "w": 148.6,
+          "h": 20,
+          "bottom": 402.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 383.4,
+          "w": 148.6,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "dailyH",
+        "rect": {
+          "x": 48,
+          "y": 572.4,
+          "w": 491.5,
+          "h": 20,
+          "bottom": 592.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 573.4,
+          "w": 141.3,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "dayName",
+        "rect": {
+          "x": 65,
+          "y": 619.4,
+          "w": 56,
+          "h": 20,
+          "bottom": 639.4
+        },
+        "ink": {
+          "x": 65,
+          "y": 620.4,
+          "w": 41,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "500",
+        "lh": "20px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "detailLabel",
+        "rect": {
+          "x": 666.5,
+          "y": 595.1,
+          "w": 58.1,
+          "h": 16.5,
+          "bottom": 611.6
+        },
+        "ink": {
+          "x": 666.5,
+          "y": 596.1,
+          "w": 58.1,
+          "h": 14
+        },
+        "size": "11px",
+        "weight": "600",
+        "lh": "16.5px",
+        "ls": "0.66px",
+        "color": "rgba(255, 255, 255, 0.88)"
+      },
+      {
+        "k": "detailValue",
+        "rect": {
+          "x": 628.5,
+          "y": 629.4,
+          "w": 125.3,
+          "h": 25,
+          "bottom": 654.4
+        },
+        "ink": {
+          "x": 628.5,
+          "y": 629.4,
+          "w": 13,
+          "h": 24
+        },
+        "size": "20px",
+        "weight": "500",
+        "lh": "25px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "pill",
+        "rect": {
+          "x": 48,
+          "y": 123,
+          "w": 108.2,
+          "h": 34,
+          "bottom": 157
+        },
+        "ink": {
+          "x": 61,
+          "y": 130,
+          "w": 84.2,
+          "h": 20
+        },
+        "size": "14px",
+        "weight": "500",
+        "lh": "20px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "nextHours",
+        "rect": {
+          "x": 845.6,
+          "y": 384.4,
+          "w": 80.4,
+          "h": 16,
+          "bottom": 400.4
+        },
+        "ink": {
+          "x": 845.6,
+          "y": 384.4,
+          "w": 80.4,
+          "h": 15
+        },
+        "size": "12px",
+        "weight": "400",
+        "lh": "16px",
+        "ls": "normal",
+        "color": "rgba(255, 255, 255, 0.74)"
+      }
+    ],
+    "count": {
+      "h1": 1,
+      "h2": 2,
+      "h3": 0
+    },
+    "theme": "dark",
+    "texts": {
+      "pill": "Miami",
+      "h1": "Miami weather",
+      "date": "SATURDAY, NOVEMBER 14"
+    },
+    "text": "Weather\n°C\n°F\nMiami weather\nMiami\nSATURDAY, NOVEMBER 14\nUpdated 2 min ago\n17°\nClear\nH:22°\nL:13°\nFeels like 15°\n49%\n9 km/h\nHOURLY FORECAST\nNext 24 hours\nNow\n17°\n0%\n6pm\n17°\n0%\n7pm\n16°\n0%\n8pm\n16°\n0%\n9pm\n15°\n0%\n10pm\n14°\n0%\n11pm\n13°\n0%\n12am\n13°\n0%\n1am\n13°\n1%\n2am\n13°\n1%\n3am\n13°\n1%\n4am\n13°\n2%\n5am\n13°\n1%\n6am\n13°\n0%\n7am\n13°\n0%\n8am\n15°\n0%\n9am\n18°\n0%\n10am\n21°\n0%\n11am\n21°\n0%\n12pm\n23°\n0%\n1pm\n25°\n0%\n2pm\n24°\n0%\n"
+  },
+  "800x560": {
+    "vp": [
+      800,
+      560
+    ],
+    "scroll": {
+      "h": 1550,
+      "client": 560,
+      "top": 0,
+      "overflow": "auto"
+    },
+    "main": {
+      "x": 0,
+      "y": 40,
+      "w": 790,
+      "h": 1550.4,
+      "bottom": 1590.4
+    },
+    "docs": {
+      "hero": {
+        "x": 48,
+        "y": 192,
+        "w": 156.4,
+        "h": 86.4,
+        "bottom": 278.4
+      },
+      "hourlyH": {
+        "x": 64,
+        "y": 382.4,
+        "w": 148.6,
+        "h": 20,
+        "bottom": 402.4
+      },
+      "dailyH": {
+        "x": 48,
+        "y": 572.4,
+        "w": 694,
+        "h": 20,
+        "bottom": 592.4
+      },
+      "hourCard": {
+        "x": 48,
+        "y": 418.4,
+        "w": 64,
+        "h": 130,
+        "bottom": 548.4
+      },
+      "dayRow": {
+        "x": 48,
+        "y": 608.4,
+        "w": 694,
+        "h": 42,
+        "bottom": 650.4
+      },
+      "dayName": {
+        "x": 65,
+        "y": 619.4,
+        "w": 56,
+        "h": 20,
+        "bottom": 639.4
+      },
+      "detailSection": {
+        "x": 24,
+        "y": 1096.4,
+        "w": 742,
+        "h": 414,
+        "bottom": 1510.4
+      },
+      "detailCard": {
+        "x": 48,
+        "y": 1112.4,
+        "w": 341,
+        "h": 119,
+        "bottom": 1231.4
+      },
+      "detailValue": {
+        "x": 65,
+        "y": 1169.4,
+        "w": 307,
+        "h": 25,
+        "bottom": 1194.4
+      },
+      "detailLabel": {
+        "x": 103,
+        "y": 1135.1,
+        "w": 58.1,
+        "h": 16.5,
+        "bottom": 1151.6
+      },
+      "pill": {
+        "x": 48,
+        "y": 123,
+        "w": 108.2,
+        "h": 34,
+        "bottom": 157
+      }
+    },
+    "ink": {
+      "hero": {
+        "x": 48,
+        "y": 177,
+        "w": 156.4,
+        "h": 116
+      },
+      "hourlyH": {
+        "x": 64,
+        "y": 383.4,
+        "w": 148.6,
+        "h": 17
+      },
+      "dailyH": {
+        "x": 64,
+        "y": 573.4,
+        "w": 141.3,
+        "h": 17
+      },
+      "dayName": {
+        "x": 65,
+        "y": 620.4,
+        "w": 41,
+        "h": 17
+      },
+      "detailValue": {
+        "x": 65,
+        "y": 1169.4,
+        "w": 13,
+        "h": 24
+      },
+      "detailLabel": {
+        "x": 103,
+        "y": 1136.1,
+        "w": 58.1,
+        "h": 14
+      }
+    },
+    "grid": {
+      "cols": "742px",
+      "rect": {
+        "x": 24,
+        "y": 556.4,
+        "w": 742,
+        "h": 954,
+        "bottom": 1510.4
+      }
+    },
+    "detailGrid": {
+      "cols": "341px 341px",
+      "rect": {
+        "x": 48,
+        "y": 1112.4,
+        "w": 694,
+        "h": 366,
+        "bottom": 1478.4
+      }
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Miami weather",
+        "rect": {
+          "x": 23,
+          "y": 103,
+          "w": 1,
+          "h": 1,
+          "bottom": 104
+        },
+        "ink": {
+          "x": 23,
+          "y": 105,
+          "w": 111,
+          "h": 20
+        },
+        "size": "16px",
+        "weight": "400",
+        "lh": "24px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      {
+        "tag": "h2",
+        "text": "HOURLY FORECAST",
+        "rect": {
+          "x": 64,
+          "y": 382.4,
+          "w": 148.6,
+          "h": 20,
+          "bottom": 402.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 383.4,
+          "w": 148.6,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      {
+        "tag": "h2",
+        "text": "10-DAY FORECAST",
+        "rect": {
+          "x": 48,
+          "y": 572.4,
+          "w": 694,
+          "h": 20,
+          "bottom": 592.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 573.4,
+          "w": 141.3,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      }
+    ],
+    "ramp": [
+      {
+        "k": "hero",
+        "rect": {
+          "x": 48,
+          "y": 192,
+          "w": 156.4,
+          "h": 86.4,
+          "bottom": 278.4
+        },
+        "ink": {
+          "x": 48,
+          "y": 177,
+          "w": 156.4,
+          "h": 116
+        },
+        "size": "96px",
+        "weight": "300",
+        "lh": "86.4px",
+        "ls": "-3.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "condition",
+        "rect": {
+          "x": 216.4,
+          "y": 234.4,
+          "w": 60.9,
+          "h": 32,
+          "bottom": 266.4
+        },
+        "ink": {
+          "x": 216.4,
+          "y": 235.4,
+          "w": 60.9,
+          "h": 29
+        },
+        "size": "24px",
+        "weight": "500",
+        "lh": "32px",
+        "ls": "normal",
+        "color": "rgba(255, 255, 255, 0.88)"
+      },
+      {
+        "k": "hourlyH",
+        "rect": {
+          "x": 64,
+          "y": 382.4,
+          "w": 148.6,
+          "h": 20,
+          "bottom": 402.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 383.4,
+          "w": 148.6,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "dailyH",
+        "rect": {
+          "x": 48,
+          "y": 572.4,
+          "w": 694,
+          "h": 20,
+          "bottom": 592.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 573.4,
+          "w": 141.3,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "dayName",
+        "rect": {
+          "x": 65,
+          "y": 619.4,
+          "w": 56,
+          "h": 20,
+          "bottom": 639.4
+        },
+        "ink": {
+          "x": 65,
+          "y": 620.4,
+          "w": 41,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "500",
+        "lh": "20px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "detailLabel",
+        "rect": {
+          "x": 103,
+          "y": 1135.1,
+          "w": 58.1,
+          "h": 16.5,
+          "bottom": 1151.6
+        },
+        "ink": {
+          "x": 103,
+          "y": 1136.1,
+          "w": 58.1,
+          "h": 14
+        },
+        "size": "11px",
+        "weight": "600",
+        "lh": "16.5px",
+        "ls": "0.66px",
+        "color": "rgba(255, 255, 255, 0.88)"
+      },
+      {
+        "k": "detailValue",
+        "rect": {
+          "x": 65,
+          "y": 1169.4,
+          "w": 307,
+          "h": 25,
+          "bottom": 1194.4
+        },
+        "ink": {
+          "x": 65,
+          "y": 1169.4,
+          "w": 13,
+          "h": 24
+        },
+        "size": "20px",
+        "weight": "500",
+        "lh": "25px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "pill",
+        "rect": {
+          "x": 48,
+          "y": 123,
+          "w": 108.2,
+          "h": 34,
+          "bottom": 157
+        },
+        "ink": {
+          "x": 61,
+          "y": 130,
+          "w": 84.2,
+          "h": 20
+        },
+        "size": "14px",
+        "weight": "500",
+        "lh": "20px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "nextHours",
+        "rect": {
+          "x": 645.6,
+          "y": 384.4,
+          "w": 80.4,
+          "h": 16,
+          "bottom": 400.4
+        },
+        "ink": {
+          "x": 645.6,
+          "y": 384.4,
+          "w": 80.4,
+          "h": 15
+        },
+        "size": "12px",
+        "weight": "400",
+        "lh": "16px",
+        "ls": "normal",
+        "color": "rgba(255, 255, 255, 0.74)"
+      }
+    ],
+    "count": {
+      "h1": 1,
+      "h2": 2,
+      "h3": 0
+    },
+    "theme": "dark",
+    "texts": {
+      "pill": "Miami",
+      "h1": "Miami weather",
+      "date": "SATURDAY, NOVEMBER 14"
+    },
+    "text": "Weather\n°C\n°F\nMiami weather\nMiami\nSATURDAY, NOVEMBER 14\nUpdated 2 min ago\n17°\nClear\nH:22°\nL:13°\nFeels like 15°\n49%\n9 km/h\nHOURLY FORECAST\nNext 24 hours\nNow\n17°\n0%\n6pm\n17°\n0%\n7pm\n16°\n0%\n8pm\n16°\n0%\n9pm\n15°\n0%\n10pm\n14°\n0%\n11pm\n13°\n0%\n12am\n13°\n0%\n1am\n13°\n1%\n2am\n13°\n1%\n3am\n13°\n1%\n4am\n13°\n2%\n5am\n13°\n1%\n6am\n13°\n0%\n7am\n13°\n0%\n8am\n15°\n0%\n9am\n18°\n0%\n10am\n21°\n0%\n11am\n21°\n0%\n12pm\n23°\n0%\n1pm\n25°\n0%\n2pm\n24°\n0%\n"
+  },
+  "1600x1000": {
+    "vp": [
+      1600,
+      1000
+    ],
+    "scroll": {
+      "h": 1112,
+      "client": 1000,
+      "top": 0,
+      "overflow": "auto"
+    },
+    "main": {
+      "x": 0,
+      "y": 40,
+      "w": 1590,
+      "h": 1112.4,
+      "bottom": 1152.4
+    },
+    "docs": {
+      "hero": {
+        "x": 48,
+        "y": 192,
+        "w": 156.4,
+        "h": 86.4,
+        "bottom": 278.4
+      },
+      "hourlyH": {
+        "x": 64,
+        "y": 382.4,
+        "w": 148.6,
+        "h": 20,
+        "bottom": 402.4
+      },
+      "dailyH": {
+        "x": 48,
+        "y": 572.4,
+        "w": 841.5,
+        "h": 20,
+        "bottom": 592.4
+      },
+      "hourCard": {
+        "x": 48,
+        "y": 418.4,
+        "w": 64,
+        "h": 130,
+        "bottom": 548.4
+      },
+      "dayRow": {
+        "x": 48,
+        "y": 608.4,
+        "w": 841.5,
+        "h": 42,
+        "bottom": 650.4
+      },
+      "dayName": {
+        "x": 65,
+        "y": 619.4,
+        "w": 56,
+        "h": 20,
+        "bottom": 639.4
+      },
+      "detailSection": {
+        "x": 937.5,
+        "y": 556.4,
+        "w": 628.5,
+        "h": 298,
+        "bottom": 854.4
+      },
+      "detailCard": {
+        "x": 961.5,
+        "y": 572.4,
+        "w": 185.5,
+        "h": 119,
+        "bottom": 691.4
+      },
+      "detailValue": {
+        "x": 978.5,
+        "y": 629.4,
+        "w": 151.5,
+        "h": 25,
+        "bottom": 654.4
+      },
+      "detailLabel": {
+        "x": 1016.5,
+        "y": 595.1,
+        "w": 58.1,
+        "h": 16.5,
+        "bottom": 611.6
+      },
+      "pill": {
+        "x": 48,
+        "y": 123,
+        "w": 108.2,
+        "h": 34,
+        "bottom": 157
+      }
+    },
+    "ink": {
+      "hero": {
+        "x": 48,
+        "y": 177,
+        "w": 156.4,
+        "h": 116
+      },
+      "hourlyH": {
+        "x": 64,
+        "y": 383.4,
+        "w": 148.6,
+        "h": 17
+      },
+      "dailyH": {
+        "x": 64,
+        "y": 573.4,
+        "w": 141.3,
+        "h": 17
+      },
+      "dayName": {
+        "x": 65,
+        "y": 620.4,
+        "w": 41,
+        "h": 17
+      },
+      "detailValue": {
+        "x": 978.5,
+        "y": 629.4,
+        "w": 13,
+        "h": 24
+      },
+      "detailLabel": {
+        "x": 1016.5,
+        "y": 596.1,
+        "w": 58.1,
+        "h": 14
+      }
+    },
+    "grid": {
+      "cols": "106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px",
+      "rect": {
+        "x": 24,
+        "y": 556.4,
+        "w": 1542,
+        "h": 516,
+        "bottom": 1072.4
+      }
+    },
+    "detailGrid": {
+      "cols": "185.5px 185.5px 185.5px",
+      "rect": {
+        "x": 961.5,
+        "y": 572.4,
+        "w": 580.5,
+        "h": 250,
+        "bottom": 822.4
+      }
+    },
+    "headings": [
+      {
+        "tag": "h1",
+        "text": "Miami weather",
+        "rect": {
+          "x": 23,
+          "y": 103,
+          "w": 1,
+          "h": 1,
+          "bottom": 104
+        },
+        "ink": {
+          "x": 23,
+          "y": 105,
+          "w": 111,
+          "h": 20
+        },
+        "size": "16px",
+        "weight": "400",
+        "lh": "24px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      {
+        "tag": "h2",
+        "text": "HOURLY FORECAST",
+        "rect": {
+          "x": 64,
+          "y": 382.4,
+          "w": 148.6,
+          "h": 20,
+          "bottom": 402.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 383.4,
+          "w": 148.6,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      },
+      {
+        "tag": "h2",
+        "text": "10-DAY FORECAST",
+        "rect": {
+          "x": 48,
+          "y": 572.4,
+          "w": 841.5,
+          "h": 20,
+          "bottom": 592.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 573.4,
+          "w": 141.3,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)",
+        "ff": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+      }
+    ],
+    "ramp": [
+      {
+        "k": "hero",
+        "rect": {
+          "x": 48,
+          "y": 192,
+          "w": 156.4,
+          "h": 86.4,
+          "bottom": 278.4
+        },
+        "ink": {
+          "x": 48,
+          "y": 177,
+          "w": 156.4,
+          "h": 116
+        },
+        "size": "96px",
+        "weight": "300",
+        "lh": "86.4px",
+        "ls": "-3.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "condition",
+        "rect": {
+          "x": 216.4,
+          "y": 234.4,
+          "w": 60.9,
+          "h": 32,
+          "bottom": 266.4
+        },
+        "ink": {
+          "x": 216.4,
+          "y": 235.4,
+          "w": 60.9,
+          "h": 29
+        },
+        "size": "24px",
+        "weight": "500",
+        "lh": "32px",
+        "ls": "normal",
+        "color": "rgba(255, 255, 255, 0.88)"
+      },
+      {
+        "k": "hourlyH",
+        "rect": {
+          "x": 64,
+          "y": 382.4,
+          "w": 148.6,
+          "h": 20,
+          "bottom": 402.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 383.4,
+          "w": 148.6,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "dailyH",
+        "rect": {
+          "x": 48,
+          "y": 572.4,
+          "w": 841.5,
+          "h": 20,
+          "bottom": 592.4
+        },
+        "ink": {
+          "x": 64,
+          "y": 573.4,
+          "w": 141.3,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "600",
+        "lh": "20px",
+        "ls": "0.84px",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "dayName",
+        "rect": {
+          "x": 65,
+          "y": 619.4,
+          "w": 56,
+          "h": 20,
+          "bottom": 639.4
+        },
+        "ink": {
+          "x": 65,
+          "y": 620.4,
+          "w": 41,
+          "h": 17
+        },
+        "size": "14px",
+        "weight": "500",
+        "lh": "20px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "detailLabel",
+        "rect": {
+          "x": 1016.5,
+          "y": 595.1,
+          "w": 58.1,
+          "h": 16.5,
+          "bottom": 611.6
+        },
+        "ink": {
+          "x": 1016.5,
+          "y": 596.1,
+          "w": 58.1,
+          "h": 14
+        },
+        "size": "11px",
+        "weight": "600",
+        "lh": "16.5px",
+        "ls": "0.66px",
+        "color": "rgba(255, 255, 255, 0.88)"
+      },
+      {
+        "k": "detailValue",
+        "rect": {
+          "x": 978.5,
+          "y": 629.4,
+          "w": 151.5,
+          "h": 25,
+          "bottom": 654.4
+        },
+        "ink": {
+          "x": 978.5,
+          "y": 629.4,
+          "w": 13,
+          "h": 24
+        },
+        "size": "20px",
+        "weight": "500",
+        "lh": "25px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "pill",
+        "rect": {
+          "x": 48,
+          "y": 123,
+          "w": 108.2,
+          "h": 34,
+          "bottom": 157
+        },
+        "ink": {
+          "x": 61,
+          "y": 130,
+          "w": 84.2,
+          "h": 20
+        },
+        "size": "14px",
+        "weight": "500",
+        "lh": "20px",
+        "ls": "normal",
+        "color": "rgb(255, 255, 255)"
+      },
+      {
+        "k": "nextHours",
+        "rect": {
+          "x": 1445.6,
+          "y": 384.4,
+          "w": 80.4,
+          "h": 16,
+          "bottom": 400.4
+        },
+        "ink": {
+          "x": 1445.6,
+          "y": 384.4,
+          "w": 80.4,
+          "h": 15
+        },
+        "size": "12px",
+        "weight": "400",
+        "lh": "16px",
+        "ls": "normal",
+        "color": "rgba(255, 255, 255, 0.74)"
+      }
+    ],
+    "count": {
+      "h1": 1,
+      "h2": 2,
+      "h3": 0
+    },
+    "theme": "dark",
+    "texts": {
+      "pill": "Miami",
+      "h1": "Miami weather",
+      "date": "SATURDAY, NOVEMBER 14"
+    },
+    "text": "Weather\n°C\n°F\nMiami weather\nMiami\nSATURDAY, NOVEMBER 14\nUpdated 2 min ago\n17°\nClear\nH:22°\nL:13°\nFeels like 15°\n49%\n9 km/h\nHOURLY FORECAST\nNext 24 hours\nNow\n17°\n0%\n6pm\n17°\n0%\n7pm\n16°\n0%\n8pm\n16°\n0%\n9pm\n15°\n0%\n10pm\n14°\n0%\n11pm\n13°\n0%\n12am\n13°\n0%\n1am\n13°\n1%\n2am\n13°\n1%\n3am\n13°\n1%\n4am\n13°\n2%\n5am\n13°\n1%\n6am\n13°\n0%\n7am\n13°\n0%\n8am\n15°\n0%\n9am\n18°\n0%\n10am\n21°\n0%\n11am\n21°\n0%\n12pm\n23°\n0%\n1pm\n25°\n0%\n2pm\n24°\n0%\n"
+  }
+}

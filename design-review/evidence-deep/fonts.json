@@ -1,0 +1,14 @@
+{
+  "method": "CDP CSS.getPlatformFontsForNode on rendered nodes",
+  "expectedStack": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+  "host": "Ubuntu (no SF Pro / Segoe UI / Roboto / Helvetica Neue installed)",
+  "rendered": {
+    "hero 96px": "LiberationSans",
+    "condition 24px": "LiberationSans",
+    "section label 14/600": "LiberationSans-Bold",
+    "city pill 14/500": "LiberationSans"
+  },
+  "bundledFonts": 0,
+  "atFontFace": 0,
+  "verdict": "The app renders in Liberation Sans (Arial metric clone), not an Apple typeface."
+}

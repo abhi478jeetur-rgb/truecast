@@ -1,0 +1,81 @@
+{
+  "1000x700": {
+    "vp": [
+      1000,
+      700
+    ],
+    "content": 1112,
+    "detailTop": 556,
+    "cardRows": [
+      {
+        "top": 572,
+        "n": 2,
+        "w": 159
+      },
+      {
+        "top": 703,
+        "n": 2,
+        "w": 159
+      },
+      {
+        "top": 819,
+        "n": 2,
+        "w": 159
+      }
+    ],
+    "cardCount": 6,
+    "detailCols": "159.25px 159.25px",
+    "mainCols": "56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px 56.5px"
+  },
+  "800x560": {
+    "vp": [
+      800,
+      560
+    ],
+    "content": 1550,
+    "detailTop": 1096,
+    "cardRows": [
+      {
+        "top": 1112,
+        "n": 2,
+        "w": 341
+      },
+      {
+        "top": 1243,
+        "n": 2,
+        "w": 341
+      },
+      {
+        "top": 1359,
+        "n": 2,
+        "w": 341
+      }
+    ],
+    "cardCount": 6,
+    "detailCols": "341px 341px",
+    "mainCols": "742px"
+  },
+  "1600x1000": {
+    "vp": [
+      1600,
+      1000
+    ],
+    "content": 1112,
+    "detailTop": 556,
+    "cardRows": [
+      {
+        "top": 572,
+        "n": 3,
+        "w": 186
+      },
+      {
+        "top": 703,
+        "n": 3,
+        "w": 186
+      }
+    ],
+    "cardCount": 6,
+    "detailCols": "185.5px 185.5px 185.5px",
+    "mainCols": "106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px 106.5px"
+  }
+}

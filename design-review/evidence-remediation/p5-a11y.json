@@ -1,0 +1,192 @@
+{
+  "at": "2026-11-14T23:13:03.648Z",
+  "heads": {
+    "h1": [
+      {
+        "text": "San Francisco weather",
+        "sr": true
+      }
+    ],
+    "h2": [
+      "HOURLY FORECAST",
+      "10-DAY FORECAST"
+    ],
+    "high": "High 17 degrees",
+    "low": "Low 11 degrees",
+    "dayHighs": 10,
+    "dayLows": 10
+  },
+  "stops": [
+    {
+      "tag": "BODY",
+      "label": null,
+      "text": "Weather\n°C\n°F\nSan Franci",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "3px",
+      "outlineStyle": "none",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Close window",
+      "text": "",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Minimize window",
+      "text": "",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Maximize window",
+      "text": "",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Celsius, wind in kilometres per hour",
+      "text": "°C",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Fahrenheit, wind in miles per hour",
+      "text": "°F",
+      "outlineColor": "rgba(255, 255, 255, 1)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Change city, currently San Francisco",
+      "text": "San Francisco",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Add San Francisco to favorites",
+      "text": "",
+      "outlineColor": "rgba(255, 255, 255, 1)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "DIV",
+      "label": null,
+      "text": "Now\n16°\n1%\n4pm\n15°\n1%\n5p",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": true
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Close window",
+      "text": "",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Minimize window",
+      "text": "",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Maximize window",
+      "text": "",
+      "outlineColor": "rgb(255, 255, 255)",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "scrollable": false
+    }
+  ],
+  "pill": {
+    "x": 129,
+    "y": 140,
+    "left": 48,
+    "top": 123,
+    "w": 162,
+    "h": 34
+  },
+  "checks": [
+    {
+      "name": "one h1 in the ready state",
+      "pass": true,
+      "detail": [
+        {
+          "text": "San Francisco weather",
+          "sr": true
+        }
+      ]
+    },
+    {
+      "name": "h1 names the city",
+      "pass": true,
+      "detail": "San Francisco weather"
+    },
+    {
+      "name": "header high is labelled",
+      "pass": true,
+      "detail": "High 17 degrees"
+    },
+    {
+      "name": "header low is labelled",
+      "pass": true,
+      "detail": "Low 11 degrees"
+    },
+    {
+      "name": "ten day rows labelled",
+      "pass": true,
+      "detail": "10/10"
+    },
+    {
+      "name": "scroller is focusable",
+      "pass": true,
+      "detail": "DIV"
+    },
+    {
+      "name": "no UA orange focus ring",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "scroller uses the token ring",
+      "pass": true,
+      "detail": "rgb(255, 255, 255)"
+    },
+    {
+      "name": "pill hover changes its fill",
+      "pass": true,
+      "detail": {
+        "bg": "rgba(255, 255, 255, 0.22)",
+        "transition": "0.15s"
+      }
+    }
+  ]
+}

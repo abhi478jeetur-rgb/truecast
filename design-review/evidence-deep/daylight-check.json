@@ -1,0 +1,76 @@
+{
+  "sydney": {
+    "facts": {
+      "city": "Sydney",
+      "head": [
+        "Weather",
+        "Sydney",
+        "FRIDAY, NOVEMBER 13",
+        "29°",
+        "Partly cloudy",
+        "H:29°",
+        "L:31°",
+        "Partly cloudy",
+        "💧 51%",
+        "🌬 17 km/h",
+        "HOURLY FORECAST",
+        "Next 24 hours",
+        "Now",
+        "15°"
+      ],
+      "icons": [
+        {
+          "l": "Now",
+          "i": "lucide lucide-moon"
+        },
+        {
+          "l": "1am",
+          "i": "lucide lucide-sun"
+        },
+        {
+          "l": "2am",
+          "i": "lucide lucide-cloud-sun"
+        },
+        {
+          "l": "3am",
+          "i": "lucide lucide-cloud-rain"
+        },
+        {
+          "l": "4am",
+          "i": "lucide lucide-cloud-sun"
+        },
+        {
+          "l": "5am",
+          "i": "lucide lucide-cloud"
+        }
+      ]
+    },
+    "theme": {
+      "color": "rgb(255, 255, 255)",
+      "backgroundImage": "linear-gradient(rgb(30, 41, 59) 0%, rgb(51, 65, 85) 100%)",
+      "bgColor": "rgba(0, 0, 0, 0)"
+    }
+  },
+  "longName": {
+    "pill": "Llanfairpwllgwyngyll",
+    "pillWidth": 172,
+    "scrollW": 170,
+    "clientW": 170,
+    "overflowsViewport": false,
+    "wrap": 34
+  },
+  "modal800": {
+    "panel": {
+      "x": 176,
+      "y": 45,
+      "w": 448,
+      "h": 470
+    },
+    "list": {
+      "h": 240,
+      "scrollH": 320
+    },
+    "innerScroll": "auto",
+    "modalFits": true
+  }
+}

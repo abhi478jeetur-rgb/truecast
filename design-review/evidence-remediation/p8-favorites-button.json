@@ -1,0 +1,51 @@
+{
+  "at": "2026-11-14T23:17:58.001Z",
+  "btn": {
+    "label": "Favorites, 2 cities",
+    "text": "2",
+    "w": 42,
+    "h": 28,
+    "x": 883,
+    "y": 20,
+    "color": "rgba(255, 255, 255, 0.88)",
+    "size": 11
+  },
+  "sheet": "Search city | 2 favorite cities | FAVORITES | Tokyo | Tokyo, Japan | Paris | Île-de-France Region, France | Cancel",
+  "empty": {
+    "label": "Favorites, none saved",
+    "text": "0"
+  },
+  "checks": [
+    {
+      "name": "a named Favorites control exists",
+      "pass": true,
+      "detail": {
+        "label": "Favorites, 2 cities",
+        "text": "2"
+      }
+    },
+    {
+      "name": "it reports the saved count",
+      "pass": true,
+      "detail": "Favorites, 2 cities"
+    },
+    {
+      "name": "hit target ≥ 24 px",
+      "pass": true,
+      "detail": "42×28"
+    },
+    {
+      "name": "clicking it opens the sheet on favourites",
+      "pass": true,
+      "detail": "Search city | 2 favorite cities | FAVORITES | Tokyo | Tokyo, Japan | Paris | Île-de-France Region, France | Cancel"
+    },
+    {
+      "name": "empty state is honest",
+      "pass": true,
+      "detail": {
+        "label": "Favorites, none saved",
+        "text": "0"
+      }
+    }
+  ]
+}

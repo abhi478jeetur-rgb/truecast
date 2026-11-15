@@ -1,0 +1,81 @@
+{
+  "at": "2026-11-14T23:00:13.836Z",
+  "runs": [
+    {
+      "label": "reload-restores-miami",
+      "requests": 5,
+      "forecast": 1,
+      "geo": 0,
+      "uniqueForecast": 1,
+      "state": {
+        "pill": "Miami",
+        "hero": "17°",
+        "h1": "Miami weather",
+        "date": "SATURDAY, NOVEMBER 14",
+        "stored": "{\"id\":\"4164138\",\"name\":\"Miami\",\"country\":\"United States\",\"admin1\":\"Florida\",\"latitude\":25.77427,\"longitude\":-80.19366}",
+        "updated": "Updated just now",
+        "cond": "Mainly clear"
+      },
+      "api": {
+        "temp": 17,
+        "tz": "America/New_York",
+        "local": "2026-11-14T18:00",
+        "hi": 21.9,
+        "lo": 13,
+        "isDay": 0
+      }
+    },
+    {
+      "label": "invalid-json-fallback",
+      "requests": 5,
+      "forecast": 1,
+      "geo": 0,
+      "uniqueForecast": 1,
+      "state": {
+        "pill": "San Francisco",
+        "hero": "16°",
+        "h1": "San Francisco weather",
+        "date": "SATURDAY, NOVEMBER 14",
+        "stored": "{\"id\":\"default\",\"name\":\"San Francisco\",\"country\":\"United States\",\"admin1\":\"California\",\"latitude\":37.7749,\"longitude\":-122.4194}",
+        "updated": "Updated just now",
+        "cond": "Overcast"
+      },
+      "api": {
+        "temp": 16.3,
+        "tz": "America/Los_Angeles",
+        "local": "2026-11-14T15:00",
+        "hi": 16.7,
+        "lo": 11.2,
+        "isDay": 1
+      }
+    },
+    {
+      "label": "restore-miami",
+      "requests": 5,
+      "forecast": 1,
+      "geo": 0,
+      "uniqueForecast": 1,
+      "state": {
+        "pill": "Miami",
+        "hero": "17°",
+        "h1": "Miami weather",
+        "date": "SATURDAY, NOVEMBER 14",
+        "stored": "{\"id\":\"4164138\",\"name\":\"Miami\",\"country\":\"United States\",\"admin1\":\"Florida\",\"latitude\":25.77427,\"longitude\":-80.19366}",
+        "updated": "Updated just now",
+        "cond": "Mainly clear"
+      },
+      "api": {
+        "temp": 17,
+        "tz": "America/New_York",
+        "local": "2026-11-14T18:00",
+        "hi": 21.9,
+        "lo": 13,
+        "isDay": 0
+      }
+    }
+  ],
+  "before": {
+    "pill": "Miami",
+    "hero": "17°"
+  }
+}

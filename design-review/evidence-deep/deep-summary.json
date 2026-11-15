@@ -1,0 +1,354 @@
+{
+  "capturedAt": "2026-11-13T05:04:02.190Z",
+  "zoomFacts": {
+    "heroFontAfterRoot200": "96px",
+    "note": "px-based type does not respond to root font-size"
+  },
+  "searchKeys": {
+    "focusBefore": {
+      "tag": "INPUT",
+      "text": "",
+      "placeholder": "Enter city name"
+    },
+    "afterEnter": {
+      "modalStillOpen": true,
+      "city": ""
+    },
+    "afterEscape": {
+      "modalStillOpen": true
+    }
+  },
+  "tabTrail": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 212,
+      "h": 16
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sanaa\nAmanat Alasimah, Yemen",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 259,
+      "h": 64
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sanya\nHainan, China",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 323,
+      "h": 64
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Sanhe\nHebei, China",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 387,
+      "h": 64
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Santos\nSão Paulo, Brazil",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 435,
+      "h": 64
+    },
+    {
+      "tag": "BUTTON",
+      "text": "San Jose\nCalifornia, United St",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 435,
+      "h": 64
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Cancel",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 528,
+      "h": 44
+    },
+    {
+      "tag": "DIV",
+      "text": "Now\n13°\n1am\n13°\n2am\n13°\n3am\n12",
+      "placeholder": null,
+      "insideModal": true,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 470,
+      "h": 133
+    }
+  ],
+  "iconTruth": {
+    "city": "Tokyo",
+    "cards": [
+      {
+        "label": "Now",
+        "icon": "lucide lucide-moon"
+      },
+      {
+        "label": "1am",
+        "icon": "lucide lucide-sun"
+      },
+      {
+        "label": "2am",
+        "icon": "lucide lucide-sun"
+      },
+      {
+        "label": "3am",
+        "icon": "lucide lucide-sun"
+      },
+      {
+        "label": "4am",
+        "icon": "lucide lucide-sun"
+      },
+      {
+        "label": "5am",
+        "icon": "lucide lucide-sun"
+      },
+      {
+        "label": "6am",
+        "icon": "lucide lucide-sun"
+      },
+      {
+        "label": "7am",
+        "icon": "lucide lucide-sun"
+      }
+    ],
+    "localTime": "Fri Nov 13 2026 00:03:44 GMT-0500 (Eastern Standard Time)",
+    "localHour": 0
+  },
+  "dailyTruth": {
+    "label": "10-DAY FORECAST",
+    "rows": 7,
+    "days": [
+      {
+        "day": "Wed",
+        "max": "22°",
+        "min": "11°"
+      },
+      {
+        "day": "Thu",
+        "max": "15°",
+        "min": "10°"
+      },
+      {
+        "day": "Fri",
+        "max": "16°",
+        "min": "10°"
+      },
+      {
+        "day": "Sat",
+        "max": "18°",
+        "min": "12°"
+      },
+      {
+        "day": "Sun",
+        "max": "15°",
+        "min": "12°"
+      },
+      {
+        "day": "Mon",
+        "max": "15°",
+        "min": "13°"
+      },
+      {
+        "day": "Tue",
+        "max": "16°",
+        "min": "12°"
+      }
+    ]
+  },
+  "persistence": {
+    "city": "San Francisco"
+  },
+  "offlineText": "Weather\n\nUnable to load weather\n\nNetwork Error",
+  "loadingText": "Weather\n\nLoading weather…",
+  "hoverCloseChanged": true,
+  "hoverRowChanged": true,
+  "reduced": {
+    "prefersReduce": true,
+    "elementsStillAnimating": 42,
+    "sample": [
+      {
+        "cls": "w-8 h-8 rounded-full hover:bg-white/20 transition flex items",
+        "td": "0.15s",
+        "an": "none"
+      },
+      {
+        "cls": "w-8 h-8 rounded-full hover:bg-white/20 transition flex items",
+        "td": "0.15s",
+        "an": "none"
+      },
+      {
+        "cls": "w-8 h-8 rounded-full hover:bg-red-500/90 transition flex ite",
+        "td": "0.15s",
+        "an": "none"
+      },
+      {
+        "cls": "app-region-no-drag flex items-center gap-2 px-3 py-1.5 round",
+        "td": "0.15s",
+        "an": "none"
+      },
+      {
+        "cls": "flex flex-col items-center gap-3 w-16 min-w-[64px] px-2 py-3",
+        "td": "0.15s",
+        "an": "none"
+      }
+    ]
+  },
+  "axSummary": {
+    "roles": {
+      "RootWebArea": 1,
+      "none": 226,
+      "generic": 14,
+      "button": 4,
+      "StaticText": 141,
+      "InlineTextBox": 141,
+      "main": 1,
+      "heading": 2
+    },
+    "unnamed": [],
+    "headings": [
+      {
+        "level": 3,
+        "name": "HOURLY FORECAST"
+      },
+      {
+        "level": 3,
+        "name": "10-DAY FORECAST"
+      }
+    ]
+  },
+  "pageTabs": [
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "title": "Minimize",
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 4
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "title": "Maximize",
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 4
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "title": "Close",
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 4
+    },
+    {
+      "tag": "BUTTON",
+      "text": "San Francisco",
+      "title": null,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 120
+    },
+    {
+      "tag": "DIV",
+      "text": "Now\n13°\n1am\n13°\n2am\n13°\n3am\n12",
+      "title": null,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 470
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "title": "Minimize",
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 4
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "title": "Maximize",
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 4
+    },
+    {
+      "tag": "BUTTON",
+      "text": "",
+      "title": "Close",
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 4
+    },
+    {
+      "tag": "BUTTON",
+      "text": "San Francisco",
+      "title": null,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 120
+    },
+    {
+      "tag": "DIV",
+      "text": "Now\n13°\n1am\n13°\n2am\n13°\n3am\n12",
+      "title": null,
+      "outline": "rgb(229, 151, 0) auto 1px",
+      "y": 470
+    }
+  ],
+  "uiData": {
+    "city": "",
+    "head": [
+      "Weather",
+      "San Francisco",
+      "FRIDAY, NOVEMBER 13",
+      "16°",
+      "Light drizzle",
+      "H:16°",
+      "L:15°",
+      "Light drizzle",
+      "💧 82%",
+      "🌬 12 km/h"
+    ],
+    "hourlyIcons": []
+  },
+  "apiCheck": {
+    "sf": {
+      "currentTemp": 16,
+      "apparent": 15.2,
+      "todayMax": 21.7,
+      "todayMin": 10.6,
+      "dailyDaysReturned": 7,
+      "hourlyHoursReturned": 168,
+      "firstDays": [
+        "2026-11-12",
+        "2026-11-13",
+        "2026-11-14"
+      ],
+      "timezone": "America/Los_Angeles"
+    },
+    "tokyo": {
+      "currentTemp": 19.9,
+      "todayMax": 19.9,
+      "todayMin": 8.1,
+      "dailyDaysReturned": 7,
+      "timezone": "Asia/Tokyo",
+      "firstHourTimes": [
+        "2026-11-13T00:00",
+        "2026-11-13T01:00",
+        "2026-11-13T02:00",
+        "2026-11-13T03:00"
+      ],
+      "hourOfDayNow": "2026-11-13T14:00"
+    }
+  }
+}

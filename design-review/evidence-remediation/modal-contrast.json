@@ -1,0 +1,166 @@
+{
+  "theme": {
+    "theme": "light",
+    "focusRing": "#0b57d0",
+    "cancelOutline": "oklch(0.446 0.043 257.281)"
+  },
+  "rows": [
+    {
+      "name": "dialog title",
+      "color": "oklch(0.208 0.042 265.755)",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "pseudo": false,
+      "rect": {
+        "x": 345,
+        "y": 50,
+        "w": 98,
+        "h": 28
+      },
+      "bg": {
+        "r": 242,
+        "g": 242,
+        "b": 243
+      },
+      "effective": {
+        "r": 15,
+        "g": 23,
+        "b": 43,
+        "a": 1
+      },
+      "contrast": 15.94,
+      "required": 3
+    },
+    {
+      "name": "input text",
+      "color": "oklch(0.208 0.042 265.755)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "pseudo": false,
+      "rect": {
+        "x": 293,
+        "y": 113,
+        "w": 414,
+        "h": 46
+      },
+      "bg": {
+        "r": 246,
+        "g": 247,
+        "b": 248
+      },
+      "effective": {
+        "r": 15,
+        "g": 23,
+        "b": 43,
+        "a": 1
+      },
+      "contrast": 16.62,
+      "required": 4.5
+    },
+    {
+      "name": "input placeholder",
+      "color": "oklch(0.446 0.043 257.281)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "pseudo": true,
+      "rect": {
+        "x": 293,
+        "y": 113,
+        "w": 414,
+        "h": 46
+      },
+      "bg": {
+        "r": 246,
+        "g": 247,
+        "b": 248
+      },
+      "effective": {
+        "r": 69,
+        "g": 85,
+        "b": 108,
+        "a": 1
+      },
+      "contrast": 7.07,
+      "required": 4.5
+    },
+    {
+      "name": "result name",
+      "color": "oklch(0.279 0.041 260.031)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "pseudo": false,
+      "rect": {
+        "x": 293,
+        "y": 199,
+        "w": 410,
+        "h": 64
+      },
+      "bg": {
+        "r": 242,
+        "g": 242,
+        "b": 243
+      },
+      "effective": {
+        "r": 29,
+        "g": 41,
+        "b": 61,
+        "a": 1
+      },
+      "contrast": 13.06,
+      "required": 4.5
+    },
+    {
+      "name": "result subtitle",
+      "color": "oklch(0.446 0.043 257.281)",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "pseudo": false,
+      "rect": {
+        "x": 309,
+        "y": 235,
+        "w": 92,
+        "h": 16
+      },
+      "bg": {
+        "r": 242,
+        "g": 242,
+        "b": 243
+      },
+      "effective": {
+        "r": 69,
+        "g": 85,
+        "b": 108,
+        "a": 1
+      },
+      "contrast": 6.78,
+      "required": 4.5
+    },
+    {
+      "name": "cancel",
+      "color": "oklch(0.446 0.043 257.281)",
+      "fontSize": "16px",
+      "fontWeight": "500",
+      "pseudo": false,
+      "rect": {
+        "x": 301,
+        "y": 612,
+        "w": 398,
+        "h": 44
+      },
+      "bg": {
+        "r": 252,
+        "g": 252,
+        "b": 252
+      },
+      "effective": {
+        "r": 69,
+        "g": 85,
+        "b": 108,
+        "a": 1
+      },
+      "contrast": 7.39,
+      "required": 4.5
+    }
+  ],
+  "source": "g07-modal.png / g07-modal-bg.png"
+}

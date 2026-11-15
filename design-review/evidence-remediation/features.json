@@ -1,0 +1,346 @@
+{
+  "initial": {
+    "pill": "Miami",
+    "hero": "17°",
+    "feels": "Feels like 15°",
+    "high": "H:22°",
+    "low": "L:13°",
+    "wind": "9 km/h",
+    "day": [
+      "Today | 13° | 22° | —"
+    ],
+    "hourly": [
+      "Now | 17° | 0%",
+      "7pm | 16° | 0%"
+    ],
+    "cards": [
+      "UV INDEX | 0 | Low",
+      "WIND | 9 km/h | From NNW",
+      "HUMIDITY | 50%",
+      "VISIBILITY | 39 km",
+      "PRESSURE | 1016 hPa",
+      "SUNRISE | 6:38 AM | Sunset 5:32 PM"
+    ],
+    "celsiusPressed": "true",
+    "fahrenheitPressed": "false",
+    "updating": false
+  },
+  "fahrenheit": {
+    "pill": "Miami",
+    "hero": "63°",
+    "feels": "Feels like 59°",
+    "high": "H:71°",
+    "low": "L:55°",
+    "wind": "6 mph",
+    "day": [
+      "Today | 55° | 71° | —"
+    ],
+    "hourly": [
+      "Now | 63° | 0%",
+      "7pm | 61° | 0%"
+    ],
+    "cards": [
+      "UV INDEX | 0 | Low",
+      "WIND | 6 mph | From NNW",
+      "HUMIDITY | 50%",
+      "VISIBILITY | 24 mi",
+      "PRESSURE | 1016 hPa",
+      "SUNRISE | 6:38 AM | Sunset 5:32 PM"
+    ],
+    "celsiusPressed": "false",
+    "fahrenheitPressed": "true",
+    "updating": false
+  },
+  "fahrenheitApi": {
+    "temp": 62.6,
+    "wind": 5.8,
+    "max": 71.4,
+    "min": 55.4,
+    "apparent": 58.6
+  },
+  "fahrenheitRequests": 1,
+  "celsius": {
+    "pill": "Miami",
+    "hero": "17°",
+    "feels": "Feels like 15°",
+    "high": "H:22°",
+    "low": "L:13°",
+    "wind": "9 km/h",
+    "day": [
+      "Today | 13° | 22° | —"
+    ],
+    "hourly": [
+      "Now | 17° | 0%",
+      "7pm | 16° | 0%"
+    ],
+    "cards": [
+      "UV INDEX | 0 | Low",
+      "WIND | 9 km/h | From NNW",
+      "HUMIDITY | 50%",
+      "VISIBILITY | 39 km",
+      "PRESSURE | 1016 hPa",
+      "SUNRISE | 6:38 AM | Sunset 5:32 PM"
+    ],
+    "celsiusPressed": "true",
+    "fahrenheitPressed": "false",
+    "updating": false
+  },
+  "favoritesContrast": [
+    {
+      "name": "favorite name",
+      "color": "oklch(0.279 0.041 260.031)",
+      "size": 16,
+      "x": 309,
+      "y": 227,
+      "w": 122,
+      "h": 24,
+      "bg": {
+        "r": 242,
+        "g": 243,
+        "b": 243
+      },
+      "contrast": 13.15,
+      "required": 4.5
+    },
+    {
+      "name": "favorite subtitle",
+      "color": "oklch(0.446 0.043 257.281)",
+      "size": 12,
+      "x": 309,
+      "y": 251,
+      "w": 122,
+      "h": 16,
+      "bg": {
+        "r": 242,
+        "g": 243,
+        "b": 243
+      },
+      "contrast": 6.82,
+      "required": 4.5
+    }
+  ],
+  "unitsContrast": [
+    {
+      "name": "unit inactive",
+      "color": "rgba(255, 255, 255, 0.74)",
+      "size": 12,
+      "x": 915,
+      "y": 8,
+      "w": 32,
+      "h": 24,
+      "bg": {
+        "r": 9,
+        "g": 20,
+        "b": 43
+      },
+      "contrast": 10.26,
+      "required": 4.5
+    },
+    {
+      "name": "unit active",
+      "color": "rgb(255, 255, 255)",
+      "size": 12,
+      "x": 949,
+      "y": 8,
+      "w": 32,
+      "h": 24,
+      "bg": {
+        "r": 48,
+        "g": 57,
+        "b": 76
+      },
+      "contrast": 11.57,
+      "required": 4.5
+    },
+    {
+      "name": "star",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "size": 16,
+      "x": 164,
+      "y": 122,
+      "w": 36,
+      "h": 36,
+      "bg": {
+        "r": 46,
+        "g": 61,
+        "b": 85
+      },
+      "contrast": 8.93,
+      "required": 4.5
+    }
+  ],
+  "stored": {
+    "units": "{\"temperature\":\"fahrenheit\",\"windSpeed\":\"mph\"}",
+    "favorites": "[{\"id\":\"4164138\",\"name\":\"Miami\",\"country\":\"United States\",\"admin1\":\"Florida\",\"latitude\":25.77427,\"longitude\":-80.19366}]"
+  },
+  "afterReload": {
+    "pill": "Miami",
+    "hero": "63°",
+    "feels": "Feels like 59°",
+    "high": "H:71°",
+    "low": "L:55°",
+    "wind": "6 mph",
+    "day": [
+      "Today | 55° | 71° | —"
+    ],
+    "hourly": [
+      "Now | 63° | 0%",
+      "7pm | 61° | 0%"
+    ],
+    "cards": [
+      "UV INDEX | 0 | Low",
+      "WIND | 6 mph | From NNW",
+      "HUMIDITY | 50%",
+      "VISIBILITY | 24 mi",
+      "PRESSURE | 1016 hPa",
+      "SUNRISE | 6:38 AM | Sunset 5:32 PM"
+    ],
+    "celsiusPressed": "false",
+    "fahrenheitPressed": "true",
+    "updating": false
+  },
+  "assertions": [
+    {
+      "name": "units control present",
+      "pass": true,
+      "detail": "true"
+    },
+    {
+      "name": "city switched to Miami",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "°F hero matches API",
+      "pass": true,
+      "detail": "63°"
+    },
+    {
+      "name": "°F feels-like matches API",
+      "pass": true,
+      "detail": "Feels like 59°"
+    },
+    {
+      "name": "°F high/low match API",
+      "pass": true,
+      "detail": "H:71° L:55°"
+    },
+    {
+      "name": "°F wind is mph and matches API",
+      "pass": true,
+      "detail": "6 mph"
+    },
+    {
+      "name": "°F hourly Now matches API",
+      "pass": true,
+      "detail": "Now | 63° | 0%"
+    },
+    {
+      "name": "°F daily row matches API",
+      "pass": true,
+      "detail": "Today | 55° | 71° | —"
+    },
+    {
+      "name": "visibility switches to miles",
+      "pass": true,
+      "detail": "[\"UV INDEX | 0 | Low\",\"WIND | 6 mph | From NNW\",\"HUMIDITY | 50%\",\"VISIBILITY | 24 mi\",\"PRESSURE | 1016 hPa\",\"SUNRISE | 6:38 AM | Sunset 5:32 PM\"]"
+    },
+    {
+      "name": "city not reset by unit change",
+      "pass": true,
+      "detail": "Miami"
+    },
+    {
+      "name": "exactly one forecast request on unit change",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "°F pressed state",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "°C hero matches API after switching back",
+      "pass": true,
+      "detail": "17°"
+    },
+    {
+      "name": "°C wind matches API after switching back",
+      "pass": true,
+      "detail": "9 km/h"
+    },
+    {
+      "name": "visibility back to kilometres",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "star becomes pressed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "star hit target ≥ 24 px",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unit buttons hit target ≥ 24 px",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "favourites section lists Miami with a remove control",
+      "pass": true,
+      "detail": "{\"heading\":true,\"rows\":1,\"remove\":true}"
+    },
+    {
+      "name": "favourite selects the city",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "units written to storage",
+      "pass": true,
+      "detail": "{\"temperature\":\"fahrenheit\",\"windSpeed\":\"mph\"}"
+    },
+    {
+      "name": "favourites written to storage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "°F survives a reload",
+      "pass": true,
+      "detail": "true"
+    },
+    {
+      "name": "readings are in °F and mph after reload",
+      "pass": true,
+      "detail": "63° / 6 mph / Miami"
+    },
+    {
+      "name": "visibility is in miles after reload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "favourite survives a reload",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "favourite removed and hint shown",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "storage updated after removal",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "passed": 28,
+  "total": 28
+}

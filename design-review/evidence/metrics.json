@@ -1,0 +1,469 @@
+{
+  "capturedAt": "2026-11-13T04:34:23.498Z",
+  "resultsText": [
+    "LondonEngland, United Kingdom",
+    "LondonOntario, Canada",
+    "LondonOhio, United States",
+    "LondonKentucky, United States",
+    "LondonArkansas, United States"
+  ],
+  "picked": "LondonEngland, United Kingdom",
+  "focus1": {
+    "tag": "DIV",
+    "text": "Now\n13°\n1am\n13°\n2am\n13°\n3am\n12°\n4am\n12°\n",
+    "outline": "rgb(229, 151, 0) auto 1px",
+    "boxShadow": "none",
+    "border": "0px solid rgb(255, 255, 255)"
+  },
+  "focus4": {
+    "tag": "BUTTON",
+    "text": "",
+    "outline": "rgb(229, 151, 0) auto 1px",
+    "boxShadow": "none",
+    "border": "0px solid rgb(255, 255, 255)"
+  },
+  "misc": {
+    "activeElement": {
+      "tag": "BUTTON",
+      "text": ""
+    },
+    "prefersReducedMotion": false,
+    "transitionsFound": 42,
+    "animationsFound": 0,
+    "tinyText": 0,
+    "hardcodedWhiteText": 94,
+    "emojiInText": 2
+  },
+  "defaultState": {
+    "viewport": {
+      "w": 1000,
+      "h": 700,
+      "dpr": 1,
+      "scrollbarWidth": 0
+    },
+    "title": "weather-app",
+    "bodyText": "Weather\nSan Francisco\nTHURSDAY, NOVEMBER 12\n16°\nOvercast\nH:16°\nL:14°\nOvercast\n💧 76%\n🌬 17 km/h\nHOURLY FORECAST\nNext 24 hours\nNow\n13°\n1am\n13°\n2am\n13°\n3am\n12°\n4am\n12°\n5am\n12°\n6am\n11°\n7am\n11°\n8am\n13°\n9am\n16°\n10am\n17°\n11am\n19°\nNoon\n21°\n1pm\n21°\n2pm\n21°\n3pm\n20°\n4pm\n19°\n5pm\n18°\n6pm\n17°\n7pm\n16°\n8pm\n16°\n9pm\n17°\n10pm\n16°\n11pm\n15°\n10-DAY FORECAST\nWed\n22°\n11°\nThu\n15°\n10°\nFri\n16°\n10°\nSat\n18°\n12°\nSun\n15°\n12°\nMon\n15°\n13°\nTue\n16°\n12°\nUV INDEX\n0\nWIND\n17 km/h\nHUMIDITY\n76%\nVISIBILITY\n18 km\nPRESSURE\n1006.9 hPa\nSUNRISE / SUNSET\n06:46 AM / 05:00 PM",
+    "cssVars": {
+      "--bg-gradient": "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)",
+      "--text-on-bg": "#ffffff"
+    },
+    "fonts": [],
+    "typography": {
+      "temp": {
+        "text": "16°",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "96px",
+        "fontWeight": "300",
+        "lineHeight": "144px",
+        "letterSpacing": "-2.4px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 48,
+          "y": 186,
+          "w": 138,
+          "h": 144
+        }
+      },
+      "cityButton": {
+        "text": "San Francisco",
+        "color": "oklch(0.208 0.042 265.755)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "padding": "6px 12px",
+        "margin": "0px",
+        "borderRadius": "3.35544e+07px",
+        "box": {
+          "x": 48,
+          "y": 120,
+          "w": 137,
+          "h": 34
+        }
+      },
+      "sectionLabel": {
+        "text": "HOURLY FORECAST",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.35px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 56,
+          "y": 434,
+          "w": 144,
+          "h": 20
+        }
+      },
+      "secondary": {
+        "text": "H:16°",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 48,
+          "y": 338,
+          "w": 35,
+          "h": 20
+        }
+      },
+      "dayRow": {
+        "text": "Wed",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 65,
+          "y": 668,
+          "w": 80,
+          "h": 20
+        }
+      }
+    },
+    "buttons": [
+      {
+        "tag": "button",
+        "text": "",
+        "ariaLabel": null,
+        "title": "Minimize",
+        "w": 32,
+        "h": 32,
+        "top": 4,
+        "classes": "w-8 h-8 rounded-full hover:bg-white/20 transition flex items-center justify-center text-slate-500"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "ariaLabel": null,
+        "title": "Maximize",
+        "w": 32,
+        "h": 32,
+        "top": 4,
+        "classes": "w-8 h-8 rounded-full hover:bg-white/20 transition flex items-center justify-center text-slate-500"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "ariaLabel": null,
+        "title": "Close",
+        "w": 32,
+        "h": 32,
+        "top": 4,
+        "classes": "w-8 h-8 rounded-full hover:bg-red-500/90 transition flex items-center justify-center text-dynamic"
+      },
+      {
+        "tag": "button",
+        "text": "San Francisco",
+        "ariaLabel": null,
+        "title": null,
+        "w": 137,
+        "h": 34,
+        "top": 120,
+        "classes": "app-region-no-drag flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/55 backdrop-blur-md border border-white/60 "
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h3",
+        "text": "HOURLY FORECAST",
+        "fontSize": "14px"
+      },
+      {
+        "tag": "h3",
+        "text": "10-DAY FORECAST",
+        "fontSize": "14px"
+      }
+    ],
+    "iconOnlyButtons": 3,
+    "iconOnlyWithoutLabel": 0,
+    "scrollables": [
+      {
+        "tag": "div",
+        "cls": "fixed inset-0 w-full h-full overflow-hidden font-sans selection:bg-blue-500/30",
+        "scrollW": 1000,
+        "clientW": 1000,
+        "scrollH": 740,
+        "clientH": 700,
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      {
+        "tag": "div",
+        "cls": "relative z-10 h-full w-full overflow-y-auto overflow-x-hidden no-scrollbar scrollbar-hide",
+        "scrollW": 985,
+        "clientW": 985,
+        "scrollH": 1345,
+        "clientH": 700,
+        "overflowX": "hidden",
+        "overflowY": "auto"
+      },
+      {
+        "tag": "div",
+        "cls": "flex gap-3 overflow-x-auto pb-4 no-scrollbar scrollbar-hide",
+        "scrollW": 1812,
+        "clientW": 873,
+        "scrollH": 118,
+        "clientH": 118,
+        "overflowX": "auto",
+        "overflowY": "auto"
+      }
+    ],
+    "landmarks": {
+      "header": false,
+      "main": true,
+      "nav": false,
+      "footer": false,
+      "sections": 0
+    },
+    "ariaLive": 0,
+    "imagesWithoutAlt": 0,
+    "totalButtons": 4,
+    "lang": "en"
+  },
+  "londonState": {
+    "viewport": {
+      "w": 1000,
+      "h": 700,
+      "dpr": 1,
+      "scrollbarWidth": 0
+    },
+    "title": "weather-app",
+    "bodyText": "Weather\nLondon\nTHURSDAY, NOVEMBER 12\n3°\nClear\nH:3°\nL:0°\nClear\n💧 73%\n🌬 9 km/h\nHOURLY FORECAST\nNext 24 hours\nNow\n13°\n1am\n13°\n2am\n13°\n3am\n12°\n4am\n12°\n5am\n12°\n6am\n11°\n7am\n11°\n8am\n13°\n9am\n16°\n10am\n17°\n11am\n19°\nNoon\n21°\n1pm\n21°\n2pm\n21°\n3pm\n20°\n4pm\n19°\n5pm\n18°\n6pm\n17°\n7pm\n16°\n8pm\n16°\n9pm\n17°\n10pm\n16°\n11pm\n15°\n10-DAY FORECAST\nWed\n22°\n11°\nThu\n15°\n10°\nFri\n16°\n10°\nSat\n18°\n12°\nSun\n15°\n12°\nMon\n15°\n13°\nTue\n16°\n12°\nUV INDEX\n0\nWIND\n17 km/h\nHUMIDITY\n76%\nVISIBILITY\n18 km\nPRESSURE\n1006.9 hPa\nSUNRISE / SUNSET\n06:46 AM / 05:00 PM",
+    "cssVars": {
+      "--bg-gradient": "linear-gradient(180deg, #0f172a 0%, #1e293b 100%)",
+      "--text-on-bg": "#ffffff"
+    },
+    "fonts": [],
+    "typography": {
+      "temp": {
+        "text": "3°",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "96px",
+        "fontWeight": "300",
+        "lineHeight": "144px",
+        "letterSpacing": "-2.4px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 48,
+          "y": 186,
+          "w": 87,
+          "h": 144
+        }
+      },
+      "cityButton": {
+        "text": "London",
+        "color": "oklch(0.208 0.042 265.755)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "padding": "6px 12px",
+        "margin": "0px",
+        "borderRadius": "3.35544e+07px",
+        "box": {
+          "x": 48,
+          "y": 120,
+          "w": 95,
+          "h": 34
+        }
+      },
+      "sectionLabel": {
+        "text": "HOURLY FORECAST",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.35px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 56,
+          "y": 434,
+          "w": 144,
+          "h": 20
+        }
+      },
+      "secondary": {
+        "text": "H:3°",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 48,
+          "y": 338,
+          "w": 27,
+          "h": 20
+        }
+      },
+      "dayRow": {
+        "text": "Wed",
+        "color": "rgb(255, 255, 255)",
+        "bgColor": null,
+        "contrastVsNearestBg": null,
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "box": {
+          "x": 65,
+          "y": 668,
+          "w": 80,
+          "h": 20
+        }
+      }
+    },
+    "buttons": [
+      {
+        "tag": "button",
+        "text": "",
+        "ariaLabel": null,
+        "title": "Minimize",
+        "w": 32,
+        "h": 32,
+        "top": 4,
+        "classes": "w-8 h-8 rounded-full hover:bg-white/20 transition flex items-center justify-center text-slate-500"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "ariaLabel": null,
+        "title": "Maximize",
+        "w": 32,
+        "h": 32,
+        "top": 4,
+        "classes": "w-8 h-8 rounded-full hover:bg-white/20 transition flex items-center justify-center text-slate-500"
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "ariaLabel": null,
+        "title": "Close",
+        "w": 32,
+        "h": 32,
+        "top": 4,
+        "classes": "w-8 h-8 rounded-full hover:bg-red-500/90 transition flex items-center justify-center text-dynamic"
+      },
+      {
+        "tag": "button",
+        "text": "London",
+        "ariaLabel": null,
+        "title": null,
+        "w": 95,
+        "h": 34,
+        "top": 120,
+        "classes": "app-region-no-drag flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/55 backdrop-blur-md border border-white/60 "
+      }
+    ],
+    "headings": [
+      {
+        "tag": "h3",
+        "text": "HOURLY FORECAST",
+        "fontSize": "14px"
+      },
+      {
+        "tag": "h3",
+        "text": "10-DAY FORECAST",
+        "fontSize": "14px"
+      }
+    ],
+    "iconOnlyButtons": 3,
+    "iconOnlyWithoutLabel": 0,
+    "scrollables": [
+      {
+        "tag": "div",
+        "cls": "fixed inset-0 w-full h-full overflow-hidden font-sans selection:bg-blue-500/30",
+        "scrollW": 1000,
+        "clientW": 1000,
+        "scrollH": 740,
+        "clientH": 700,
+        "overflowX": "hidden",
+        "overflowY": "hidden"
+      },
+      {
+        "tag": "div",
+        "cls": "relative z-10 h-full w-full overflow-y-auto overflow-x-hidden no-scrollbar scrollbar-hide",
+        "scrollW": 985,
+        "clientW": 985,
+        "scrollH": 1345,
+        "clientH": 700,
+        "overflowX": "hidden",
+        "overflowY": "auto"
+      },
+      {
+        "tag": "div",
+        "cls": "flex gap-3 overflow-x-auto pb-4 no-scrollbar scrollbar-hide",
+        "scrollW": 1812,
+        "clientW": 873,
+        "scrollH": 118,
+        "clientH": 118,
+        "overflowX": "auto",
+        "overflowY": "auto"
+      }
+    ],
+    "landmarks": {
+      "header": false,
+      "main": true,
+      "nav": false,
+      "footer": false,
+      "sections": 0
+    },
+    "ariaLive": 0,
+    "imagesWithoutAlt": 0,
+    "totalButtons": 4,
+    "lang": "en"
+  }
+}

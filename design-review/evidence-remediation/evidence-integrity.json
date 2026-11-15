@@ -1,0 +1,166 @@
+{
+  "frames": 25,
+  "uniquePixelHashes": 25,
+  "duplicateGroups": {},
+  "noDuplicates": true,
+  "plates": [
+    {
+      "plate": "g07-modal-bg.png",
+      "size": [
+        1000,
+        700
+      ],
+      "perceptiblePixels": 17890,
+      "percent": 2.56,
+      "meanChannelDelta": 2.4,
+      "layoutIdentical": true
+    },
+    {
+      "plate": "r01-default-1000x700-bg.png",
+      "size": [
+        1000,
+        700
+      ],
+      "perceptiblePixels": 17232,
+      "percent": 2.46,
+      "meanChannelDelta": 3.06,
+      "layoutIdentical": true
+    },
+    {
+      "plate": "r02-sydney-bg.png",
+      "size": [
+        1000,
+        700
+      ],
+      "perceptiblePixels": 18057,
+      "percent": 2.58,
+      "meanChannelDelta": 3.19,
+      "layoutIdentical": true
+    },
+    {
+      "plate": "r03-london-bg.png",
+      "size": [
+        1000,
+        700
+      ],
+      "perceptiblePixels": 14589,
+      "percent": 2.08,
+      "meanChannelDelta": 2.73,
+      "layoutIdentical": true
+    },
+    {
+      "plate": "r10-light-theme-bg.png",
+      "size": [
+        1000,
+        700
+      ],
+      "perceptiblePixels": 15293,
+      "percent": 2.18,
+      "meanChannelDelta": 2.94,
+      "layoutIdentical": true
+    }
+  ],
+  "allPlatesLayoutIdentical": true,
+  "dimensions": {
+    "f01-fahrenheit.png": [
+      1000,
+      700
+    ],
+    "f02-favorites.png": [
+      1000,
+      700
+    ],
+    "f03-favorites-bg.png": [
+      1000,
+      700
+    ],
+    "f04-after-reload.png": [
+      1000,
+      700
+    ],
+    "f05-units-bg.png": [
+      1000,
+      700
+    ],
+    "f06-celsius-restored.png": [
+      1000,
+      700
+    ],
+    "g03-hover-day-row.png": [
+      1000,
+      700
+    ],
+    "g04-viewport-500x350.png": [
+      500,
+      350
+    ],
+    "g05-text-200.png": [
+      1000,
+      700
+    ],
+    "g06-modal-keyboard.png": [
+      1000,
+      700
+    ],
+    "g07-modal-bg.png": [
+      1000,
+      700
+    ],
+    "g07-modal.png": [
+      1000,
+      700
+    ],
+    "r01-default-1000x700-bg.png": [
+      1000,
+      700
+    ],
+    "r01-default-1000x700.png": [
+      1000,
+      700
+    ],
+    "r02-sydney-bg.png": [
+      1000,
+      700
+    ],
+    "r02-sydney.png": [
+      1000,
+      700
+    ],
+    "r03-london-bg.png": [
+      1000,
+      700
+    ],
+    "r03-london.png": [
+      1000,
+      700
+    ],
+    "r04-long-name.png": [
+      1000,
+      700
+    ],
+    "r09-1600x1000.png": [
+      1600,
+      1000
+    ],
+    "r10-light-theme-bg.png": [
+      1000,
+      700
+    ],
+    "r10-light-theme.png": [
+      1000,
+      700
+    ],
+    "r11-failed-switch.png": [
+      1000,
+      700
+    ],
+    "r12-recovered-tokyo.png": [
+      1000,
+      700
+    ],
+    "r13-cold-failure.png": [
+      1000,
+      700
+    ]
+  }
+}

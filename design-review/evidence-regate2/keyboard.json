@@ -1,0 +1,492 @@
+{
+  "at": "2026-11-14T23:04:10.873Z",
+  "base": [
+    {
+      "tag": "BUTTON",
+      "label": "Remove Miami from favorites",
+      "text": "",
+      "cls": "chip flex h-9 w-9 shrink-0 items-center ",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        164,
+        122,
+        36,
+        36
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "DIV",
+      "label": null,
+      "text": "Now\n17°\n0%\n7pm\n16°\n0%\n8pm\n",
+      "cls": "flex gap-3 scroll-x pb-2",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        48,
+        418,
+        894,
+        138
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Close window",
+      "text": "",
+      "cls": "group w-6 h-6 rounded-full flex items-ce",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        16,
+        8,
+        24,
+        24
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Minimize window",
+      "text": "",
+      "cls": "group w-6 h-6 rounded-full flex items-ce",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        44,
+        8,
+        24,
+        24
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Maximize window",
+      "text": "",
+      "cls": "group w-6 h-6 rounded-full flex items-ce",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        72,
+        8,
+        24,
+        24
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Celsius, wind in kilometres per hour",
+      "text": "°C",
+      "cls": "min-w-8 h-6 px-1.5 rounded-full text-xs ",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        915,
+        8,
+        32,
+        24
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Fahrenheit, wind in miles per hour",
+      "text": "°F",
+      "cls": "min-w-8 h-6 px-1.5 rounded-full text-xs ",
+      "outline": "rgba(255, 255, 255, 0.98) 2px solid",
+      "fv": true,
+      "rect": [
+        949,
+        8,
+        32,
+        24
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Change city, currently Miami",
+      "text": "Miami",
+      "cls": "chip group flex items-center gap-2 pl-3 ",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        48,
+        123,
+        108,
+        34
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Remove Miami from favorites",
+      "text": "",
+      "cls": "chip flex h-9 w-9 shrink-0 items-center ",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        164,
+        122,
+        36,
+        36
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "DIV",
+      "label": null,
+      "text": "Now\n17°\n0%\n7pm\n16°\n0%\n8pm\n",
+      "cls": "flex gap-3 scroll-x pb-2",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        48,
+        418,
+        894,
+        138
+      ],
+      "inDialog": false,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Close window",
+      "text": "",
+      "cls": "group w-6 h-6 rounded-full flex items-ce",
+      "outline": "rgb(255, 255, 255) 2px solid",
+      "fv": true,
+      "rect": [
+        16,
+        8,
+        24,
+        24
+      ],
+      "inDialog": false,
+      "isH1": false
+    }
+  ],
+  "modalTopEmpty": {
+    "top": 182.8,
+    "h": 334.5
+  },
+  "modalTopPartial": {
+    "top": 31,
+    "h": 638,
+    "count": "6 results"
+  },
+  "modalTopFull": {
+    "top": 31,
+    "h": 638,
+    "count": "6 results"
+  },
+  "modalTabs": [
+    {
+      "tag": "BUTTON",
+      "label": "Clear search",
+      "text": "",
+      "cls": "app-region-no-drag absolute right-1.5 to",
+      "outline": "rgb(14, 88, 206) 2px solid",
+      "fv": true,
+      "rect": [
+        665,
+        118,
+        36,
+        36
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nÎle-de-France Region",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        199,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nTexas, United States",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        263,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nTennessee, United St",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 83, 196) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        327,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nKentucky, United Sta",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        391,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nIllinois, United Sta",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        455,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nMaine, United States",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        519,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Cancel",
+      "cls": "app-region-no-drag w-full py-2.5 rounded",
+      "outline": "rgb(13, 87, 205) 2px solid",
+      "fv": true,
+      "rect": [
+        301,
+        612,
+        398,
+        44
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "INPUT",
+      "label": "Enter city name",
+      "text": "",
+      "cls": "app-region-no-drag w-full pl-10 pr-12 py",
+      "outline": "rgb(11, 82, 195) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        113,
+        414,
+        46
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Clear search",
+      "text": "",
+      "cls": "app-region-no-drag absolute right-1.5 to",
+      "outline": "rgb(14, 88, 206) 2px solid",
+      "fv": true,
+      "rect": [
+        665,
+        118,
+        36,
+        36
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nÎle-de-France Region",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        199,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nTexas, United States",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 83, 196) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        263,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nTennessee, United St",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 83, 196) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        327,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nKentucky, United Sta",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(11, 87, 207) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        391,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    }
+  ],
+  "modalShift": [
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nTennessee, United St",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        327,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nTexas, United States",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        263,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Paris\nÎle-de-France Region",
+      "cls": "app-region-no-drag w-full flex items-cen",
+      "outline": "rgb(12, 86, 203) 2px solid",
+      "fv": true,
+      "rect": [
+        293,
+        199,
+        410,
+        64
+      ],
+      "inDialog": true,
+      "isH1": false
+    }
+  ],
+  "escapedDialog": false,
+  "afterClose": {
+    "tag": "BUTTON",
+    "label": "Change city, currently Miami",
+    "text": "Miami",
+    "cls": "chip group flex items-center gap-2 pl-3 ",
+    "outline": "rgb(255, 255, 255) 2px solid",
+    "fv": true,
+    "rect": [
+      48,
+      123,
+      108,
+      34
+    ],
+    "inDialog": false,
+    "isH1": false
+  },
+  "h1": {
+    "tabindex": null,
+    "inTabs": false
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "before": {
+    "city": "San Francisco"
+  },
+  "picked": "BerlinState of Berlin, Germany",
+  "after": {
+    "hasErrorCopy": true,
+    "hasSpinner": false,
+    "snippet": [
+      "Weather",
+      "Unable to load weather",
+      "Network Error",
+      "HOURLY FORECAST",
+      "Next 24 hours",
+      "Now",
+      "13°",
+      "1am",
+      "13°",
+      "2am",
+      "13°",
+      "3am",
+      "12°",
+      "4am",
+      "12°",
+      "5am"
+    ]
+  }
+}

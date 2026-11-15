@@ -1,0 +1,23 @@
+{
+  "roles": {
+    "RootWebArea": 1,
+    "none": 226,
+    "generic": 14,
+    "button": 4,
+    "StaticText": 141,
+    "InlineTextBox": 141,
+    "main": 1,
+    "heading": 2
+  },
+  "unnamed": [],
+  "headings": [
+    {
+      "level": 3,
+      "name": "HOURLY FORECAST"
+    },
+    {
+      "level": 3,
+      "name": "10-DAY FORECAST"
+    }
+  ]
+}

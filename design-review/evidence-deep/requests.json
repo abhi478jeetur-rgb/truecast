@@ -1,0 +1,9 @@
+{
+  "method": "CDP Network.requestWillBeSent during a clean Page.reload, 9 s window",
+  "host": "release/linux-unpacked/weather-app --remote-debugging-port=9225",
+  "requests": 3,
+  "uniqueUrls": 1,
+  "url": "https://api.open-meteo.com/v1/forecast?latitude=37.7749&longitude=-122.4194&current=temperature_2m,relative_humidity_2m,apparent_temperature,...",
+  "cause": "three useWeather() instances (App.tsx:10, CurrentWeatherHeader.tsx:7, WeatherBackground.tsx:5) each fetch on mount",
+  "capturedAt": "2026-11-13T23:00:00-05:00"
+}

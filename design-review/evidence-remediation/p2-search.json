@@ -1,0 +1,114 @@
+{
+  "at": "2026-11-14T23:12:51.328Z",
+  "wide": {
+    "results": 6,
+    "countLine": "6 results",
+    "viewport": {
+      "w": 1000,
+      "h": 700
+    },
+    "dialog": {
+      "top": 30,
+      "bottom": 670,
+      "left": 276,
+      "right": 724
+    },
+    "list": {
+      "top": 198,
+      "bottom": 582,
+      "clientHeight": 384,
+      "scrollHeight": 384
+    },
+    "lastRow": {
+      "top": 518,
+      "bottom": 582
+    },
+    "lastFullyVisible": true,
+    "listScrolls": false,
+    "unnamedButtons": 0
+  },
+  "narrow": {
+    "results": 6,
+    "countLine": "6 results",
+    "viewport": {
+      "w": 800,
+      "h": 560
+    },
+    "dialog": {
+      "top": 12,
+      "bottom": 548,
+      "left": 176,
+      "right": 624
+    },
+    "list": {
+      "top": 180,
+      "bottom": 462,
+      "clientHeight": 282,
+      "scrollHeight": 384
+    },
+    "lastRow": {
+      "top": 500,
+      "bottom": 564
+    },
+    "lastFullyVisible": false,
+    "listScrolls": true,
+    "unnamedButtons": 0
+  },
+  "checks": [
+    {
+      "name": "six results returned",
+      "pass": true,
+      "detail": 6
+    },
+    {
+      "name": "count line shown",
+      "pass": true,
+      "detail": "6 results"
+    },
+    {
+      "name": "list does not scroll at 1000×700",
+      "pass": true,
+      "detail": "384/384"
+    },
+    {
+      "name": "last row fully visible",
+      "pass": true,
+      "detail": "582 <= 582"
+    },
+    {
+      "name": "dialog inside the viewport",
+      "pass": true,
+      "detail": {
+        "top": 30,
+        "bottom": 670,
+        "left": 276,
+        "right": 724
+      }
+    },
+    {
+      "name": "no unnamed buttons in the sheet",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "dialog fits at 800×560",
+      "pass": true,
+      "detail": {
+        "top": 12,
+        "bottom": 548,
+        "left": 176,
+        "right": 624
+      }
+    },
+    {
+      "name": "dialog stays within the width",
+      "pass": true,
+      "detail": {
+        "top": 12,
+        "bottom": 548,
+        "left": 176,
+        "right": 624
+      }
+    }
+  ]
+}

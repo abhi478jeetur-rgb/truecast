@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+/* ── Typeface ────────────────────────────────────────────────────────────────
+   Bundled, not borrowed. The old stack resolved to Liberation Sans on Ubuntu
+   because none of its first five names exist there. Inter ships as a single
+   48 KB latin variable file (SIL OFL, licence alongside it), so the app looks
+   the same on every machine and has a real 100–900 weight axis. */
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./assets/fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
+}
+
+@theme {
+  --font-sans: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Theme tokens ────────────────────────────────────────────────────────────
+   Two palettes, selected by the *rendered backdrop* (a light grey overcast day
+   still needs dark text; rain at noon does not). The default is the dark set so
+   the very first paint is never a white flash. */
+:root,
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(180deg, #0b1220 0%, #1e293b 100%);
+
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.88);
+  --text-tertiary: rgba(255, 255, 255, 0.74);
+
+  --glass-fill: rgba(255, 255, 255, 0.12);
+  --glass-fill-strong: rgba(255, 255, 255, 0.20);
+  --glass-fill-subtle: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-border-strong: rgba(255, 255, 255, 0.30);
+  --hairline: rgba(255, 255, 255, 0.20);
+  --chip-fill: rgba(255, 255, 255, 0.12);
+  --chip-hover: rgba(255, 255, 255, 0.22);
+  /* The unit switch sits at the top of the window, on the lightest part of the
+     sky. A white-on-white chip plus a white active segment stacked to 3.5:1, so
+     it gets its own dark track instead of two translucent white fills. */
+  --unit-track: rgba(2, 6, 23, 0.32);
+  --unit-active: rgba(255, 255, 255, 0.16);
+
+  --focus-ring: #ffffff;
+  --scrollbar-thumb: rgba(255, 255, 255, 0.24);
+  --scrollbar-thumb-hover: rgba(255, 255, 255, 0.38);
+  --skeleton: rgba(255, 255, 255, 0.16);
+  --shadow-card: 0 10px 30px rgba(2, 6, 23, 0.22);
+}
+
+[data-theme="light"] {
+  --bg-gradient: linear-gradient(180deg, #bfdbfe 0%, #60a5fa 100%);
+
+  --text-primary: #0b1220;
+  --text-secondary: rgba(11, 18, 32, 0.84);
+  --text-tertiary: rgba(11, 18, 32, 0.70);
+
+  --glass-fill: rgba(255, 255, 255, 0.46);
+  --glass-fill-strong: rgba(255, 255, 255, 0.68);
+  --glass-fill-subtle: rgba(255, 255, 255, 0.28);
+  --glass-border: rgba(255, 255, 255, 0.70);
+  --glass-border-strong: rgba(255, 255, 255, 0.88);
+  --hairline: rgba(11, 18, 32, 0.14);
+  --chip-fill: rgba(255, 255, 255, 0.58);
+  --chip-hover: rgba(255, 255, 255, 0.78);
+  --unit-track: rgba(255, 255, 255, 0.55);
+  --unit-active: rgba(255, 255, 255, 0.75);
+
+  --focus-ring: #0b57d0;
+  --scrollbar-thumb: rgba(11, 18, 32, 0.24);
+  --scrollbar-thumb-hover: rgba(11, 18, 32, 0.38);
+  --skeleton: rgba(11, 18, 32, 0.10);
+  --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+html,
+body,
+#root {
+  @apply h-full w-full m-0 p-0;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+}
+
+#root,
+body {
+  overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea,
+a {
+  -webkit-app-region: no-drag;
+}
+
+.app-region-drag {
+  -webkit-app-region: drag;
+}
+
+.app-region-no-drag {
+  -webkit-app-region: no-drag;
+}
+
+/* ── Surfaces ────────────────────────────────────────────────────────────────
+   Glass is deliberately restrained: at /45 and /55 the old cards turned into a
+   light grey plate that white text could not sit on (1.63:1). These fills keep
+   every label above 4.5:1 on the rendered pixel, in both themes. Declared as
+   Tailwind utilities so variants (hover:, focus:) work on them. */
+@utility glass {
+  background-color: var(--glass-fill);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-card);
+  -webkit-backdrop-filter: blur(22px) saturate(150%);
+  backdrop-filter: blur(22px) saturate(150%);
+}
+
+@utility glass-strong {
+  background-color: var(--glass-fill-strong);
+  border: 1px solid var(--glass-border-strong);
+  box-shadow: var(--shadow-card);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  backdrop-filter: blur(24px) saturate(160%);
+}
+
+@utility glass-subtle {
+  background-color: var(--glass-fill-subtle);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  backdrop-filter: blur(14px) saturate(140%);
+}
+
+@utility chip {
+  background-color: var(--chip-fill);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  backdrop-filter: blur(16px) saturate(150%);
+
+  &:hover {
+    background-color: var(--chip-hover);
+  }
+}
+
+@utility unit-track {
+  background-color: var(--unit-track);
+  border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+}
+
+@utility text-app {
+  color: var(--text-primary);
+}
+
+@utility text-app-2 {
+  color: var(--text-secondary);
+}
+
+@utility text-app-3 {
+  color: var(--text-tertiary);
+}
+
+@utility scroll-x {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility tnum {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+/* ── Focus ───────────────────────────────────────────────────────────────────
+   The old build had no visible focus ring anywhere: `outline: ... none`. */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: rgba(96, 165, 250, 0.35);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
+}
+
+/* ── Motion ──────────────────────────────────────────────────────────────────
+   42 transitions ran even when the OS asked for less. */
+@media (forced-colors: active) {
+  /* Background colour is overridden in forced-colors mode, so a selected
+     segment or star would look identical to an unselected one. */
+  [aria-pressed="true"] {
+    outline: 2px solid Highlight;
+    outline-offset: -3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

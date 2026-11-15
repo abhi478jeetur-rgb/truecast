@@ -1,0 +1,18 @@
+{
+  "before": {
+    "pill": "Search city",
+    "hero": "13°",
+    "condition": "Mainly clear",
+    "now": "Fri Nov 13 2026 23:06:08 GMT-0500 (Eastern Standard Time)"
+  },
+  "afterReload": {
+    "pill": "San Francisco",
+    "hero": "13°",
+    "now": "Fri Nov 13 2026 23:06:15 GMT-0500 (Eastern Standard Time)"
+  },
+  "source": {
+    "refreshCall": "useWeather.ts:38-42 — loadWeather(data.city.latitude, data.city.longitude) with no cityName",
+    "merge": "useWeather.ts:52-58 — name: cityName ?? weather.city.name; fetchWeather returns city.name: ''",
+    "render": "CurrentWeatherHeader.tsx:48 — {city.name || 'Search city'}"
+  }
+}

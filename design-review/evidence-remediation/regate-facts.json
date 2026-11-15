@@ -1,0 +1,129 @@
+{
+  "hover": {
+    "row": {
+      "x": 48,
+      "y": 608,
+      "w": 492,
+      "h": 42,
+      "bg": "rgba(255, 255, 255, 0.12)"
+    },
+    "bgBefore": "rgba(255, 255, 255, 0.12)",
+    "bgAfter": "rgba(255, 255, 255, 0.22)",
+    "changedPixelsInBox": 19686,
+    "boxArea": 19600,
+    "screenshots": [
+      "r01-default-1000x700.png",
+      "g03-hover-day-row.png"
+    ],
+    "changedPixelsGlobal": 19686,
+    "percentOfRowBox": 95.3,
+    "measuredBy": "PIL/numpy pixel-array diff of two full frames captured over CDP; no file-hash comparison"
+  },
+  "modalTraversal": {
+    "steps": [
+      {
+        "tag": "INPUT",
+        "label": "Enter city name",
+        "text": "",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": "Clear search",
+        "text": "",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nOntario, Canada",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nOhio, United States",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nKansas, United States",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nSouth Dakota, United Sta",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nIowa, United States",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nTanga, Tanzania",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Cancel",
+        "insideDialog": true
+      },
+      {
+        "tag": "INPUT",
+        "label": "Enter city name",
+        "text": "",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": "Clear search",
+        "text": "",
+        "insideDialog": true
+      },
+      {
+        "tag": "BUTTON",
+        "label": null,
+        "text": "Toronto\nOntario, Canada",
+        "insideDialog": true
+      }
+    ],
+    "escaped": false,
+    "uniqueStops": 9
+  },
+  "viewport500": {
+    "innerWidth": 500,
+    "innerHeight": 350,
+    "scrollWidth": 490,
+    "overflowX": false,
+    "pillWidth": 162,
+    "pillTruncated": false,
+    "heroFontPx": "96px",
+    "contentHeight": 1602,
+    "twoColumn": false
+  },
+  "text200": {
+    "before": {
+      "count": 117,
+      "heading": "14px",
+      "hero": "96px",
+      "contentHeight": 1112
+    },
+    "after": {
+      "heading": "28px",
+      "hero": "96px",
+      "heroWidth": 156,
+      "contentHeight": 2206,
+      "horizontalOverflow": false,
+      "clippedDate": false
+    },
+    "remScaled": true,
+    "heroScaled": false
+  }
+}

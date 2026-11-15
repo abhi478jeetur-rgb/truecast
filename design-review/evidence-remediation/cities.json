@@ -1,0 +1,312 @@
+{
+  "sydneyPicked": "SydneyNew South Wales, Australia",
+  "sydney": {
+    "pill": "Sydney",
+    "date": "SUNDAY, NOVEMBER 15",
+    "hero": "20°",
+    "condition": "Overcast",
+    "high": "H:22°",
+    "low": "L:18°",
+    "theme": "dark",
+    "gradient": "linear-gradient(rgb(71, 85, 105) 0%, rgb(30, 41, 59) 100%)",
+    "hourly": [
+      "Now | 20° | 22%",
+      "9am | 20° | 32%",
+      "10am | 21° | 47%"
+    ],
+    "icons": [
+      "lucide lucide-cloud",
+      "lucide lucide-cloud",
+      "lucide lucide-cloud"
+    ],
+    "dayRows": [
+      "Today | 18° | 22° | 82%",
+      "Mon | 16° | 18° | 97%"
+    ],
+    "moonish": false
+  },
+  "sydneyApi": {
+    "latitude": -33.848858,
+    "longitude": 151.19551,
+    "generationtime_ms": 8.04150104522705,
+    "utc_offset_seconds": 39600,
+    "timezone": "Australia/Sydney",
+    "timezone_abbreviation": "GMT+11",
+    "elevation": 51,
+    "current_units": {
+      "time": "iso8601",
+      "interval": "seconds",
+      "temperature_2m": "°C",
+      "weather_code": "wmo code",
+      "apparent_temperature": "°C"
+    },
+    "current": {
+      "time": "2026-11-15T08:00",
+      "interval": 900,
+      "temperature_2m": 19.8,
+      "weather_code": 3,
+      "apparent_temperature": 19.9
+    },
+    "daily_units": {
+      "time": "iso8601",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "sunrise": "iso8601",
+      "sunset": "iso8601"
+    },
+    "daily": {
+      "time": [
+        "2026-11-15",
+        "2026-11-16"
+      ],
+      "temperature_2m_max": [
+        21.8,
+        17.8
+      ],
+      "temperature_2m_min": [
+        17.6,
+        15.9
+      ],
+      "sunrise": [
+        "2026-11-15T05:43",
+        "2026-11-16T05:43"
+      ],
+      "sunset": [
+        "2026-11-15T19:36",
+        "2026-11-16T19:37"
+      ]
+    }
+  },
+  "sydneyContrast": [
+    {
+      "name": "hero",
+      "size": "96px",
+      "contrast": 9.56,
+      "bg": {
+        "r": 57,
+        "g": 70,
+        "b": 90
+      }
+    },
+    {
+      "name": "pill",
+      "size": "14px",
+      "contrast": 6.19,
+      "bg": {
+        "r": 81,
+        "g": 98,
+        "b": 125
+      }
+    },
+    {
+      "name": "heading",
+      "size": "14px",
+      "contrast": 11,
+      "bg": {
+        "r": 48,
+        "g": 61,
+        "b": 80
+      }
+    },
+    {
+      "name": "day-min",
+      "size": "14px",
+      "contrast": 7.73,
+      "bg": {
+        "r": 56,
+        "g": 71,
+        "b": 95
+      }
+    },
+    {
+      "name": "day-max",
+      "size": "14px",
+      "contrast": 9.4,
+      "bg": {
+        "r": 56,
+        "g": 71,
+        "b": 95
+      }
+    },
+    {
+      "name": "now",
+      "size": "12px",
+      "contrast": 6.28,
+      "bg": {
+        "r": 82,
+        "g": 97,
+        "b": 121
+      }
+    },
+    {
+      "name": "feels",
+      "size": "14px",
+      "contrast": 8.68,
+      "bg": {
+        "r": 51,
+        "g": 63,
+        "b": 82
+      }
+    }
+  ],
+  "londonPicked": "LondonEngland, United Kingdom",
+  "london": {
+    "pill": "London",
+    "date": "SATURDAY, NOVEMBER 14",
+    "hero": "7°",
+    "condition": "Partly cloudy",
+    "high": "H:10°",
+    "low": "L:0°",
+    "theme": "dark",
+    "gradient": "linear-gradient(rgb(16, 26, 44) 0%, rgb(51, 65, 85) 100%)",
+    "hourly": [
+      "Now | 7° | 0%",
+      "10pm | 6° | 0%",
+      "11pm | 6° | 0%"
+    ],
+    "icons": [
+      "lucide lucide-cloud-moon",
+      "lucide lucide-moon",
+      "lucide lucide-cloud"
+    ],
+    "dayRows": [
+      "Today | 0° | 10° | —",
+      "Sun | 4° | 11° | 90%"
+    ],
+    "moonish": false
+  },
+  "londonApi": {
+    "latitude": 51.51147,
+    "longitude": -0.13078308,
+    "generationtime_ms": 0.1386404037475586,
+    "utc_offset_seconds": 0,
+    "timezone": "Europe/London",
+    "timezone_abbreviation": "GMT",
+    "elevation": 23,
+    "current_units": {
+      "time": "iso8601",
+      "interval": "seconds",
+      "temperature_2m": "°C",
+      "weather_code": "wmo code",
+      "apparent_temperature": "°C"
+    },
+    "current": {
+      "time": "2026-11-14T21:00",
+      "interval": 900,
+      "temperature_2m": 6.5,
+      "weather_code": 2,
+      "apparent_temperature": 3.7
+    },
+    "daily_units": {
+      "time": "iso8601",
+      "temperature_2m_max": "°C",
+      "temperature_2m_min": "°C",
+      "sunrise": "iso8601",
+      "sunset": "iso8601"
+    },
+    "daily": {
+      "time": [
+        "2026-11-14",
+        "2026-11-15"
+      ],
+      "temperature_2m_max": [
+        9.7,
+        11
+      ],
+      "temperature_2m_min": [
+        -0.4,
+        3.9
+      ],
+      "sunrise": [
+        "2026-11-14T07:16",
+        "2026-11-15T07:18"
+      ],
+      "sunset": [
+        "2026-11-14T16:12",
+        "2026-11-15T16:11"
+      ]
+    }
+  },
+  "londonContrast": [
+    {
+      "name": "hero",
+      "size": "96px",
+      "contrast": 14.99,
+      "bg": {
+        "r": 28,
+        "g": 39,
+        "b": 58
+      }
+    },
+    {
+      "name": "pill",
+      "size": "14px",
+      "contrast": 10.97,
+      "bg": {
+        "r": 46,
+        "g": 61,
+        "b": 85
+      }
+    },
+    {
+      "name": "heading",
+      "size": "14px",
+      "contrast": 13.3,
+      "bg": {
+        "r": 36,
+        "g": 48,
+        "b": 67
+      }
+    },
+    {
+      "name": "day-min",
+      "size": "14px",
+      "contrast": 6.34,
+      "bg": {
+        "r": 67,
+        "g": 85,
+        "b": 111
+      }
+    },
+    {
+      "name": "day-max",
+      "size": "14px",
+      "contrast": 7.59,
+      "bg": {
+        "r": 67,
+        "g": 85,
+        "b": 111
+      }
+    },
+    {
+      "name": "now",
+      "size": "12px",
+      "contrast": 6.81,
+      "bg": {
+        "r": 75,
+        "g": 92,
+        "b": 116
+      }
+    },
+    {
+      "name": "feels",
+      "size": "14px",
+      "contrast": 10.93,
+      "bg": {
+        "r": 34,
+        "g": 46,
+        "b": 65
+      }
+    }
+  ],
+  "longPicked": "LlanfairpwllgwyngyllWales, United Kingdom",
+  "long": {
+    "text": "Llanfairpwllgwyngyll",
+    "width": 206,
+    "height": 34,
+    "scrollWidth": 204,
+    "clientWidth": 204,
+    "overflowRight": false,
+    "label": "Change city, currently Llanfairpwllgwyngyll"
+  }
+}

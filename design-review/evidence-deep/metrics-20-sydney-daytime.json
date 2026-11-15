@@ -1,0 +1,89 @@
+{
+  "dims": {
+    "w": 1000,
+    "h": 700
+  },
+  "samples": [
+    {
+      "name": "condition",
+      "text": "Partly cloudy",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "24px",
+      "fontWeight": "500",
+      "rect": {
+        "x": 194,
+        "y": 267,
+        "w": 137,
+        "h": 32
+      },
+      "bg": {
+        "r": 38,
+        "g": 51,
+        "b": 69
+      },
+      "contrast": 12.79
+    },
+    {
+      "name": "city-pill",
+      "text": "Sydney",
+      "color": "oklch(0.208 0.042 265.755)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "rect": {
+        "x": 48,
+        "y": 120,
+        "w": 95,
+        "h": 34
+      },
+      "bg": {
+        "r": 155,
+        "g": 160,
+        "b": 169
+      },
+      "contrast": null
+    },
+    {
+      "name": "section-label",
+      "text": "HOURLY FORECAST",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "rect": {
+        "x": 56,
+        "y": 434,
+        "w": 144,
+        "h": 20
+      },
+      "bg": {
+        "r": 43,
+        "g": 56,
+        "b": 75
+      },
+      "contrast": 11.86
+    },
+    {
+      "name": "day-name",
+      "text": "Thu",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "rect": {
+        "x": 65,
+        "y": 712,
+        "w": 80,
+        "h": 20
+      },
+      "bg": {
+        "r": 204,
+        "g": 208,
+        "b": 213
+      },
+      "contrast": 1.55
+    }
+  ],
+  "theme": {
+    "color": "rgb(255, 255, 255)",
+    "backgroundImage": "linear-gradient(rgb(30, 41, 59) 0%, rgb(51, 65, 85) 100%)",
+    "bgColor": "rgba(0, 0, 0, 0)"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "at": "2026-11-14T23:00:53.644Z",
+  "open": {
+    "dialog": {
+      "x": 276,
+      "y": 183,
+      "w": 448,
+      "h": 334,
+      "bottom": 517,
+      "right": 724
+    },
+    "role": "dialog",
+    "modal": "true",
+    "labelledby": "search-title",
+    "title": "Search city",
+    "viewport": [
+      1000,
+      700
+    ],
+    "active": "INPUT",
+    "activeLabel": "Enter city name"
+  },
+  "six": {
+    "count": "6 results",
+    "rows": 6,
+    "rowH": [
+      64,
+      64,
+      64,
+      64,
+      64,
+      64
+    ],
+    "list": {
+      "x": 293,
+      "y": 199,
+      "w": 414,
+      "h": 384,
+      "bottom": 583,
+      "clientHeight": 384,
+      "scrollHeight": 384,
+      "scrolls": false,
+      "snap": "y",
+      "maxH": "384px",
+      "overflow": "auto"
+    },
+    "lastRow": {
+      "x": 293,
+      "y": 519,
+      "w": 410,
+      "h": 64,
+      "bottom": 583
+    },
+    "dialogMaxH": "676px",
+    "unnamed": 0,
+    "buttons": [
+      {
+        "t": "",
+        "al": "Clear search"
+      },
+      {
+        "t": "Sanaa\nAmanat Alasimah,",
+        "al": null
+      },
+      {
+        "t": "Sanya\nHainan, China",
+        "al": null
+      },
+      {
+        "t": "Sanhe\nHebei, China",
+        "al": null
+      },
+      {
+        "t": "Santos\nSão Paulo, Braz",
+        "al": null
+      },
+      {
+        "t": "San Jose\nCalifornia, U",
+        "al": null
+      },
+      {
+        "t": "Sanming\nFujian, China",
+        "al": null
+      },
+      {
+        "t": "Cancel",
+        "al": null
+      }
+    ]
+  },
+  "narrow": {
+    "dialog": {
+      "x": 176,
+      "y": 12,
+      "w": 448,
+      "h": 536,
+      "bottom": 548
+    },
+    "list": {
+      "x": 193,
+      "y": 176,
+      "w": 414,
+      "h": 286,
+      "bottom": 462,
+      "clientHeight": 286,
+      "scrollHeight": 384
+    },
+    "lastRow": {
+      "x": 193,
+      "y": 496,
+      "w": 400,
+      "h": 64,
+      "bottom": 560
+    }
+  },
+  "escape": "INPUT",
+  "afterEscape": {
+    "dialog": false,
+    "tag": "BUTTON",
+    "label": "Change city, currently Miami",
+    "text": "Miami"
+  }
+}

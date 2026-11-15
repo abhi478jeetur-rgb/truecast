@@ -1,0 +1,403 @@
+{
+  "at": "2026-11-14T22:56:50.398Z",
+  "facts": {
+    "pill": "Miami",
+    "theme": "dark",
+    "gradient": "linear-gradient(rgb(11, 18, 32) 0%, rgb(30, 41, 59) 100%)",
+    "hero": "17°",
+    "condition": "Clear",
+    "high": "H:22°",
+    "low": "L:13°",
+    "hourly": [
+      "Now | 17° | 0%",
+      "6pm | 17° | 0%",
+      "7pm | 16° | 0%",
+      "8pm | 16° | 0%"
+    ],
+    "icons": [
+      "lucide lucide-moon",
+      "lucide lucide-cloud-moon",
+      "lucide lucide-cloud",
+      "lucide lucide-cloud"
+    ],
+    "dayRows": [
+      "Today | 13° | 22° | —",
+      "Sun | 13° | 25° | 26%"
+    ],
+    "dayIcon": "lucide lucide-cloud"
+  },
+  "api0": "2026-11-14",
+  "apiMax": 21.9,
+  "apiMin": 13,
+  "rows": [
+    {
+      "name": "hero",
+      "color": "rgb(255, 255, 255)",
+      "size": "96px",
+      "weight": "300",
+      "rect": {
+        "x": 48,
+        "y": 192,
+        "w": 156,
+        "h": 86
+      },
+      "bg": {
+        "r": 18,
+        "g": 26,
+        "b": 41
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 17.42,
+      "required": 3
+    },
+    {
+      "name": "condition",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "size": "24px",
+      "weight": "500",
+      "rect": {
+        "x": 216,
+        "y": 234,
+        "w": 61,
+        "h": 32
+      },
+      "bg": {
+        "r": 18,
+        "g": 27,
+        "b": 42
+      },
+      "effective": {
+        "r": 227,
+        "g": 228,
+        "b": 229
+      },
+      "contrast": 13.57,
+      "required": 3
+    },
+    {
+      "name": "city-pill",
+      "color": "rgb(255, 255, 255)",
+      "size": "14px",
+      "weight": "500",
+      "rect": {
+        "x": 48,
+        "y": 123,
+        "w": 108,
+        "h": 34
+      },
+      "bg": {
+        "r": 41,
+        "g": 50,
+        "b": 70
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 12.81,
+      "required": 4.5
+    },
+    {
+      "name": "high",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "size": "14px",
+      "weight": "400",
+      "rect": {
+        "x": 48,
+        "y": 286,
+        "w": 39,
+        "h": 20
+      },
+      "bg": {
+        "r": 19,
+        "g": 27,
+        "b": 43
+      },
+      "effective": {
+        "r": 227,
+        "g": 228,
+        "b": 230
+      },
+      "contrast": 13.54,
+      "required": 4.5
+    },
+    {
+      "name": "low",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "size": "14px",
+      "weight": "400",
+      "rect": {
+        "x": 112,
+        "y": 286,
+        "w": 36,
+        "h": 20
+      },
+      "bg": {
+        "r": 19,
+        "g": 27,
+        "b": 43
+      },
+      "effective": {
+        "r": 227,
+        "g": 228,
+        "b": 230
+      },
+      "contrast": 13.54,
+      "required": 4.5
+    },
+    {
+      "name": "feels-like",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "size": "14px",
+      "weight": "500",
+      "rect": {
+        "x": 48,
+        "y": 346,
+        "w": 86,
+        "h": 20
+      },
+      "bg": {
+        "r": 21,
+        "g": 30,
+        "b": 46
+      },
+      "effective": {
+        "r": 227,
+        "g": 228,
+        "b": 230
+      },
+      "contrast": 13.13,
+      "required": 4.5
+    },
+    {
+      "name": "hourly-heading",
+      "color": "rgb(255, 255, 255)",
+      "size": "14px",
+      "weight": "600",
+      "rect": {
+        "x": 64,
+        "y": 382,
+        "w": 149,
+        "h": 20
+      },
+      "bg": {
+        "r": 22,
+        "g": 31,
+        "b": 47
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 16.52,
+      "required": 4.5
+    },
+    {
+      "name": "daily-heading",
+      "color": "rgb(255, 255, 255)",
+      "size": "14px",
+      "weight": "600",
+      "rect": {
+        "x": 48,
+        "y": 572,
+        "w": 492,
+        "h": 20
+      },
+      "bg": {
+        "r": 26,
+        "g": 37,
+        "b": 54
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 15.42,
+      "required": 4.5
+    },
+    {
+      "name": "day-name",
+      "color": "rgb(255, 255, 255)",
+      "size": "14px",
+      "weight": "500",
+      "rect": {
+        "x": 65,
+        "y": 619,
+        "w": 56,
+        "h": 20
+      },
+      "bg": {
+        "r": 51,
+        "g": 66,
+        "b": 88
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 10.19,
+      "required": 4.5
+    },
+    {
+      "name": "day-min",
+      "color": "rgba(255, 255, 255, 0.88)",
+      "size": "14px",
+      "weight": "400",
+      "rect": {
+        "x": 169,
+        "y": 619,
+        "w": 32,
+        "h": 20
+      },
+      "bg": {
+        "r": 51,
+        "g": 66,
+        "b": 88
+      },
+      "effective": {
+        "r": 231,
+        "g": 232,
+        "b": 235
+      },
+      "contrast": 8.32,
+      "required": 4.5
+    },
+    {
+      "name": "day-max",
+      "color": "rgb(255, 255, 255)",
+      "size": "14px",
+      "weight": "500",
+      "rect": {
+        "x": 443,
+        "y": 619,
+        "w": 32,
+        "h": 20
+      },
+      "bg": {
+        "r": 51,
+        "g": 66,
+        "b": 88
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 10.19,
+      "required": 4.5
+    },
+    {
+      "name": "hourly-now",
+      "color": "rgb(255, 255, 255)",
+      "size": "12px",
+      "weight": "500",
+      "rect": {
+        "x": 67,
+        "y": 431,
+        "w": 26,
+        "h": 16
+      },
+      "bg": {
+        "r": 65,
+        "g": 78,
+        "b": 98
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 8.43,
+      "required": 4.5
+    },
+    {
+      "name": "detail-label",
+      "color": "rgb(255, 255, 255)",
+      "size": "16px",
+      "weight": "400",
+      "rect": {
+        "x": 629,
+        "y": 589,
+        "w": 125,
+        "h": 28
+      },
+      "bg": {
+        "r": 50,
+        "g": 65,
+        "b": 87
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 10.35,
+      "required": 4.5
+    },
+    {
+      "name": "updated",
+      "color": "rgba(255, 255, 255, 0.74)",
+      "size": "12px",
+      "weight": "400",
+      "rect": {
+        "x": 739,
+        "y": 144,
+        "w": 203,
+        "h": 16
+      },
+      "bg": {
+        "r": 16,
+        "g": 24,
+        "b": 38
+      },
+      "effective": {
+        "r": 193,
+        "g": 195,
+        "b": 199
+      },
+      "contrast": 10.08,
+      "required": 4.5
+    },
+    {
+      "name": "date",
+      "color": "rgb(255, 255, 255)",
+      "size": "16px",
+      "weight": "400",
+      "rect": {
+        "x": 739,
+        "y": 120,
+        "w": 203,
+        "h": 40
+      },
+      "bg": {
+        "r": 15,
+        "g": 23,
+        "b": 38
+      },
+      "effective": {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 1
+      },
+      "contrast": 17.94,
+      "required": 4.5
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "method": "PIL/numpy pixel-array diff of two full frames captured over CDP; no file-hash comparison",
+  "frames": [
+    "p6-hover-before.png",
+    "p6-hover-pill.png"
+  ],
+  "target": "city pill (the element that actually has a click)",
+  "rowBox": {
+    "x": 48,
+    "y": 123,
+    "w": 162,
+    "h": 34
+  },
+  "changedPixels": 5207,
+  "changedInsideRowBox": 5207,
+  "rowBoxArea": 5508,
+  "percentOfRowBox": 94.5,
+  "changedOutsideRowBox": 0,
+  "maxChannelDelta": 325,
+  "computedBackground": {
+    "before": "rgba(255, 255, 255, 0.12)",
+    "after": "rgba(255, 255, 255, 0.22)"
+  }
+}

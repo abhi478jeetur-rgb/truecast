@@ -1,0 +1,91 @@
+{
+  "at": "2026-11-14T23:12:15.552Z",
+  "empty": {
+    "top": 30,
+    "bottom": 670,
+    "h": 640
+  },
+  "full": {
+    "top": 30,
+    "bottom": 670,
+    "h": 640
+  },
+  "beforeFocus": "Remove Tokyo from favorites",
+  "afterFocus": {
+    "tag": "BUTTON",
+    "label": "Remove Paris from favorites",
+    "inDialog": true
+  },
+  "forced": {
+    "active": {
+      "pressed": "true",
+      "outline": "2px solid",
+      "color": "rgba(0, 230, 255, 0.8)"
+    },
+    "inactive": {
+      "pressed": "false",
+      "outline": "3px",
+      "style": "none"
+    }
+  },
+  "checks": [
+    {
+      "name": "sheet height is identical empty vs results",
+      "pass": true,
+      "detail": {
+        "empty": {
+          "top": 30,
+          "bottom": 670,
+          "h": 640
+        },
+        "full": {
+          "top": 30,
+          "bottom": 670,
+          "h": 640
+        }
+      }
+    },
+    {
+      "name": "no 152px jump",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "focus moves to the next remove button",
+      "pass": true,
+      "detail": {
+        "beforeFocus": "Remove Tokyo from favorites",
+        "afterFocus": {
+          "tag": "BUTTON",
+          "label": "Remove Paris from favorites",
+          "inDialog": true
+        }
+      }
+    },
+    {
+      "name": "forced-colors marks the selected unit",
+      "pass": true,
+      "detail": {
+        "active": {
+          "pressed": "true",
+          "outline": "2px solid",
+          "color": "rgba(0, 230, 255, 0.8)"
+        },
+        "inactive": {
+          "pressed": "false",
+          "outline": "3px",
+          "style": "none"
+        }
+      }
+    },
+    {
+      "name": "forced-colors leaves the unselected unit unringed",
+      "pass": true,
+      "detail": {
+        "pressed": "false",
+        "outline": "3px",
+        "style": "none"
+      }
+    }
+  ]
+}

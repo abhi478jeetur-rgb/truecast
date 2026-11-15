@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-15T04:06:16.499Z",
+  "heroDefault": 96,
+  "heroBig": {
+    "size": 192,
+    "overflow": false
+  },
+  "afterLast": {
+    "tag": "INPUT",
+    "label": "Enter city name",
+    "inDialog": true
+  },
+  "copy": "Search city | Search for a city, open it, then use the star beside its name to keep it here for one-click access, even after you restart the app. | Cancel",
+  "checks": [
+    {
+      "name": "last removal lands on the search field",
+      "pass": true,
+      "detail": {
+        "tag": "INPUT",
+        "label": "Enter city name",
+        "inDialog": true
+      }
+    },
+    {
+      "name": "empty-state copy points at the header star",
+      "pass": true,
+      "detail": "Search city | Search for a city, open it, then use the star beside its name to keep it here for one-click access, even after you restart the app. | Cancel"
+    },
+    {
+      "name": "hero is 96 px at 1000 px width",
+      "pass": true,
+      "detail": 96
+    },
+    {
+      "name": "hero scales with text size",
+      "pass": true,
+      "detail": {
+        "size": 192,
+        "overflow": false
+      }
+    },
+    {
+      "name": "no horizontal overflow at 200 % text",
+      "pass": true,
+      "detail": false
+    }
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "state": "03-maximized-1920x1080.png",
+  "dims": {
+    "w": 1920,
+    "h": 1080,
+    "dpr": 1
+  },
+  "samples": [
+    {
+      "name": "hero-temp",
+      "text": "16°",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "96px",
+      "fontWeight": "300",
+      "lineHeight": "144px",
+      "letterSpacing": "-2.4px",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 48,
+        "y": 186,
+        "w": 138,
+        "h": 144
+      },
+      "opacity": "1",
+      "sampledBg": {
+        "r": 5,
+        "g": 10,
+        "b": 28
+      },
+      "contrast": 19.69,
+      "sampleAt": {
+        "x": 117,
+        "y": 258
+      }
+    },
+    {
+      "name": "city-button",
+      "text": "San Francisco",
+      "color": "oklch(0.208 0.042 265.755)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 48,
+        "y": 120,
+        "w": 137,
+        "h": 34
+      },
+      "opacity": "1",
+      "sampledBg": {
+        "r": 141,
+        "g": 143,
+        "b": 151
+      },
+      "contrast": 5.53,
+      "sampleAt": {
+        "x": 117,
+        "y": 137
+      }
+    },
+    {
+      "name": "section-label",
+      "text": "HOURLY FORECAST",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "600",
+      "lineHeight": "20px",
+      "letterSpacing": "0.35px",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 56,
+        "y": 434,
+        "w": 144,
+        "h": 20
+      },
+      "opacity": "0.9",
+      "sampledBg": {
+        "r": 7,
+        "g": 13,
+        "b": 30
+      },
+      "contrast": 19.35,
+      "sampleAt": {
+        "x": 128,
+        "y": 444
+      }
+    },
+    {
+      "name": "high-low",
+      "text": "H:16°",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 48,
+        "y": 338,
+        "w": 35,
+        "h": 20
+      },
+      "opacity": "1",
+      "sampledBg": {
+        "r": 6,
+        "g": 11,
+        "b": 29
+      },
+      "contrast": 19.56,
+      "sampleAt": {
+        "x": 66,
+        "y": 348
+      }
+    },
+    {
+      "name": "day-name",
+      "text": "Wed",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "14px",
+      "fontWeight": "500",
+      "lineHeight": "20px",
+      "letterSpacing": "normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 65,
+        "y": 668,
+        "w": 80,
+        "h": 20
+      },
+      "opacity": "0.9",
+      "sampledBg": {
+        "r": 120,
+        "g": 124,
+        "b": 134
+      },
+      "contrast": 4.18,
+      "sampleAt": {
+        "x": 105,
+        "y": 678
+      }
+    },
+    {
+      "name": "detail-value",
+      "text": "82%",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "18px",
+      "fontWeight": "500",
+      "lineHeight": "28px",
+      "letterSpacing": "normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 1658,
+        "y": 680,
+        "w": 197,
+        "h": 28
+      },
+      "opacity": "1",
+      "sampledBg": {
+        "r": 120,
+        "g": 124,
+        "b": 134
+      },
+      "contrast": 4.18,
+      "sampleAt": {
+        "x": 1757,
+        "y": 694
+      }
+    },
+    {
+      "name": "titlebar-close",
+      "text": "",
+      "color": "rgb(255, 255, 255)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 104,
+        "y": 4,
+        "w": 32,
+        "h": 32
+      },
+      "opacity": "1",
+      "sampledBg": {
+        "r": 2,
+        "g": 6,
+        "b": 23
+      },
+      "contrast": 20.17,
+      "sampleAt": {
+        "x": 120,
+        "y": 20
+      }
+    }
+  ],
+  "facts": {
+    "viewport": {
+      "w": 1920,
+      "h": 1080,
+      "dpr": 1,
+      "scrollbar": 0
+    },
+    "title": "weather-app",
+    "lang": "en",
+    "transitions": {
+      "0.15s": 35,
+      "0.7s": 7
+    },
+    "fontSizes": {
+      "16px": 1,
+      "12px": 32,
+      "14px": 53,
+      "96px": 1,
+      "24px": 1,
+      "18px": 6
+    },
+    "colors": {
+      "rgb(255, 255, 255)": 94
+    },
+    "interactive": [
+      {
+        "tag": "button",
+        "text": "",
+        "aria": null,
+        "title": "Minimize",
+        "w": 32,
+        "h": 32,
+        "tabindex": null,
+        "role": null
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "aria": null,
+        "title": "Maximize",
+        "w": 32,
+        "h": 32,
+        "tabindex": null,
+        "role": null
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "aria": null,
+        "title": "Close",
+        "w": 32,
+        "h": 32,
+        "tabindex": null,
+        "role": null
+      },
+      {
+        "tag": "button",
+        "text": "San Francisco",
+        "aria": null,
+        "title": null,
+        "w": 137,
+        "h": 34,
+        "tabindex": null,
+        "role": null
+      }
+    ],
+    "scrollables": [
+      {
+        "tag": "div",
+        "cls": "fixed inset-0 w-full h-full overflow-hidden font-sans selection:bg-blue-500/30",
+        "sw": 1920,
+        "cw": 1920,
+        "sh": 1120,
+        "ch": 1080,
+        "ox": "hidden",
+        "oy": "hidden"
+      },
+      {
+        "tag": "div",
+        "cls": "flex gap-3 overflow-x-auto pb-4 no-scrollbar scrollbar-hide",
+        "sw": 1812,
+        "cw": 1808,
+        "sh": 118,
+        "ch": 118,
+        "ox": "auto",
+        "oy": "auto"
+      }
+    ],
+    "leftEdges": [
+      48,
+      56,
+      65,
+      76,
+      77,
+      88,
+      116
+    ],
+    "headings": [
+      {
+        "tag": "H3",
+        "text": "HOURLY FORECAST",
+        "size": "14px"
+      },
+      {
+        "tag": "H3",
+        "text": "10-DAY FORECAST",
+        "size": "14px"
+      }
+    ],
+    "landmarks": {
+      "header": false,
+      "main": true,
+      "nav": false,
+      "footer": false,
+      "sections": 0
+    },
+    "ariaLive": 0,
+    "ariaModal": 0,
+    "roleDialog": 0,
+    "imgNoAlt": 0,
+    "svgCount": 43,
+    "svgNoLabel": 0,
+    "positiveTabindex": 0,
+    "reducedMotion": false,
+    "hardcodedWhite": 93,
+    "emoji": 2,
+    "now": "Fri Nov 13 2026 00:03:26 GMT-0500 (Eastern Standard Time)"
+  },
+  "bodyText": "Weather\nSan Francisco\nFRIDAY, NOVEMBER 13\n16°\nLight drizzle\nH:16°\nL:15°\nLight drizzle\n💧 82%\n🌬 12 km/h\nHOURLY FORECAST\nNext 24 hours\nNow\n13°\n1am\n13°\n2am\n13°\n3am\n12°\n4am\n12°\n5am\n12°\n6am\n11°\n7am\n11°\n8am\n13°\n9am\n16°\n10am\n17°\n11am\n19°\nNoon\n21°\n1pm\n21°\n2pm\n21°\n3pm\n20°\n4pm\n19°\n5pm\n18°\n6pm\n17°\n7pm\n16°\n8pm\n16°\n9pm\n16°\n10pm\n16°\n11pm\n15°\n10-DAY FORECAST\nWed\n22°\n11°\nThu\n15°\n10°\nFri\n16°\n10°\nSat\n18°\n12°\nSun\n15°\n12°\nMon\n15°\n13°\nTue\n16°\n12°\nUV INDEX\n0\nWIND\n12 km/h\nHUMIDITY\n82%\nVISIBILITY\n17 km\nPRESSURE\n1007.5 hPa\nSUNRISE / SUNSET\n06:46 AM / 05:00 PM",
+  "label": "maximized"
+}

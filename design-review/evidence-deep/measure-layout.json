@@ -1,0 +1,165 @@
+{
+  "viewport": {
+    "w": 1000,
+    "h": 700
+  },
+  "scroll": {
+    "scrollHeight": 1389,
+    "clientHeight": 700,
+    "scrollTop": 0,
+    "overflowY": "auto"
+  },
+  "hero": {
+    "rect": {
+      "x": 48,
+      "y": 186,
+      "w": 138,
+      "h": 144
+    },
+    "size": "96px",
+    "weight": "300",
+    "color": "rgb(255, 255, 255)",
+    "tracking": "-2.4px"
+  },
+  "hourlyLabel": {
+    "rect": {
+      "x": 56,
+      "y": 434,
+      "w": 144,
+      "h": 20
+    },
+    "size": "14px",
+    "tracking": "0.35px",
+    "weight": "600",
+    "color": "rgb(255, 255, 255)"
+  },
+  "tenDayLabel": {
+    "rect": {
+      "x": 48,
+      "y": 663,
+      "w": 889,
+      "h": 20
+    },
+    "size": "14px",
+    "tracking": "0.35px"
+  },
+  "pill": {
+    "rect": {
+      "x": 48,
+      "y": 120,
+      "w": 137,
+      "h": 34
+    },
+    "radius": "3.35544e+07px"
+  },
+  "dayRow": {
+    "rect": {
+      "x": 48,
+      "y": 999,
+      "w": 889,
+      "h": 46
+    },
+    "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.45)",
+    "radius": "12px"
+  },
+  "firstCard": {
+    "rect": {
+      "x": 56,
+      "y": 470,
+      "w": 64,
+      "h": 146
+    },
+    "gap": "12px",
+    "bg": "oklab(0.999994 0.0000455678 0.0000200868 / 0.5)"
+  },
+  "sunrise": {
+    "rect": {
+      "x": 710,
+      "y": 1236,
+      "w": 122,
+      "h": 16
+    }
+  },
+  "headings": [
+    {
+      "tag": "H3",
+      "text": "HOURLY FORECAST",
+      "size": "14px",
+      "weight": "600",
+      "tracking": "0.35px",
+      "rect": {
+        "x": 56,
+        "y": 434,
+        "w": 144,
+        "h": 20
+      }
+    },
+    {
+      "tag": "H3",
+      "text": "10-DAY FORECAST",
+      "size": "14px",
+      "weight": "600",
+      "tracking": "0.35px",
+      "rect": {
+        "x": 48,
+        "y": 663,
+        "w": 889,
+        "h": 20
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "title": "Minimize",
+      "text": "",
+      "rect": {
+        "x": 16,
+        "y": 4,
+        "w": 32,
+        "h": 32
+      },
+      "outline": "oklch(0.554 0.046 257.417) none 3px"
+    },
+    {
+      "title": "Maximize",
+      "text": "",
+      "rect": {
+        "x": 60,
+        "y": 4,
+        "w": 32,
+        "h": 32
+      },
+      "outline": "oklch(0.554 0.046 257.417) none 3px"
+    },
+    {
+      "title": "Close",
+      "text": "",
+      "rect": {
+        "x": 104,
+        "y": 4,
+        "w": 32,
+        "h": 32
+      },
+      "outline": "rgb(255, 255, 255) none 3px"
+    },
+    {
+      "title": null,
+      "text": "San Francisco",
+      "rect": {
+        "x": 48,
+        "y": 120,
+        "w": 137,
+        "h": 34
+      },
+      "outline": "oklch(0.208 0.042 265.755) none 3px"
+    }
+  ],
+  "gridCols": {
+    "class": "grid grid-cols-1 lg:grid-cols-12 gap-6",
+    "cols": "937px"
+  },
+  "fontFamilies": [
+    "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif"
+  ],
+  "minZoom": 1
+}

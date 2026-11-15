@@ -1,0 +1,82 @@
+{
+  "run": "gate #3, 2026-11-14, CDP :9225, release/linux-unpacked",
+  "artifact": "app.asar from release/linux-unpacked, Electron 45.3.1",
+  "verification_mode": "spot-check only; data layer not re-derived",
+  "window_identity": {
+    "document.title": "Weather",
+    "cdp_target_title": "Weather",
+    "desktop_entry": {
+      "Name": "Weather",
+      "Icon": "weather-app",
+      "StartupWMClass": "Weather",
+      "Exec": "/opt/Weather/weather-app %U"
+    },
+    "icon_on_disk": "build/icon.png 512x512 PNG; deb: /usr/share/icons/hicolor/512x512/apps/weather-app.png",
+    "maximize": { "outer_before": [1032, 742], "outer_after": [2880, 1588], "label": "Restore window" },
+    "restore": { "outer": [1032, 742], "label": "Maximize window" },
+    "dblclick_drag_region": { "outer": [2880, 1588], "label": "Restore window" },
+    "titlebar_drag_class": "app-region-drag relative z-50 h-10 px-4 flex items-center justify-between"
+  },
+  "favorites": {
+    "titlebar_control": { "aria_empty": "Favorites, none saved", "count_text": "0", "rect": [42, 28] },
+    "after_one_save": "Favorites, 1 city",
+    "after_two_saves": "Favorites, 2 cities",
+    "opens_view": "1 favorite city / FAVORITES / <city>",
+    "empty_state": "Search for a city above. Use the star beside its name to keep it here for one-click access, even after you restart the app.",
+    "persists_across_reload": true,
+    "storage_key": "weather.favorites.v1",
+    "city_persists_across_reload": "weather.city.v1",
+    "search_rows_have_star": false,
+    "search_row_dom": "button > span(name) + span(admin1, country) + lucide-arrow-right"
+  },
+  "focus_after_remove": {
+    "non_empty_list": "pass - focus moves to next 'Remove <city> from favorites' button, stays in dialog",
+    "last_item": "fail - document.activeElement = BODY, dialog still open",
+    "focus_trap_after_fail": "holds - Tab from body lands on Cancel inside dialog, cycles Input<->Cancel"
+  },
+  "sheet_geometry": {
+    "empty": { "top": 474, "height": 640, "width": 448, "rows": 0 },
+    "six_results": { "top": 474, "height": 640, "width": 448, "rows": 6, "list_scrollHeight": 384, "list_clientHeight": 384, "last_row_bottom": 1026, "dialog_bottom": 1114, "count_text": "6 results" },
+    "jump_px": 0,
+    "viewport": [2880, 1588]
+  },
+  "data_spot_check_oslo": {
+    "api_current": { "time": "2026-11-15T05:00", "temperature_2m": 6.3, "is_day": 0 },
+    "hero_c": 6,
+    "hourly_match": "23 of 24 labels match Math.round(api)",
+    "hourly_1pm_ui": 9,
+    "hourly_1pm_api": 8.4,
+    "note": "single .5 rounding-boundary difference; precip probabilities align at every label, so indexing is correct; not reported as a data defect",
+    "daily_today_ui": [5, 9],
+    "header_date": "SUNDAY, NOVEMBER 15 (Oslo local), matches timezone=auto"
+  },
+  "data_spot_check_san_francisco": {
+    "api_current_c": { "temperature_2m": 13, "apparent_temperature": 11.9, "relative_humidity_2m": 79, "wind_speed_10m": 6.1, "weather_code": 3, "is_day": 0 },
+    "ui": { "hero": 13, "high": 17, "low": 11, "feels": 12, "humidity": "79%", "wind": "6 km/h", "condition": "Overcast" },
+    "daily_api_max_min": [16.9, 11.2]
+  },
+  "console_errors_clean_load": 0,
+  "forced_colors": {
+    "matches": true,
+    "selected_unit_outline": "solid 2px rgba(0, 230, 255, 0.8)",
+    "unselected_outline": "none",
+    "caveat": "hardcoded cyan, not a system colour; may fall below 3:1 on a light forced palette"
+  },
+  "hero_numeral": {
+    "computed_font_size": "96px",
+    "source": "src/components/CurrentWeatherHeader.tsx:80 text-[96px]",
+    "responds_to_text_size": false
+  },
+  "one_char_query": {
+    "ui": "No cities found for \u201ca\u201d",
+    "api": "geocoding-api returns no results for name=a (generationtime only)",
+    "assessment": "copy is API-accurate but premature; P3"
+  },
+  "theme": {
+    "app_is_dark_at_night": true,
+    "body_background": "#0b1220",
+    "search_sheet_background": "light",
+    "assessment": "sheet is always light inside a dark app; P2"
+  },
+  "state_left_after_testing": { "city": "Oslo", "favorites": 0, "window": [1032, 742] }
+}

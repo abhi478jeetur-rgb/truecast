@@ -1,0 +1,126 @@
+{
+  "state": "11-offline-error.png",
+  "dims": {
+    "w": 1000,
+    "h": 700,
+    "dpr": 1
+  },
+  "samples": [
+    {
+      "name": "titlebar-close",
+      "text": "",
+      "color": "rgb(15, 23, 42)",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, sans-serif",
+      "rect": {
+        "x": 104,
+        "y": 4,
+        "w": 32,
+        "h": 32
+      },
+      "opacity": "1",
+      "sampledBg": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "contrast": 17.85,
+      "sampleAt": {
+        "x": 120,
+        "y": 20
+      }
+    }
+  ],
+  "facts": {
+    "viewport": {
+      "w": 1000,
+      "h": 700,
+      "dpr": 1,
+      "scrollbar": 0
+    },
+    "title": "weather-app",
+    "lang": "en",
+    "transitions": {
+      "0.15s": 3
+    },
+    "fontSizes": {
+      "16px": 1,
+      "12px": 1,
+      "18px": 1,
+      "14px": 1
+    },
+    "colors": {
+      "rgb(15, 23, 42)": 4
+    },
+    "interactive": [
+      {
+        "tag": "button",
+        "text": "",
+        "aria": null,
+        "title": "Minimize",
+        "w": 32,
+        "h": 32,
+        "tabindex": null,
+        "role": null
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "aria": null,
+        "title": "Maximize",
+        "w": 32,
+        "h": 32,
+        "tabindex": null,
+        "role": null
+      },
+      {
+        "tag": "button",
+        "text": "",
+        "aria": null,
+        "title": "Close",
+        "w": 32,
+        "h": 32,
+        "tabindex": null,
+        "role": null
+      }
+    ],
+    "scrollables": [
+      {
+        "tag": "div",
+        "cls": "fixed inset-0 w-full h-full overflow-hidden font-sans selection:bg-blue-500/30",
+        "sw": 1000,
+        "cw": 1000,
+        "sh": 740,
+        "ch": 700,
+        "ox": "hidden",
+        "oy": "hidden"
+      }
+    ],
+    "leftEdges": [],
+    "headings": [],
+    "landmarks": {
+      "header": false,
+      "main": true,
+      "nav": false,
+      "footer": false,
+      "sections": 0
+    },
+    "ariaLive": 0,
+    "ariaModal": 0,
+    "roleDialog": 0,
+    "imgNoAlt": 0,
+    "svgCount": 3,
+    "svgNoLabel": 0,
+    "positiveTabindex": 0,
+    "reducedMotion": false,
+    "hardcodedWhite": 0,
+    "emoji": 0,
+    "now": "Fri Nov 13 2026 00:03:52 GMT-0500 (Eastern Standard Time)"
+  },
+  "bodyText": "Weather\n\nUnable to load weather\n\nNetwork Error",
+  "label": "offline error",
+  "offlineText": "Weather\n\nUnable to load weather\n\nNetwork Error"
+}

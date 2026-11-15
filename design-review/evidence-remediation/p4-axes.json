@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-14T23:12:55.915Z",
+  "measure": {
+    "hero": 48,
+    "highLow": 48,
+    "feels": 48,
+    "hourlyHeading": 64,
+    "dailyHeading": 64,
+    "hourlyCard": 48,
+    "dayName": 65,
+    "dayRowLeft": 48,
+    "detailCardLeft": 612,
+    "detailLabel": 667,
+    "detailValue": 629
+  },
+  "edges": {
+    "hero": 48,
+    "highLow": 48,
+    "feels": 48,
+    "hourlyCard": 48
+  },
+  "insets": {
+    "hourlyHeading": 16,
+    "dailyHeading": 16,
+    "dayName": 17,
+    "detailValue": 17
+  },
+  "edgeOk": true,
+  "insetOk": true
+}

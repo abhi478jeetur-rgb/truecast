@@ -76,8 +76,8 @@ app.whenReady().then(() => {
     applicationName: "Truecast",
     applicationVersion: app.getVersion(),
     version: app.getVersion(),
-    copyright: "Weather data by Open-Meteo (CC BY 4.0). Not affiliated with Apple.",
-    credits: "A weather app that proves its numbers.",
+    copyright: "© 2026 Tarun Bansal · MIT licensed",
+    credits: "A weather app that proves its numbers.\nData by Open-Meteo (CC BY 4.0). Not affiliated with Apple.",
   });
   Menu.setApplicationMenu(
     Menu.buildFromTemplate([

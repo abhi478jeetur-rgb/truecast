@@ -82,12 +82,15 @@ packaged binary; `npm run typecheck` and `npm run lint` clean; `p15-hidpi.json`
 
 | ID | Task | Size | Pri | Notes |
 |---|---|---|---|---|
-| R-40 | CI job that fails when the UI disagrees with the API | M | P2 | genuinely novel; you already have the harness |
-| R-41 | Write-up: "I had an AI design gate my app three times…" + link the repo | S | P2 | the thing that actually travels |
-| R-42 | About panel: version, data source, licence, commit | XS | P2 | |
-| R-43 | Localisation scaffold (en + one other) | L | P3 | only if you want contributors |
+| R-40 | CI truth check | M | P2 | **DONE** — `e2e/truth.mjs`, 125 values, wired into CI |
+| R-41 | Write-up | S | P2 | **DONE** — `docs/STORY.md`, linked from the README |
+| R-42 | About panel | XS | P2 | **DONE** — version, licence, data credit |
+| R-43 | Localisation scaffold | L | P3 | **DEFERRED** — English-only is fine for v1; strings are already centralised in components |
 
 ---
+
+**M4 verification:** `node e2e/truth.mjs` → 125/125 agree; `node e2e/smoke.mjs`
+→ 8/8; CI runs both under xvfb.
 
 ## Definition of "polished"
 

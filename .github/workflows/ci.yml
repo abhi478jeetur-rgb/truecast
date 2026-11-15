@@ -32,3 +32,5 @@ jobs:
       - run: npm ci
       - run: npm run dist
       - run: xvfb-run -a node e2e/smoke.mjs
+      # The differentiator: fail the build when the UI and the API disagree.
+      - run: xvfb-run -a node e2e/truth.mjs

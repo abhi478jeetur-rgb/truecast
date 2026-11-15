@@ -11,6 +11,9 @@ on screen is checked against the API it came from, and the receipts are in
 | ![Dark theme](docs/screenshots/dark.png) | ![Light theme](docs/screenshots/light.png) |
 | ![Search sheet](docs/screenshots/sheet.png) | ![Fahrenheit](docs/screenshots/fahrenheit.png) |
 
+The bugs it shipped with, and how they were found, are written up in
+[`docs/STORY.md`](docs/STORY.md).
+
 ## Why this one
 
 Most desktop weather apps are a web page in a frame. This one is small, honest,
@@ -115,7 +118,8 @@ Three runs, their measurements, and the things that were *not* fixed are in
 [`QA.md`](QA.md); the full reports are in [`design-review/`](design-review/).
 
 That is backed by 30 unit tests, an end-to-end smoke test against the packaged
-binary (launch, API agreement, units, shortcuts), and CI on every push.
+binary (launch, API agreement, units, shortcuts), and a **truth check that fails
+the build when the UI and the API disagree** — all on every push.
 Packaging notes for AUR and Flathub are in [`packaging/`](packaging/).
 
 ## Licence

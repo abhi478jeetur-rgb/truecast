@@ -35,6 +35,7 @@ and measured:
 - °C/°F with km/h ↔ mph (re-requested from the API, never converted locally)
 - City search with keyboard support; saved favourites reorder by arrow key or drag
 - Last city, units and favourites persist across launches
+- `Ctrl+R` refreshes, `Ctrl+F` searches, arrows move through results
 - Frameless window with real traffic lights, Restore state and double-click zoom
 
 ## Install

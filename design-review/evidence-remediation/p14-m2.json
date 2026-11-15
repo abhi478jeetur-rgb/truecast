@@ -1,0 +1,72 @@
+{
+  "at": "2026-11-15T05:00:42.176Z",
+  "marker": 42,
+  "refreshed": 1,
+  "firstActive": "city-option-0",
+  "secondActive": "city-option-1",
+  "options": [
+    "Sanaa",
+    "Sanya",
+    "Sanhe"
+  ],
+  "pill": "Sanya",
+  "anim": "city-in",
+  "skeleton": {
+    "blocks": 24,
+    "busy": "true",
+    "h": 860
+  },
+  "checks": [
+    {
+      "name": "Ctrl+R does not reload the page",
+      "pass": true,
+      "detail": 42
+    },
+    {
+      "name": "Ctrl+R fetches fresh weather",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "Ctrl+F opens the sheet",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "combobox highlights the first result",
+      "pass": true,
+      "detail": "city-option-0"
+    },
+    {
+      "name": "ArrowDown moves the active option",
+      "pass": true,
+      "detail": "city-option-1"
+    },
+    {
+      "name": "Enter selects the highlighted city",
+      "pass": true,
+      "detail": {
+        "pill": "Sanya",
+        "options": [
+          "Sanaa",
+          "Sanya",
+          "Sanhe"
+        ]
+      }
+    },
+    {
+      "name": "city change runs the cross-fade",
+      "pass": true,
+      "detail": "city-in"
+    },
+    {
+      "name": "loading state matches the layout",
+      "pass": true,
+      "detail": {
+        "blocks": 24,
+        "busy": "true",
+        "h": 860
+      }
+    }
+  ]
+}

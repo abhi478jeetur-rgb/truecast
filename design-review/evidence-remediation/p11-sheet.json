@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-15T04:56:18.545Z",
+  "at": "2026-11-15T05:02:20.145Z",
   "dark": {
     "theme": "dark",
     "file": "/home/tarun-bansal/dev/weather-app/design-review/evidence-remediation/p11-sheet-dark.png",
@@ -53,11 +53,11 @@
         "x": 498,
         "y": 230,
         "bg": {
-          "r": 14,
-          "g": 22,
-          "b": 40
+          "r": 32,
+          "g": 40,
+          "b": 56
         },
-        "contrast": 17.24,
+        "contrast": 14.11,
         "required": 4.5
       },
       {
@@ -67,11 +67,11 @@
         "x": 381,
         "y": 242,
         "bg": {
-          "r": 14,
-          "g": 22,
-          "b": 40
+          "r": 32,
+          "g": 40,
+          "b": 56
         },
-        "contrast": 9.7,
+        "contrast": 8.37,
         "required": 4.5
       },
       {
@@ -157,11 +157,11 @@
         "x": 498,
         "y": 230,
         "bg": {
-          "r": 246,
-          "g": 248,
+          "r": 232,
+          "g": 238,
           "b": 249
         },
-        "contrast": 16.76,
+        "contrast": 15.33,
         "required": 4.5
       },
       {
@@ -171,11 +171,11 @@
         "x": 381,
         "y": 242,
         "bg": {
-          "r": 246,
-          "g": 248,
+          "r": 232,
+          "g": 238,
           "b": 249
         },
-        "contrast": 7.11,
+        "contrast": 6.51,
         "required": 4.5
       },
       {

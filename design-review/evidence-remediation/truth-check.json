@@ -1,11 +1,11 @@
 {
-  "at": "2026-11-15T04:56:33.894Z",
+  "at": "2026-11-15T05:01:32.488Z",
   "city": "San Francisco",
   "api": {
     "timezone": "America/Los_Angeles",
-    "currentTime": "2026-11-14T20:45",
-    "temperature": 12.8,
-    "apparent": 11.6,
+    "currentTime": "2026-11-14T21:00",
+    "temperature": 12.7,
+    "apparent": 11.5,
     "daily0": {
       "date": "2026-11-14",
       "max": 16.9,
@@ -14,8 +14,8 @@
       "sunset": "2026-11-14T16:58"
     }
   },
-  "total": 131,
-  "passed": 131,
+  "total": 132,
+  "passed": 132,
   "failed": [],
   "checks": [
     {
@@ -50,8 +50,8 @@
     },
     {
       "name": "humidity",
-      "ui": "82%",
-      "api": "82%",
+      "ui": "83%",
+      "api": "83%",
       "pass": true
     },
     {
@@ -110,8 +110,8 @@
     },
     {
       "name": "hour[1] label",
-      "ui": "9pm",
-      "api": "9pm",
+      "ui": "10pm",
+      "api": "10pm",
       "pass": true
     },
     {
@@ -121,9 +121,15 @@
       "pass": true
     },
     {
+      "name": "hour[1] pop",
+      "ui": "1%",
+      "api": "1%",
+      "pass": true
+    },
+    {
       "name": "hour[2] label",
-      "ui": "10pm",
-      "api": "10pm",
+      "ui": "11pm",
+      "api": "11pm",
       "pass": true
     },
     {
@@ -140,14 +146,14 @@
     },
     {
       "name": "hour[3] label",
-      "ui": "11pm",
-      "api": "11pm",
+      "ui": "12am",
+      "api": "12am",
       "pass": true
     },
     {
       "name": "hour[3] temp",
-      "ui": "13°",
-      "api": "13°",
+      "ui": "12°",
+      "api": "12°",
       "pass": true
     },
     {
@@ -158,8 +164,8 @@
     },
     {
       "name": "hour[4] label",
-      "ui": "12am",
-      "api": "12am",
+      "ui": "1am",
+      "api": "1am",
       "pass": true
     },
     {
@@ -176,8 +182,8 @@
     },
     {
       "name": "hour[5] label",
-      "ui": "1am",
-      "api": "1am",
+      "ui": "2am",
+      "api": "2am",
       "pass": true
     },
     {
@@ -194,8 +200,8 @@
     },
     {
       "name": "hour[6] label",
-      "ui": "2am",
-      "api": "2am",
+      "ui": "3am",
+      "api": "3am",
       "pass": true
     },
     {
@@ -212,8 +218,8 @@
     },
     {
       "name": "hour[7] label",
-      "ui": "3am",
-      "api": "3am",
+      "ui": "4am",
+      "api": "4am",
       "pass": true
     },
     {
@@ -230,8 +236,8 @@
     },
     {
       "name": "hour[8] label",
-      "ui": "4am",
-      "api": "4am",
+      "ui": "5am",
+      "api": "5am",
       "pass": true
     },
     {
@@ -242,14 +248,14 @@
     },
     {
       "name": "hour[8] pop",
-      "ui": "1%",
-      "api": "1%",
+      "ui": "2%",
+      "api": "2%",
       "pass": true
     },
     {
       "name": "hour[9] label",
-      "ui": "5am",
-      "api": "5am",
+      "ui": "6am",
+      "api": "6am",
       "pass": true
     },
     {
@@ -266,8 +272,8 @@
     },
     {
       "name": "hour[10] label",
-      "ui": "6am",
-      "api": "6am",
+      "ui": "7am",
+      "api": "7am",
       "pass": true
     },
     {
@@ -278,68 +284,68 @@
     },
     {
       "name": "hour[10] pop",
-      "ui": "2%",
-      "api": "2%",
-      "pass": true
-    },
-    {
-      "name": "hour[11] label",
-      "ui": "7am",
-      "api": "7am",
-      "pass": true
-    },
-    {
-      "name": "hour[11] temp",
-      "ui": "12°",
-      "api": "12°",
-      "pass": true
-    },
-    {
-      "name": "hour[11] pop",
       "ui": "3%",
       "api": "3%",
       "pass": true
     },
     {
-      "name": "hour[12] label",
+      "name": "hour[11] label",
       "ui": "8am",
       "api": "8am",
       "pass": true
     },
     {
-      "name": "hour[12] temp",
+      "name": "hour[11] temp",
       "ui": "13°",
       "api": "13°",
       "pass": true
     },
     {
-      "name": "hour[12] pop",
+      "name": "hour[11] pop",
       "ui": "4%",
       "api": "4%",
       "pass": true
     },
     {
-      "name": "hour[13] label",
+      "name": "hour[12] label",
       "ui": "9am",
       "api": "9am",
       "pass": true
     },
     {
-      "name": "hour[13] temp",
+      "name": "hour[12] temp",
       "ui": "14°",
       "api": "14°",
       "pass": true
     },
     {
-      "name": "hour[13] pop",
+      "name": "hour[12] pop",
       "ui": "6%",
       "api": "6%",
       "pass": true
     },
     {
-      "name": "hour[14] label",
+      "name": "hour[13] label",
       "ui": "10am",
       "api": "10am",
+      "pass": true
+    },
+    {
+      "name": "hour[13] temp",
+      "ui": "16°",
+      "api": "16°",
+      "pass": true
+    },
+    {
+      "name": "hour[13] pop",
+      "ui": "9%",
+      "api": "9%",
+      "pass": true
+    },
+    {
+      "name": "hour[14] label",
+      "ui": "11am",
+      "api": "11am",
       "pass": true
     },
     {
@@ -350,68 +356,68 @@
     },
     {
       "name": "hour[14] pop",
-      "ui": "9%",
-      "api": "9%",
-      "pass": true
-    },
-    {
-      "name": "hour[15] label",
-      "ui": "11am",
-      "api": "11am",
-      "pass": true
-    },
-    {
-      "name": "hour[15] temp",
-      "ui": "16°",
-      "api": "16°",
-      "pass": true
-    },
-    {
-      "name": "hour[15] pop",
       "ui": "23%",
       "api": "23%",
       "pass": true
     },
     {
-      "name": "hour[16] label",
+      "name": "hour[15] label",
       "ui": "12pm",
       "api": "12pm",
       "pass": true
     },
     {
-      "name": "hour[16] temp",
+      "name": "hour[15] temp",
       "ui": "15°",
       "api": "15°",
       "pass": true
     },
     {
-      "name": "hour[16] pop",
+      "name": "hour[15] pop",
       "ui": "32%",
       "api": "32%",
       "pass": true
     },
     {
-      "name": "hour[17] label",
+      "name": "hour[16] label",
       "ui": "1pm",
       "api": "1pm",
       "pass": true
     },
     {
-      "name": "hour[17] temp",
+      "name": "hour[16] temp",
       "ui": "14°",
       "api": "14°",
       "pass": true
     },
     {
-      "name": "hour[17] pop",
+      "name": "hour[16] pop",
       "ui": "38%",
       "api": "38%",
       "pass": true
     },
     {
-      "name": "hour[18] label",
+      "name": "hour[17] label",
       "ui": "2pm",
       "api": "2pm",
+      "pass": true
+    },
+    {
+      "name": "hour[17] temp",
+      "ui": "13°",
+      "api": "13°",
+      "pass": true
+    },
+    {
+      "name": "hour[17] pop",
+      "ui": "48%",
+      "api": "48%",
+      "pass": true
+    },
+    {
+      "name": "hour[18] label",
+      "ui": "3pm",
+      "api": "3pm",
       "pass": true
     },
     {
@@ -422,14 +428,14 @@
     },
     {
       "name": "hour[18] pop",
-      "ui": "48%",
-      "api": "48%",
+      "ui": "66%",
+      "api": "66%",
       "pass": true
     },
     {
       "name": "hour[19] label",
-      "ui": "3pm",
-      "api": "3pm",
+      "ui": "4pm",
+      "api": "4pm",
       "pass": true
     },
     {
@@ -440,32 +446,32 @@
     },
     {
       "name": "hour[19] pop",
-      "ui": "66%",
-      "api": "66%",
-      "pass": true
-    },
-    {
-      "name": "hour[20] label",
-      "ui": "4pm",
-      "api": "4pm",
-      "pass": true
-    },
-    {
-      "name": "hour[20] temp",
-      "ui": "13°",
-      "api": "13°",
-      "pass": true
-    },
-    {
-      "name": "hour[20] pop",
       "ui": "82%",
       "api": "82%",
       "pass": true
     },
     {
-      "name": "hour[21] label",
+      "name": "hour[20] label",
       "ui": "5pm",
       "api": "5pm",
+      "pass": true
+    },
+    {
+      "name": "hour[20] temp",
+      "ui": "12°",
+      "api": "12°",
+      "pass": true
+    },
+    {
+      "name": "hour[20] pop",
+      "ui": "94%",
+      "api": "94%",
+      "pass": true
+    },
+    {
+      "name": "hour[21] label",
+      "ui": "6pm",
+      "api": "6pm",
       "pass": true
     },
     {
@@ -476,14 +482,14 @@
     },
     {
       "name": "hour[21] pop",
-      "ui": "94%",
-      "api": "94%",
+      "ui": "92%",
+      "api": "92%",
       "pass": true
     },
     {
       "name": "hour[22] label",
-      "ui": "6pm",
-      "api": "6pm",
+      "ui": "7pm",
+      "api": "7pm",
       "pass": true
     },
     {
@@ -494,26 +500,26 @@
     },
     {
       "name": "hour[22] pop",
-      "ui": "92%",
-      "api": "92%",
+      "ui": "85%",
+      "api": "85%",
       "pass": true
     },
     {
       "name": "hour[23] label",
-      "ui": "7pm",
-      "api": "7pm",
+      "ui": "8pm",
+      "api": "8pm",
       "pass": true
     },
     {
       "name": "hour[23] temp",
-      "ui": "12°",
-      "api": "12°",
+      "ui": "11°",
+      "api": "11°",
       "pass": true
     },
     {
       "name": "hour[23] pop",
-      "ui": "85%",
-      "api": "85%",
+      "ui": "51%",
+      "api": "51%",
       "pass": true
     },
     {
@@ -776,8 +782,8 @@
     },
     {
       "name": "humidity card",
-      "ui": "82%",
-      "api": "82%",
+      "ui": "83%",
+      "api": "83%",
       "pass": true
     },
     {

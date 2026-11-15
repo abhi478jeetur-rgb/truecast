@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import WeatherBackground from "@/components/WeatherBackground";
 import TitleBar from "@/components/TitleBar";
 import CurrentWeatherHeader from "@/components/CurrentWeatherHeader";
@@ -7,7 +8,25 @@ import WeatherDetailGrid from "@/components/WeatherDetailGrid";
 import { useWeather } from "@/state/WeatherProvider";
 
 export default function App() {
-  const { data, city, status, error, isStale, failedCity, retry, dismissError } = useWeather();
+  const { data, city, status, error, isStale, failedCity, retry, dismissError, refresh, openSearch } =
+    useWeather();
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (!(event.ctrlKey || event.metaKey)) return;
+      const key = event.key.toLowerCase();
+      if (key === "r") {
+        event.preventDefault();
+        refresh();
+      }
+      if (key === "f") {
+        event.preventDefault();
+        openSearch();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [refresh, openSearch]);
 
   return (
     <div className="fixed inset-0 w-full h-full overflow-hidden font-sans selection:bg-blue-500/30">
@@ -37,6 +56,7 @@ export default function App() {
                 aria-busy={isStale}
                 className={`transition-opacity duration-300 ${isStale ? "opacity-55" : "opacity-100"}`}
               >
+                <div key={data.city.id} className="city-enter">
                 <HourlyForecastStrip hourly={data.hourly} />
                 {/* Side by side only when the right column is wide enough for
                     two readable cards. At 800-899 px a 5/12 column squeezed them
@@ -53,6 +73,7 @@ export default function App() {
                 <p className="px-6 pb-6 text-app-2 text-xs">
                   Weather data by Open-Meteo (CC BY 4.0). Not affiliated with Apple.
                 </p>
+                </div>
               </div>
             </>
           )}
@@ -63,21 +84,32 @@ export default function App() {
 }
 
 function LoadingState() {
+  const block = "rounded-2xl animate-pulse";
+  const fill = { backgroundColor: "var(--skeleton)" };
   return (
-    <div
-      className="h-[60vh] flex flex-col items-center justify-center gap-5"
-      aria-busy="true"
-      aria-label="Loading weather"
-    >
-      <div
-        className="h-24 w-64 rounded-3xl animate-pulse"
-        style={{ backgroundColor: "var(--skeleton)" }}
-      />
-      <div
-        className="h-4 w-40 rounded-full animate-pulse"
-        style={{ backgroundColor: "var(--skeleton)" }}
-      />
-      <p className="text-app-3 text-sm font-medium">Loading weather…</p>
+    <div className="pt-4 px-6" aria-busy="true" aria-label="Loading weather">
+      <span className="sr-only">Loading weather…</span>
+      <div className={`${block} h-9 w-44 rounded-full`} style={fill} />
+      <div className="mt-8 flex items-end gap-4">
+        <div className={`${block} h-24 w-64`} style={fill} />
+        <div className={`${block} h-6 w-32 mb-3`} style={fill} />
+      </div>
+      <div className={`${block} mt-3 h-4 w-40`} style={fill} />
+      <div className={`${block} mt-10 h-5 w-72`} style={fill} />
+
+      <div className={`${block} mt-8 h-4 w-40`} style={fill} />
+      <div className="mt-4 flex gap-3 overflow-hidden">
+        {Array.from({ length: 8 }).map((_, index) => (
+          <div key={index} className={`${block} h-40 w-16 shrink-0`} style={fill} />
+        ))}
+      </div>
+
+      <div className={`${block} mt-8 h-4 w-44`} style={fill} />
+      <div className="mt-4 space-y-2">
+        {Array.from({ length: 6 }).map((_, index) => (
+          <div key={index} className={`${block} h-11 w-full`} style={fill} />
+        ))}
+      </div>
     </div>
   );
 }

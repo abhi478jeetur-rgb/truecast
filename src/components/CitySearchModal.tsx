@@ -38,6 +38,17 @@ export function CitySearchModal({
   /** One ref per favourites row, so removing one can hand focus to the next. */
   const removeRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [confirmClear, setConfirmClear] = useState(false);
+  /** Index of the keyboard-highlighted result, -1 when there is none. */
+  const [activeIndex, setActiveIndex] = useState(-1);
+
+  useEffect(() => {
+    setActiveIndex(results.length > 0 ? 0 : -1);
+  }, [results]);
+
+  useEffect(() => {
+    if (activeIndex < 0) return;
+    document.getElementById(`city-option-${activeIndex}`)?.scrollIntoView({ block: "nearest" });
+  }, [activeIndex]);
 
   useEffect(() => {
     if (!open) return;
@@ -115,12 +126,27 @@ export function CitySearchModal({
             <input
               ref={inputRef}
               type="text"
+              role="combobox"
+              aria-expanded={results.length > 0}
+              aria-controls="city-results"
+              aria-autocomplete="list"
+              aria-activedescendant={
+                activeIndex >= 0 && results[activeIndex]
+                  ? `city-option-${activeIndex}`
+                  : undefined
+              }
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               onKeyDown={(event) => {
-                if (event.key === "Enter" && results.length > 0) {
+                if (event.key === "ArrowDown" && results.length > 0) {
                   event.preventDefault();
-                  onSelect(results[0]);
+                  setActiveIndex((index) => (index + 1) % results.length);
+                } else if (event.key === "ArrowUp" && results.length > 0) {
+                  event.preventDefault();
+                  setActiveIndex((index) => (index - 1 + results.length) % results.length);
+                } else if (event.key === "Enter" && results.length > 0) {
+                  event.preventDefault();
+                  onSelect(results[activeIndex] ?? results[0]);
                 }
               }}
               placeholder="Enter city name"
@@ -289,22 +315,32 @@ export function CitySearchModal({
               </>
             )}
 
-            {query.trim() && results.map((city) => (
-              <button
-                key={city.id}
-                onClick={() => onSelect(city)}
-                className="app-region-no-drag w-full flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl hover:bg-[color:var(--sheet-hover)] transition text-[color:var(--sheet-text)] snap-start"
-              >
-                <span className="flex flex-col min-w-0">
-                  <span className="font-medium truncate">{city.name}</span>
-                  <span className="text-xs text-[color:var(--sheet-muted)] truncate">
-                    {city.admin1 ? city.admin1 + ", " : ""}
-                    {city.country}
-                  </span>
-                </span>
-                <ArrowRight size={14} className="text-[color:var(--sheet-faint)] shrink-0" aria-hidden="true" />
-              </button>
-            ))}
+            {query.trim() && (
+              <div role="listbox" id="city-results" aria-label="Search results">
+                {results.map((city, index) => (
+                  <div
+                    key={city.id}
+                    id={`city-option-${index}`}
+                    role="option"
+                    aria-selected={index === activeIndex}
+                    onMouseEnter={() => setActiveIndex(index)}
+                    onClick={() => onSelect(city)}
+                    className={`app-region-no-drag w-full flex items-center justify-between gap-3 px-4 py-3 text-left rounded-xl transition text-[color:var(--sheet-text)] cursor-pointer snap-start ${
+                      index === activeIndex ? "bg-[color:var(--sheet-hover)]" : ""
+                    }`}
+                  >
+                    <span className="flex flex-col min-w-0">
+                      <span className="font-medium truncate">{city.name}</span>
+                      <span className="text-xs text-[color:var(--sheet-muted)] truncate">
+                        {city.admin1 ? city.admin1 + ", " : ""}
+                        {city.country}
+                      </span>
+                    </span>
+                    <ArrowRight size={14} className="text-[color:var(--sheet-faint)] shrink-0" aria-hidden="true" />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 

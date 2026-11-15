@@ -62,6 +62,7 @@ export interface WeatherContextValue {
   moveFavorite: (from: number, to: number) => void;
   clearFavorites: () => void;
   retry: () => void;
+  refresh: () => void;
   dismissError: () => void;
   selectCity: (city: City) => void;
 
@@ -265,6 +266,10 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
     void load(failedCity ?? city, { force: true });
   }, [failedCity, city, load]);
 
+  const refresh = useCallback(() => {
+    void load(city, { force: true });
+  }, [city, load]);
+
   const dismissError = useCallback(() => {
     setError(null);
     setFailedCity(null);
@@ -291,6 +296,7 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
       moveFavorite,
       clearFavorites,
       retry,
+      refresh,
       dismissError,
       selectCity,
       isSearchOpen,
@@ -319,6 +325,7 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
       moveFavorite,
       clearFavorites,
       retry,
+      refresh,
       dismissError,
       selectCity,
       isSearchOpen,

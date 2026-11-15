@@ -46,16 +46,20 @@ sheet 5/5, focus 5/5, truth 131/131, console 0).
 
 | ID | Task | Size | Pri | Notes |
 |---|---|---|---|---|
-| R-20 | Settings sheet (units, motion, about) with `Ctrl+,` | M | P1 | makes it feel like an app, not a demo |
-| R-21 | Manual refresh + last-updated in the title bar | S | P1 | |
-| R-22 | Keyboard shortcuts: refresh, search, Esc, Enter, arrows in results | S | P1 | |
-| R-23 | Search results as a real combobox (`aria-activedescendant`, arrow keys) | S | P2 | completes the a11y story |
-| R-24 | City-switch transition (crossfade), honoured by reduced motion | S | P2 | biggest "premium" perception win per hour |
-| R-25 | Per-row star in search results | S | P2 | fixes the empty-state copy properly |
-| R-26 | Skeletons that match the real layout (hero/hourly/days), no spinner | S | P2 | |
-| R-27 | Tray icon with current temperature | M | P3 | nice on Linux, not required |
+| R-20 | Settings sheet / About | M | P1 | **PARTIAL** — native About panel with version + data credit; units already live in the title bar |
+| R-21 | Manual refresh + last-updated | S | P1 | **DONE** — refresh control spins while stale; `Ctrl+R` |
+| R-22 | Keyboard shortcuts | S | P1 | **DONE** — `Ctrl+R`, `Ctrl+F`, Esc, Enter, arrows |
+| R-23 | Search results as a real combobox | S | P2 | **DONE** — `role=combobox/listbox/option`, active descendant |
+| R-24 | City-switch cross-fade | S | P2 | **DONE** — 260 ms, disabled under reduced motion |
+| R-25 | Per-row star in search results | S | P2 | **DEFERRED** — a button inside a listbox option breaks the combobox semantics; the header star covers it |
+| R-26 | Skeletons that match the real layout | S | P2 | **DONE** — 24 shapes mirroring hero, strip and rows |
+| R-27 | Tray icon with current temperature | M | P3 | **DEFERRED** — P3; an AppIndicator dependency for little value |
 
 ---
+
+**M2 verification:** `p14-m2.json` — 8/8: Ctrl+R refreshes without reloading,
+Ctrl+F opens the sheet, combobox highlights/arrow/Enter, cross-fade runs, skeleton
+matches the layout (24 blocks, 860 px).
 
 ## M3 — Ship and be found (P1)
 

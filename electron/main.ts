@@ -72,6 +72,13 @@ function createWindow() {
 }
 
 app.whenReady().then(() => {
+  app.setAboutPanelOptions({
+    applicationName: "Truecast",
+    applicationVersion: app.getVersion(),
+    version: app.getVersion(),
+    copyright: "Weather data by Open-Meteo (CC BY 4.0). Not affiliated with Apple.",
+    credits: "A weather app that proves its numbers.",
+  });
   Menu.setApplicationMenu(
     Menu.buildFromTemplate([
       { label: "Truecast", submenu: [{ role: "about" }, { type: "separator" }, { role: "quit" }] },
@@ -90,8 +97,6 @@ app.whenReady().then(() => {
       {
         label: "View",
         submenu: [
-          { role: "reload" },
-          { type: "separator" },
           { role: "resetZoom" },
           { role: "zoomIn" },
           { role: "zoomOut" },

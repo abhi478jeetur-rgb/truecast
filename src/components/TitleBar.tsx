@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Bookmark, Minimize2, Minus, Square, X } from "lucide-react";
+import { Bookmark, Minimize2, Minus, RotateCw, Square, X } from "lucide-react";
 import { useWeather } from "@/state/WeatherProvider";
 import type { UnitPreferences } from "@/services/weatherApi";
 
@@ -24,7 +24,7 @@ const UNIT_OPTIONS: Array<{ short: string; label: string; value: UnitPreferences
 export default function TitleBar() {
   const api = (window as any).electronAPI ?? {};
   const { minimize, maximize, close } = api;
-  const { units, changeUnits, favorites, openSearch, isSearchOpen } = useWeather();
+  const { units, changeUnits, favorites, openSearch, isSearchOpen, refresh, isStale } = useWeather();
 
   const [maximized, setMaximized] = useState(false);
   useEffect(() => {
@@ -98,6 +98,15 @@ export default function TitleBar() {
       </div>
 
       <div className="app-region-no-drag flex items-center gap-2">
+        <button
+          onClick={refresh}
+          aria-label="Refresh weather"
+          title="Refresh"
+          className="chip flex h-7 w-7 items-center justify-center rounded-full text-app-2 transition hover:text-app"
+        >
+          <RotateCw size={13} className={isStale ? "animate-spin" : ""} aria-hidden="true" />
+        </button>
+
         {/* A named way into the saved cities. The city pill opens the same sheet,
             but nothing on the pill says favourites exist. */}
         <button

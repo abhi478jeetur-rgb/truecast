@@ -1,9 +1,9 @@
 {
-  "at": "2026-11-15T04:56:26.015Z",
+  "at": "2026-11-15T05:02:27.627Z",
   "precip": {
     "cards": 24,
     "withBar": 24,
-    "nonZero": 19
+    "nonZero": 18
   },
   "before": [
     "Tokyo",
@@ -32,13 +32,13 @@
       "detail": {
         "cards": 24,
         "withBar": 24,
-        "nonZero": 19
+        "nonZero": 18
       }
     },
     {
       "name": "non-zero probabilities have a fill",
       "pass": true,
-      "detail": 19
+      "detail": 18
     },
     {
       "name": "arrow key reorders favourites",

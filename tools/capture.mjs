@@ -85,8 +85,8 @@ const setCity = async (query, region) => {
   await ev(`(() => { const i = document.querySelector('input[aria-label="Enter city name"]');
     const set = Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, 'value').set;
     set.call(i, ${JSON.stringify(query)}); i.dispatchEvent(new Event('input', { bubbles: true })); })()`);
-  await waitFor(`[...document.querySelectorAll('[role="dialog"] button')].some(b => new RegExp(${JSON.stringify(region)}).test(b.textContent))`);
-  await ev(`(() => { const b = [...document.querySelectorAll('[role="dialog"] button')].find(x => new RegExp(${JSON.stringify(region)}).test(x.textContent)); b.click(); })()`);
+  await waitFor(`[...document.querySelectorAll('[role="option"]')].some(b => new RegExp(${JSON.stringify(region)}).test(b.textContent))`);
+  await ev(`(() => { const b = [...document.querySelectorAll('[role="option"]')].find(x => new RegExp(${JSON.stringify(region)}).test(x.textContent)); b.click(); })()`);
   await waitFor(`document.querySelector('button[aria-label^="Change city"]')?.innerText.includes(${JSON.stringify(query.split(",")[0])})`);
   await sleep(1600);
 };

@@ -267,7 +267,10 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
     };
   }, [query, isSearchOpen]);
 
+  // The two sheets are exclusive: opening one closes the other, so there
+  // is never a second role=dialog on top and Escape/focus stay unambiguous.
   const openSearch = useCallback(() => {
+    setIsSettingsOpen(false);
     setIsSearchOpen(true);
     setQuery("");
     setResults([]);
@@ -279,6 +282,7 @@ export function WeatherProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const openSettings = useCallback(() => {
+    setIsSearchOpen(false);
     setIsSettingsOpen(true);
   }, []);
 

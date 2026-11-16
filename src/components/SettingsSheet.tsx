@@ -77,7 +77,10 @@ export function SettingsSheet({
       document.removeEventListener("keydown", onKeyDown);
       // Return focus to the trigger. Programmatic/assistive opens (Ctrl+,
       // the app menu) often leave activeElement on <body>, so fall back to
-      // the settings gear explicitly — never to <body>.
+      // the settings gear explicitly — never to <body>. But when the sheet
+      // closed because the *other* dialog opened in the same update, that
+      // dialog owns focus now — don't steal it back to the gear.
+      if (document.querySelector('[role="dialog"]')) return;
       const trigger = document.querySelector<HTMLElement>("[data-settings-trigger]");
       const previous = previousFocus.current;
       const target =
@@ -183,8 +186,8 @@ export function SettingsSheet({
                 className="app-region-no-drag relative h-6 w-11 shrink-0 rounded-full transition"
                 style={{
                   backgroundColor: reduceMotion
-                    ? "var(--sheet-accent)"
-                    : "var(--sheet-field-border)",
+                    ? "var(--sheet-switch-on)"
+                    : "var(--sheet-switch-off)",
                 }}
               >
                 <span

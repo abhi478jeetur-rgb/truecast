@@ -10,7 +10,8 @@
 // foreground colour over it, and computes the WCAG ratio. The screenshots
 // double as the PR evidence: design-review/evidence/settings-sheet-<theme>.png.
 // Exits non-zero when any text run is below its bar (4.5:1, or 3:1 for text
-// at/above 24 px, or 18.66 px and bold).
+// at/above 24 px, or 18.66 px and bold), or when the motion switch knob vs
+// track is below 3:1 (WCAG 1.4.11) in either state.
 import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
@@ -72,6 +73,12 @@ try {
   await cdp.eval(`document.querySelector('[data-settings-trigger]').click()`);
   await waitFor(cdp, `!!document.querySelector('[role="dialog"]')`, "sheet open");
   await sleep(400);
+
+  // Transitions animate the token colours over 150 ms on a theme switch, and
+  // under xvfb the compositor can lag wall-clock time, so a fixed sleep can
+  // sample mid-transition colours. Freeze them for the measurement: the
+  // steady-state colours are what the bar is about.
+  await cdp.eval(`(() => { const s = document.createElement('style'); s.id = 'audit-no-transition'; s.textContent = '*{transition:none !important;animation:none !important;}'; document.head.appendChild(s); })()`);
 
   fs.mkdirSync(TMP, { recursive: true });
 
@@ -143,6 +150,64 @@ try {
           `rgb(${effective.r},${effective.g},${effective.b})`.padEnd(16) +
           `${String(ratio).padEnd(6)} ${required}  ${pass ? "PASS" : "FAIL"}`,
       );
+    }
+
+    // The motion switch: knob vs track, both states, on the rendered pixel
+    // (WCAG 1.4.11, bar 3:1). The knob is 20x20 at a 2 px inset of the
+    // 44x24 track; on-state it sits 20 px right (translate-x-5). Screenshots
+    // are sampled at the knob centre and at a track pixel clear of the knob.
+    const switchRect = await cdp.eval(`(() => {
+      const el = document.querySelector('[role="switch"][aria-label="Reduce motion"]');
+      if (!el) return null;
+      const r = el.getBoundingClientRect();
+      return { x: r.x, y: r.y, vw: window.innerWidth };
+    })()`);
+    if (!switchRect) {
+      failures.push(`${theme}: motion switch not found`);
+    } else {
+      const pngWidth = (file) =>
+        Number(
+          execFileSync("python3", [
+            "-c",
+            "import sys; from PIL import Image; print(Image.open(sys.argv[1]).size[0])",
+            file,
+          ]).toString().trim(),
+        );
+      console.log(`\n${theme} — motion switch knob vs track (bar 3:1)`);
+      console.log("state   knob              track             ratio  req");
+      for (const wantOn of [false, true]) {
+        const isOn =
+          (await cdp.eval(
+            `document.querySelector('[role="switch"][aria-label="Reduce motion"]').getAttribute('aria-checked')`,
+          )) === "true";
+        if (isOn !== wantOn) {
+          await cdp.eval(`document.querySelector('[role="switch"][aria-label="Reduce motion"]').click()`);
+          await sleep(500);
+        }
+        const switchFile = path.join(TMP, `settings-switch-${theme}-${wantOn ? "on" : "off"}.png`);
+        await shot(switchFile);
+        const scale = pngWidth(switchFile) / switchRect.vw;
+        const at = (cx, cy) => pixel(switchFile, cx * scale, cy * scale);
+        const knob = at(switchRect.x + (wantOn ? 32 : 12), switchRect.y + 12);
+        const track = at(switchRect.x + (wantOn ? 6 : 38), switchRect.y + 12);
+        const ratio = contrast(knob, track);
+        const pass = ratio >= 3;
+        if (!pass) failures.push(`${theme}: switch ${wantOn ? "on" : "off"} ${ratio} < 3`);
+        console.log(
+          `${(wantOn ? "on" : "off").padEnd(8)}rgb(${knob.r},${knob.g},${knob.b})`.padEnd(22) +
+            `rgb(${track.r},${track.g},${track.b})`.padEnd(18) +
+            `${String(ratio).padEnd(6)} 3  ${pass ? "PASS" : "FAIL"}`,
+        );
+      }
+      // Leave the app as it was found: motion off.
+      const leftOn =
+        (await cdp.eval(
+          `document.querySelector('[role="switch"][aria-label="Reduce motion"]').getAttribute('aria-checked')`,
+        )) === "true";
+      if (leftOn) {
+        await cdp.eval(`document.querySelector('[role="switch"][aria-label="Reduce motion"]').click()`);
+        await sleep(500);
+      }
     }
   }
 } catch (error) {

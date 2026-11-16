@@ -88,6 +88,37 @@ try {
   await sleep(400);
   check("focus still returns to the gear after Ctrl+,", (await activeLabel()) === "Open settings", await activeLabel());
 
+  // Dialog exclusivity: opening one sheet closes the other — never two
+  // role=dialog at once, in either direction, and focus lands in the sheet
+  // that just opened, not on the trigger of the one that closed.
+  const dialogCount = () => cdp.eval(`document.querySelectorAll('[role="dialog"]').length`);
+  const dialogLabel = () =>
+    cdp.eval(`document.querySelector('[role="dialog"]')?.getAttribute('aria-labelledby') ?? ''`);
+  await cdp.eval(`document.querySelector('[data-settings-trigger]').click()`);
+  await waitFor(cdp, `!!document.querySelector('[role="dialog"]')`, "sheet open");
+  check("settings open before Ctrl+F", (await dialogCount()) === 1, await dialogCount());
+  await cdp.key("f", "KeyF", 70, 2);
+  await sleep(500);
+  check("Ctrl+F with Settings open leaves one dialog", (await dialogCount()) === 1, await dialogCount());
+  check("that dialog is the city search", (await dialogLabel()) === "search-title", await dialogLabel());
+  check(
+    "focus lands in the search input, not the settings gear",
+    (await cdp.eval(`document.activeElement?.getAttribute('aria-label')`)) === "Enter city name",
+    await activeLabel(),
+  );
+  await cdp.key(",", "Comma", 188, 2);
+  await sleep(500);
+  check("Ctrl+, with search open leaves one dialog", (await dialogCount()) === 1, await dialogCount());
+  check("that dialog is Settings again", (await dialogLabel()) === "settings-title", await dialogLabel());
+  check(
+    "focus lands on the first control again",
+    (await cdp.eval(`document.activeElement?.getAttribute('aria-label')`))?.startsWith("Celsius") ?? false,
+  );
+  await cdp.key("Escape", "Escape", 27);
+  await sleep(400);
+  check("Escape closes it after the switch", !(await dialogOpen()));
+  check("focus returns to the gear after the switch", (await activeLabel()) === "Open settings", await activeLabel());
+
   // About: version only, no commit hash anywhere in the sheet.
   await cdp.eval(`document.querySelector('[data-settings-trigger]').click()`);
   await waitFor(cdp, `!!document.querySelector('[role="dialog"]')`, "sheet open");
